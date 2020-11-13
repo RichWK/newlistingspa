@@ -38,7 +38,7 @@ export default {
             { name: "addressUnitNumber", fType: "text", friendlyName: "Unit" },
             { name: "addressHouseNumber", fType: "text", friendlyName: "House number" },
             { name: "addressStreetName", fType: "text", friendlyName: "Street name" },
-            { name: "addressStreetType", fType: "text", friendlyName: "Street fType" },
+            { name: "addressStreetType", fType: "text", friendlyName: "Street type" },
             { name: "addressStreetDirection", fType: "text", friendlyName: "Street direction" },
             { name: "addressCityOrTown", fType: "text", friendlyName: "City or town" }
           ]

@@ -6,7 +6,7 @@
 
     <template v-for="field in fields" :key="field.name">
 
-        <FormText v-if="field.type === 'string'" v-bind="field"/>
+        <FormText v-if="field.type === 'text'" v-bind="field"/>
         <FormNumber v-if="field.type === 'number'" v-bind="field"/>
         <FormPhone v-if="field.type === 'phone'" v-bind="field"/>
         <FormCheckbox v-if="field.type === 'checkbox'" v-bind="field"/>

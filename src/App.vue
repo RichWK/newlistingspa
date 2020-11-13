@@ -35,30 +35,30 @@ export default {
         {
           name: "Property address",
           fields: [
-            { name: "addressUnitNumber", type: "string", friendlyName: "Unit" },
-            { name: "addressHouseNumber", type: "string", friendlyName: "House number" },
-            { name: "addressStreetName", type: "string", friendlyName: "Street name" },
-            { name: "addressStreetType", type: "string", friendlyName: "Street type" },
-            { name: "addressStreetDirection", type: "string", friendlyName: "Street direction" },
-            { name: "addressCityOrTown", type: "string", friendlyName: "City or town" }
+            { name: "addressUnitNumber", type: "text", friendlyName: "Unit" },
+            { name: "addressHouseNumber", type: "text", friendlyName: "House number" },
+            { name: "addressStreetName", type: "text", friendlyName: "Street name" },
+            { name: "addressStreetType", type: "text", friendlyName: "Street type" },
+            { name: "addressStreetDirection", type: "text", friendlyName: "Street direction" },
+            { name: "addressCityOrTown", type: "text", friendlyName: "City or town" }
           ]
         },
         {
           name: "Location",
           fields: [
-            { name: "area", type: "string" },
-            { name: "subarea", type: "string" }
+            { name: "area", type: "text" },
+            { name: "subarea", type: "text" }
           ]
         },
         {
           name: "Agent details",
           fields: [
-            { name: "designatedAgent1", type: "string" },
-            { name: "designatedAgent2", type: "string" },
-            { name: "designatedAgent3", type: "string" },
-            { name: "userId1", type: "string" },
-            { name: "userId2", type: "string" },
-            { name: "userId3", type: "string" }
+            { name: "designatedAgent1", type: "text" },
+            { name: "designatedAgent2", type: "text" },
+            { name: "designatedAgent3", type: "text" },
+            { name: "userId1", type: "text" },
+            { name: "userId2", type: "text" },
+            { name: "userId3", type: "text" }
           ]
         },
         {
@@ -77,7 +77,7 @@ export default {
           name: "Appointment contact",
           fields: [
             { name: "appointmentPhoneNumber", type: "phone", friendlyName: "Phone number" },
-            { name: "forAppointmentCall", type: "string", friendlyName: "For appointment call" }
+            { name: "forAppointmentCall", type: "text", friendlyName: "For appointment call" }
           ]
         },
         {

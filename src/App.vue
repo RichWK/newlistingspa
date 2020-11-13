@@ -3,10 +3,10 @@
   <h1>Create a new listing</h1>
 
   <ListingGroup
-    v-for="grouping in groupings"
-    :key="grouping.name"
-    :name="grouping.name"
-    :fields="grouping.fields"
+    v-for="group in groups"
+    :key="group.name"
+    :name="group.name"
+    :fields="group.fields"
   />
 
 </template>
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      groupings: [
+      groups: [
         {
           name: "Multiple Listing Contract date",
           fields: [

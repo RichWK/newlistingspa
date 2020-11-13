@@ -11,14 +11,12 @@
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
 import Grouping from './components/Grouping.vue'
 
 export default {
 
   name: 'App',
   components: {
-    HelloWorld,
     Grouping
   },
   data() {

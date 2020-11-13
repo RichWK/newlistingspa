@@ -1,6 +1,6 @@
 <template>
   
-  <p>Calendar here</p>
+  <p>📅</p>
 
 </template>
 

@@ -27,7 +27,7 @@ export default {
     return {
       groups: [
         {
-          name: "Multiple Listing Contract date",
+          name: "Date on Multiple Listing Contract",
           fields: [
             { name: "contractDate", type: "date" }
           ]

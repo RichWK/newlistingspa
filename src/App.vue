@@ -29,7 +29,7 @@ export default {
         {
           name: "Multiple Listing Contract date",
           fields: [
-            { name: "contractDate", type: "calendar" }
+            { name: "contractDate", type: "date" }
           ]
         },
         {

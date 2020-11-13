@@ -1,6 +1,10 @@
 <template>
   
-  <p>I'm a grouping</p>
+  <div class="grouping">
+
+    <h2>{{ name }}</h2>
+
+  </div>
 
 </template>
 
@@ -10,7 +14,11 @@
 
 export default {
   
-  name: 'Grouping'
+  name: 'Grouping',
+  props: [
+    'name',
+    'fields'
+  ]
 }
 
 </script>

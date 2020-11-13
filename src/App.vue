@@ -2,7 +2,12 @@
 
   <h1>Create a new listing</h1>
 
-  <Grouping/>
+  <Grouping
+    v-for="grouping in groupings"
+    :key="grouping.name"
+    :name="grouping.name"
+    :fields="grouping.fields"
+  />
 
 </template>
 

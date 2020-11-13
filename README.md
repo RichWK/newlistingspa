@@ -1,8 +1,15 @@
 # newlistingspa
 
-## Project setup
+An online alternative to REBGV's existing 'Data Input Form'. Intended to compliment automated listing input.
+
+### Project setup
 ```
 npm install
+```
+
+### Access GUI when using @vue/cli
+```
+vue ui
 ```
 
 ### Compiles and hot-reloads for development
@@ -19,6 +26,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

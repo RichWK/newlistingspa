@@ -10,7 +10,7 @@
 
 export default {
   
-  name: 'InputPhone',
+  name: 'FormPhone',
   props: [
     'friendlyName',
     'name'

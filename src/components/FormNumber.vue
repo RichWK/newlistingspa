@@ -10,7 +10,7 @@
 
 export default {
   
-  name: 'InputNumber',
+  name: 'FormNumber',
   props: [
     'friendlyName',
     'name'

@@ -10,7 +10,7 @@
 
 export default {
   
-  name: 'InputRadio'
+  name: 'FormRadio'
 }
 
 </script>

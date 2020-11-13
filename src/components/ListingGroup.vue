@@ -6,12 +6,12 @@
 
     <template v-for="field in fields" :key="field.name">
 
-        <FormText v-if="field.fieldType === 'text'" v-bind="field"/>
-        <FormNumber v-if="field.fieldType === 'number'" v-bind="field"/>
-        <FormDate v-if="field.fieldType === 'date'" v-bind="field"/>
-        <FormPhone v-if="field.fieldType === 'phone'" v-bind="field"/>
-        <FormCheckbox v-if="field.fieldType === 'checkbox'" v-bind="field"/>
-        <FormRadio v-if="field.fieldType === 'radio'" v-bind="field"/>
+        <FormText v-if="field.fType === 'text'" v-bind="field"/>
+        <FormNumber v-if="field.fType === 'number'" v-bind="field"/>
+        <FormDate v-if="field.fType === 'date'" v-bind="field"/>
+        <FormPhone v-if="field.fType === 'phone'" v-bind="field"/>
+        <FormCheckbox v-if="field.fType === 'checkbox'" v-bind="field"/>
+        <FormRadio v-if="field.fType === 'radio'" v-bind="field"/>
 
     </template>
 

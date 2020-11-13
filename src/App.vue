@@ -3,7 +3,6 @@
   <h1>Create a new listing</h1>
 
   <Grouping/>
-  <HelloWorld/>
 
 </template>
 

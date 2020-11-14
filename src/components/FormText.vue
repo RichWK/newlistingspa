@@ -42,8 +42,18 @@ export default {
 .container {
 
   display: inline-block;
+  margin-top: 12px;
   margin-right: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+/* Adjusting PrimeVue floating label defaults. */
+
+.p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label, .p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label, .p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label {
+  
+    top: -.65rem;
+    font-size: 11px;
+    left: 0.2rem;
 }
 
 input {
@@ -52,13 +62,10 @@ input {
   border-radius: 4px;
 }
 
-/* label {
+label {
 
-  display: block;
-  font-size: 11px;
-  margin-left: 1px;
-  margin-bottom: 5px;
-} */
+  font-size: 14px;
+}
 
 </style>
 

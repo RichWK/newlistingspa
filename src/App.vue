@@ -46,8 +46,34 @@ export default {
         {
           name: "Location",
           fields: [
-            { name: "area", fType: "text" },
-            { name: "subarea", fType: "text" }
+            { name: "area", fType: "dropdown", options: [
+              '',
+              'Burnaby East',
+              'Burnaby North',
+              'Burnaby South',
+              'Coquitlam',
+              'Islands Van and Gulf',
+              'Ladner',
+              'Maple Ridge',
+              'New Westminster',
+              'North Vancouver',
+              'Pemberton',
+              'Pitt Meadows',
+              'Port Coquitlam',
+              'Port Moody',
+              'Richmond',
+              'Squamish',
+              'Sunshine Coast',
+              'Tsawwassen',
+              'Vancouver East',
+              'Vancouver West',
+              'West Vancouver',
+              'Whistler'
+            ] },
+            { name: "subarea", fType: "dropdown", dropdownOptions: [
+              '',
+              'Subareas'
+            ] }
           ]
         },
         {
@@ -64,13 +90,13 @@ export default {
         {
           name: "Showing information",
           fields: [
-            { name: "showingsNoRequirements", fType: "checkbox" },
-            { name: "showingsPhoneListingRealtorFirst", fType: "checkbox" },
-            { name: "showingsPhoneSellerFirst", fType: "checkbox" },
-            { name: "showingsPhoneTenantFirst", fType: "checkbox" },
-            { name: "showingsPhoneOther", fType: "checkbox" },
-            { name: "showingsTouchbase", fType: "checkbox" },
-            { name: "showingsShowingTime", fType: "checkbox" }
+            { name: "showingsNoRequirements", fType: "checkbox", friendlyName: "Keybox or appointment not required" },
+            { name: "showingsPhoneListingRealtorFirst", fType: "checkbox", friendlyName: "Phone listing agent first" },
+            { name: "showingsPhoneSellerFirst", fType: "checkbox", friendlyName: "Phone seller first" },
+            { name: "showingsPhoneTenantFirst", fType: "checkbox", friendlyName: "Phone tenant first" },
+            { name: "showingsPhoneOther", fType: "checkbox", friendlyName: "Phone other" },
+            { name: "showingsTouchbase", fType: "checkbox", friendlyName: "Touchbase" },
+            { name: "showingsShowingTime", fType: "checkbox", friendlyName: "Showing Time (BC Northern only)" }
           ]
         },
         {

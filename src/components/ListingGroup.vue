@@ -7,6 +7,7 @@
   <template v-for="field in fields" :key="field.name">
 
       <FormText v-if="field.fType === 'text'" v-bind="field"/>
+      <FormDropdown v-if="field.fType === 'dropdown'" v-bind="field"/>
       <FormNumber v-if="field.fType === 'number'" v-bind="field"/>
       <FormDate v-if="field.fType === 'date'" v-bind="field"/>
       <FormPhone v-if="field.fType === 'phone'" v-bind="field"/>
@@ -24,6 +25,7 @@
 <script>
 
 import FormText from './FormText.vue'
+import FormDropdown from './FormDropdown.vue'
 import FormNumber from './FormNumber.vue'
 import FormDate from './FormDate.vue'
 import FormPhone from './FormPhone.vue'
@@ -35,6 +37,7 @@ export default {
   name: 'Grouping',
   components: {
     'FormText': FormText,
+    'FormDropdown': FormDropdown,
     'FormNumber': FormNumber,
     'FormDate': FormDate,
     'FormPhone': FormPhone,

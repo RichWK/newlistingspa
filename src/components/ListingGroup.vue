@@ -1,21 +1,21 @@
 <template>
   
-  <div class="grouping">
+<div class="group">
 
-    <h2>{{ name }}</h2>
+  <h2>{{ name }}</h2>
 
-    <template v-for="field in fields" :key="field.name">
+  <template v-for="field in fields" :key="field.name">
 
-        <FormText v-if="field.fType === 'text'" v-bind="field"/>
-        <FormNumber v-if="field.fType === 'number'" v-bind="field"/>
-        <FormDate v-if="field.fType === 'date'" v-bind="field"/>
-        <FormPhone v-if="field.fType === 'phone'" v-bind="field"/>
-        <FormCheckbox v-if="field.fType === 'checkbox'" v-bind="field"/>
-        <FormRadio v-if="field.fType === 'radio'" v-bind="field"/>
+      <FormText v-if="field.fType === 'text'" v-bind="field"/>
+      <FormNumber v-if="field.fType === 'number'" v-bind="field"/>
+      <FormDate v-if="field.fType === 'date'" v-bind="field"/>
+      <FormPhone v-if="field.fType === 'phone'" v-bind="field"/>
+      <FormCheckbox v-if="field.fType === 'checkbox'" v-bind="field"/>
+      <FormRadio v-if="field.fType === 'radio'" v-bind="field"/>
 
-    </template>
+  </template>
 
-  </div>
+</div>
 
 </template>
 
@@ -29,8 +29,6 @@ import FormDate from './FormDate.vue'
 import FormPhone from './FormPhone.vue'
 import FormCheckbox from './FormCheckbox.vue'
 import FormRadio from './FormRadio.vue'
-// import Days from './components/Days.vue'
-// import Months from './components/Months.vue'
 
 export default {
   
@@ -57,8 +55,23 @@ export default {
 
 h2 {
 
-  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 
+.group {
+
+  margin-bottom: 20px;
+  padding: 15px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.group:nth-child(odd) {
+
+  background: #d5d5d5;
+}
+
 </style>
+

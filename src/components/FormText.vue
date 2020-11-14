@@ -43,7 +43,7 @@ export default {
 
   display: inline-block;
   margin-top: 12px;
-  margin-right: 10px;
+  margin-right: 12px;
   margin-bottom: 20px;
 }
 

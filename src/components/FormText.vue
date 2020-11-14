@@ -3,7 +3,7 @@
   <div class="container p-float-label">
 
     
-    <InputText :id="name" v-model="textTest" />
+    <PrimeInputText :id="name" v-model="textTest" />
     <label :for="name">{{ friendlyName }}</label> 
     
   </div>
@@ -20,7 +20,7 @@ export default {
   
   name: 'FormText',
   components: {
-    'InputText': InputText
+    'PrimeInputText': InputText
   },
   data () {
     return {

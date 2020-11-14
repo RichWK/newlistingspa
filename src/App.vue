@@ -44,47 +44,54 @@ export default {
           ]
         },
         {
-          name: "Location",
+          name: "General location",
           fields: [
-            { name: "area", fType: "dropdown", options: [
-              '',
-              'Burnaby East',
-              'Burnaby North',
-              'Burnaby South',
-              'Coquitlam',
-              'Islands Van and Gulf',
-              'Ladner',
-              'Maple Ridge',
-              'New Westminster',
-              'North Vancouver',
-              'Pemberton',
-              'Pitt Meadows',
-              'Port Coquitlam',
-              'Port Moody',
-              'Richmond',
-              'Squamish',
-              'Sunshine Coast',
-              'Tsawwassen',
-              'Vancouver East',
-              'Vancouver West',
-              'West Vancouver',
-              'Whistler'
-            ] },
-            { name: "subarea", fType: "dropdown", dropdownOptions: [
-              '',
-              'Subareas'
+            { 
+              name: "area",
+              fType: "dropdown",
+              friendlyName: "Area",
+              dropdownOptions: [
+                { name: "Burnaby East" },
+                { name: "Burnaby North" },
+                { name: "Burnaby South" },
+                { name: "Coquitlam" },
+                { name: "Islands Van and Gulf" },
+                { name: "Ladner" },
+                { name: "Maple Ridge" },
+                { name: "New Westminster" },
+                { name: "North Vancouver" },
+                { name: "Pemberton" },
+                { name: "Pitt Meadows" },
+                { name: "Port Coquitlam" },
+                { name: "Port Moody" },
+                { name: "Richmond" },
+                { name: "Squamish" },
+                { name: "Sunshine Coast" },
+                { name: "Tsawwassen" },
+                { name: "Vancouver East" },
+                { name: "Vancouver West" },
+                { name: "West Vancouver" },
+                { name: "Whistler" }
+              ]
+            },
+            { 
+              name: "subarea",
+              fType: "dropdown",
+              friendlyName: "Subarea",
+              dropdownOptions: [
+                { name: "Subareas" }
             ] }
           ]
         },
         {
           name: "Agent details",
           fields: [
-            { name: "designatedAgent1", fType: "text" },
-            { name: "designatedAgent2", fType: "text" },
-            { name: "designatedAgent3", fType: "text" },
-            { name: "userId1", fType: "text" },
-            { name: "userId2", fType: "text" },
-            { name: "userId3", fType: "text" }
+            { name: "designatedAgent1", fType: "text", friendlyName: "Primary agent's full name" },
+            { name: "userId1", fType: "text", friendlyName: "Primary agent's ID number" },
+            { name: "designatedAgent2", fType: "text", friendlyName: "Secondary agent's full name" },
+            { name: "userId2", fType: "text", friendlyName: "Secondary agent's ID number" },
+            { name: "designatedAgent3", fType: "text", friendlyName: "Tertiary agent's full name" },
+            { name: "userId3", fType: "text", friendlyName: "Tertiary agent's ID number" }
           ]
         },
         {

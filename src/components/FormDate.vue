@@ -2,7 +2,7 @@
   
   <PrimeCalendar
     v-model="calendarTest"
-    dateFormat="dd MM yy"
+    dateFormat="MM d, yy"
     showIcon
   />
 

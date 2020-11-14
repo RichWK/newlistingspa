@@ -56,15 +56,14 @@ export default {
 h2 {
 
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
 }
 
 .group {
 
   margin-bottom: 20px;
-  padding: 15px;
-  padding-bottom: 20px;
+  padding: 20px 15px;
   border-radius: 5px;
 }
 

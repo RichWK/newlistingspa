@@ -2,7 +2,7 @@
   
   <div class="container">
   
-    <PrimeCheckbox v-model="testing" :value="friendlyName" :name="name" />
+    <PrimeCheckbox :id="name" v-model="testing" :value="friendlyName" :name="name" />
     <label :for="name">{{ friendlyName }}</label>
 
   </div>

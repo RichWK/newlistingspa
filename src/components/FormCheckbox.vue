@@ -53,17 +53,6 @@ label {
 
   margin-right: 20px;
 }
-/* 
-.p-checkbox + span {
-
-  margin-bottom: 10px;
-}
-
-label {
-
-  display: inline-block;
-  margin-bottom: 10px;
-  margin-right: 20px;
-} */
 
 </style>
+

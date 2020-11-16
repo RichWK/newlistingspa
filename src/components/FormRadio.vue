@@ -1,6 +1,11 @@
 <template>
+
+  <div class="container">
   
-  <input type="radio">
+    <PrimeRadio v-model="testing" :name="name" />
+    <label :for="name">{{ friendlyName }}</label>
+
+  </div>
 
 </template>
 
@@ -8,9 +13,23 @@
 
 <script>
 
+import RadioButton from 'primevue/radiobutton';
+
 export default {
   
-  name: 'FormRadio'
+  name: 'FormRadio',
+  components: {
+    'PrimeRadio': RadioButton
+  },
+  data () {
+    return {
+      'testing': null 
+    }
+  },
+  props: [
+    'friendlyName',
+    'name'
+  ]
 }
 
 </script>
@@ -19,6 +38,20 @@ export default {
 
 <style scoped>
 
+.container {
 
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.p-radiobutton {
+
+  margin-right: 10px;
+}
+
+label {
+
+  margin-right: 20px;
+}
 
 </style>

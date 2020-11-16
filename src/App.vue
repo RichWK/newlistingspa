@@ -124,24 +124,31 @@ export default {
         {
           name: "Type of dwelling",
           fields: [
-            { name: "detachedHouseSingleFamily", fType: "radio", friendlyName: "House / single family" },
-            { name: "detachedHouseWithAcreage", fType: "radio", friendlyName: "House with acreage" },
-            { name: "detachedTownhouse", fType: "radio", friendlyName: "Detached townhouse" },
-            { name: "detachedManufactured", fType: "radio", friendlyName: "Manufactured" },
-            { name: "detachedManufacturedWithLand", fType: "radio", friendlyName: "Manufactured with land" },
-            { name: "detachedRecreational", fType: "radio", friendlyName: "Recreational detached" },
-            { name: "detachedOther", fType: "radio", friendlyName: "Other detached" },
-            { name: "attachedApartmentCondo", fType: "radio", friendlyName: "Apartment / condo" },
-            { name: "attachedHalfDuplex", fType: "radio", friendlyName: "1/2 duplex" },
-            { name: "attachedRecreational", fType: "radio", friendlyName: "Recreational attached" },
-            { name: "attachedTownhouse", fType: "radio", friendlyName: "Attached townhouse" },
-            { name: "attachedRowHouseNonStrata", fType: "radio", friendlyName: "Row house (non-strata)" },
-            { name: "attachedOther", fType: "radio", friendlyName: "Other attached" },
-            { name: "multifamilyDuplex", fType: "radio", friendlyName: "Duplex" },
-            { name: "multifamilyTriplex", fType: "radio", friendlyName: "Triplex" },
-            { name: "multifamilyFourplex", fType: "radio", friendlyName: "Fourplex" },
-            { name: "multifamilyRecreational", fType: "radio", friendlyName: "Recreational multifamily" },
-            { name: "multifamilyOther", fType: "radio", friendlyName: "Other multifamily" }
+            { 
+              name: "typeOfDwelling",
+              fType: "radio",
+              friendlyName: "Type of dwelling",
+              options: [
+                { name: "detachedHouseSingleFamily", friendlyName: "House / single family" },
+                { name: "detachedHouseWithAcreage", friendlyName: "House with acreage" },
+                { name: "detachedTownhouse", friendlyName: "Detached townhouse" },
+                { name: "detachedManufactured", friendlyName: "Manufactured" },
+                { name: "detachedManufacturedWithLand", friendlyName: "Manufactured with land" },
+                { name: "detachedRecreational", friendlyName: "Recreational detached" },
+                { name: "detachedOther", friendlyName: "Other detached" },
+                { name: "attachedApartmentCondo", friendlyName: "Apartment / condo" },
+                { name: "attachedHalfDuplex", friendlyName: "1/2 duplex" },
+                { name: "attachedRecreational", friendlyName: "Recreational attached" },
+                { name: "attachedTownhouse", friendlyName: "Attached townhouse" },
+                { name: "attachedRowHouseNonStrata", friendlyName: "Row house (non-strata)" },
+                { name: "attachedOther", friendlyName: "Other attached" },
+                { name: "multifamilyDuplex", friendlyName: "Duplex" },
+                { name: "multifamilyTriplex", friendlyName: "Triplex" },
+                { name: "multifamilyFourplex", friendlyName: "Fourplex" },
+                { name: "multifamilyRecreational", friendlyName: "Recreational multifamily" },
+                { name: "multifamilyOther", friendlyName: "Other multifamily" }
+              ]
+            }
           ]
         }
       ]

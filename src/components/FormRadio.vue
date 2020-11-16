@@ -2,7 +2,7 @@
 
   <div class="container">
   
-    <PrimeRadio name="test" :value="name" v-model="testing" />
+    <PrimeRadio :id="name" :value="name" v-model="testing" />
     <label :for="name">{{ friendlyName }}</label>
 
   </div>

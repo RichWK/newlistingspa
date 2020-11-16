@@ -50,7 +50,7 @@ export default {
               name: "area",
               fType: "dropdown",
               friendlyName: "Area",
-              dropdownOptions: [
+              options: [
                 { name: "Burnaby East" },
                 { name: "Burnaby North" },
                 { name: "Burnaby South" },
@@ -78,7 +78,7 @@ export default {
               name: "subarea",
               fType: "dropdown",
               friendlyName: "Subarea",
-              dropdownOptions: [
+              options: [
                 { name: "Subareas" }
             ] }
           ]

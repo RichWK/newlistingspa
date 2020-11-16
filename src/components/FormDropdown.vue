@@ -3,7 +3,7 @@
   <PrimeDropdown
     v-model="testing"
     :placeholder="friendlyName"
-    :options="dropdownOptions"
+    :options="options"
     optionLabel="name"
     filter
   />
@@ -28,7 +28,7 @@ export default {
     }
   },
   props: [
-    'dropdownOptions',
+    'options',
     'friendlyName',
     'name'
   ]

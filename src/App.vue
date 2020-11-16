@@ -116,32 +116,32 @@ export default {
         {
           name: "Dwelling classification",
           fields: [
-            { name: "dwellingClassificationDetached", fType: "radio" },
-            { name: "dwellingClassificationAttached", fType: "radio" },
-            { name: "dwellingClassificationMultifamily", fType: "radio" }
+            { name: "dwellingClassificationDetached", fType: "radio", friendlyName: "Detached" },
+            { name: "dwellingClassificationAttached", fType: "radio", friendlyName: "Attached" },
+            { name: "dwellingClassificationMultifamily", fType: "radio", friendlyName: "Multifamily" }
           ]
         },
         {
           name: "Type of dwelling",
           fields: [
-            { name: "detachedHouseSingleFamily", fType: "radio" },
-            { name: "detachedHouseWithAcreage", fType: "radio" },
-            { name: "detachedTownhouse", fType: "radio" },
-            { name: "detachedManufactured", fType: "radio" },
-            { name: "detachedManufacturedWithLand", fType: "radio" },
-            { name: "detachedRecreational", fType: "radio" },
-            { name: "detachedOther", fType: "radio" },
-            { name: "attachedApartmentCondo", fType: "radio" },
-            { name: "attachedHalfDuplex", fType: "radio" },
-            { name: "attachedRecreational", fType: "radio" },
-            { name: "attachedTownhouse", fType: "radio" },
-            { name: "attachedRowHouseNonStrata", fType: "radio" },
-            { name: "attachedOther", fType: "radio" },
-            { name: "multifamilyDuplex", fType: "radio" },
-            { name: "multifamilyTriplex", fType: "radio" },
-            { name: "multifamilyFourplex", fType: "radio" },
-            { name: "multifamilyRecreational", fType: "radio" },
-            { name: "multifamilyOther", fType: "radio" }
+            { name: "detachedHouseSingleFamily", fType: "radio", friendlyName: "House / single family" },
+            { name: "detachedHouseWithAcreage", fType: "radio", friendlyName: "House with acreage" },
+            { name: "detachedTownhouse", fType: "radio", friendlyName: "Detached townhouse" },
+            { name: "detachedManufactured", fType: "radio", friendlyName: "Manufactured" },
+            { name: "detachedManufacturedWithLand", fType: "radio", friendlyName: "Manufactured with land" },
+            { name: "detachedRecreational", fType: "radio", friendlyName: "Recreational detached" },
+            { name: "detachedOther", fType: "radio", friendlyName: "Other detached" },
+            { name: "attachedApartmentCondo", fType: "radio", friendlyName: "Apartment / condo" },
+            { name: "attachedHalfDuplex", fType: "radio", friendlyName: "1/2 duplex" },
+            { name: "attachedRecreational", fType: "radio", friendlyName: "Recreational attached" },
+            { name: "attachedTownhouse", fType: "radio", friendlyName: "Attached townhouse" },
+            { name: "attachedRowHouseNonStrata", fType: "radio", friendlyName: "Row house (non-strata)" },
+            { name: "attachedOther", fType: "radio", friendlyName: "Other attached" },
+            { name: "multifamilyDuplex", fType: "radio", friendlyName: "Duplex" },
+            { name: "multifamilyTriplex", fType: "radio", friendlyName: "Triplex" },
+            { name: "multifamilyFourplex", fType: "radio", friendlyName: "Fourplex" },
+            { name: "multifamilyRecreational", fType: "radio", friendlyName: "Recreational multifamily" },
+            { name: "multifamilyOther", fType: "radio", friendlyName: "Other multifamily" }
           ]
         }
       ]

@@ -43,7 +43,7 @@ export default {
 
   display: inline-block;
   margin-right: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 /* Adjusting PrimeVue floating label defaults. */

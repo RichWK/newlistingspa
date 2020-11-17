@@ -61,7 +61,7 @@ h2 {
   margin: 0;
   margin-top: 5px;
   margin-left: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-size: 14px;
 }
 

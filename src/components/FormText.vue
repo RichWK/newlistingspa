@@ -42,9 +42,8 @@ export default {
 .container {
 
   display: inline-block;
-  margin-top: 12px;
   margin-right: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Adjusting PrimeVue floating label defaults. */

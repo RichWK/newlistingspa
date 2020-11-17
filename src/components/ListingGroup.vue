@@ -59,8 +59,9 @@ export default {
 h2 {
 
   margin: 0;
+  margin-top: 5px;
   margin-left: 3px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
   font-size: 14px;
 }
 
@@ -68,6 +69,7 @@ h2 {
 
   margin-bottom: 20px;
   padding: 20px 15px;
+  padding-bottom: 15px;
   border-radius: 5px;
 }
 

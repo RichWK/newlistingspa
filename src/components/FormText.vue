@@ -1,10 +1,13 @@
 <template>
   
   <div class="container p-float-label">
-
     
-    <PrimeInputText :id="name" v-model="textTest" />
-    <label :for="name">{{ friendlyName }}</label> 
+    <PrimeInputText
+      :id="name"
+      v-model="textTest"
+      :type="textOrTel"
+    />
+    <label :for="name">{{ friendlyName }}</label>
     
   </div>
 
@@ -22,6 +25,12 @@ export default {
   components: {
     'PrimeInputText': InputText
   },
+  computed: {
+    textOrTel() {
+      // Adjusts <input> to accomodate phone number entry.
+      return this.fType === 'phone' ? 'tel' : 'text'
+    }
+  },
   data () {
     return {
       textTest: null
@@ -29,6 +38,7 @@ export default {
   },
   props: [
     'friendlyName',
+    'fType',
     'name'
   ]
 }

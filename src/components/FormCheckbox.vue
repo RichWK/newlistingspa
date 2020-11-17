@@ -1,14 +1,14 @@
 <template>
   
-  <div class="container">
+  <div class="container" v-for="option in options" :key="option.name">
   
     <PrimeCheckbox
-      :id="name"
+      :id="option.name"
       v-model="testing"
-      :value="friendlyName"
+      :value="option.friendlyName"
       :name="name"
     />
-    <label :for="name">{{ friendlyName }}</label>
+    <label :for="option.name">{{ option.friendlyName }}</label>
 
   </div>
 
@@ -33,7 +33,8 @@ export default {
   },
   props: [
     'friendlyName',
-    'name'
+    'name',
+    'options'
   ]
 }
 

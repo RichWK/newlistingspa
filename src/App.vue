@@ -102,13 +102,13 @@ export default {
               fType: "checkbox",
               friendlyName: "Keybox or appointment not required",
               options: [
-                { name: "showingsNoRequirements", fType: "checkbox", friendlyName: "Keybox or appointment not required" },
-                { name: "showingsPhoneListingRealtorFirst", fType: "checkbox", friendlyName: "Phone listing agent first" },
-                { name: "showingsPhoneSellerFirst", fType: "checkbox", friendlyName: "Phone seller first" },
-                { name: "showingsPhoneTenantFirst", fType: "checkbox", friendlyName: "Phone tenant first" },
-                { name: "showingsPhoneOther", fType: "checkbox", friendlyName: "Phone other" },
-                { name: "showingsTouchbase", fType: "checkbox", friendlyName: "Touchbase" },
-                { name: "showingsShowingTime", fType: "checkbox", friendlyName: "Showing Time (BC Northern only)" }
+                { name: "showingsNoRequirements", friendlyName: "Keybox or appointment not required" },
+                { name: "showingsPhoneListingRealtorFirst", friendlyName: "Phone listing agent first" },
+                { name: "showingsPhoneSellerFirst", friendlyName: "Phone seller first" },
+                { name: "showingsPhoneTenantFirst", friendlyName: "Phone tenant first" },
+                { name: "showingsPhoneOther", friendlyName: "Phone other" },
+                { name: "showingsTouchbase", friendlyName: "Touchbase" },
+                { name: "showingsShowingTime", friendlyName: "Showing Time (BC Northern only)" }
               ]
             }
           ]

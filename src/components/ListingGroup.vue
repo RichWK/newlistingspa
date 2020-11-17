@@ -78,5 +78,10 @@ h2 {
   background: #d5d5d5;
 }
 
+.group:last-of-type {
+
+    margin-bottom: 40px;
+}
+
 </style>
 

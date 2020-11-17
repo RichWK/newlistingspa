@@ -9,7 +9,6 @@
   <FormDropdown v-for="field in dropdownFields" :key="field.name" v-bind="field"/>
   <FormCheckbox v-for="field in checkboxFields" :key="field.name" v-bind="field"/>
   <FormRadio v-for="field in radioFields" :key="field.name" v-bind="field"/>
-  <!-- <FormNumber v-for="field in numberFields" :key="field.name" v-bind="field"/> -->
 
 </div>
 
@@ -24,7 +23,6 @@ import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
 import FormCheckbox from './FormCheckbox.vue'
 import FormRadio from './FormRadio.vue'
-// import FormNumber from './FormNumber.vue'
 
 export default {
   
@@ -52,11 +50,10 @@ export default {
     'FormDropdown': FormDropdown,
     'FormCheckbox': FormCheckbox,
     'FormRadio': FormRadio
-    // 'FormNumber': FormNumber
   },
   data() {
     return {
-      textFieldTypes: ['text', 'phone']
+      textFieldTypes: ['number','phone','text']
     }
   },
   props: {

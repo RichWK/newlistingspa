@@ -32,7 +32,7 @@ export default {
       return this.fType === 'number' ? 'numeric' : undefined
     },
     pattern() {
-      return this.fType === 'number' ? '[0-9]' : undefined
+      return this.fType === 'number' ? '[0-9]*' : undefined
     },
     type() {
       return this.fType === 'phone' ? 'tel' : 'text'

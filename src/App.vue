@@ -116,9 +116,16 @@ export default {
         {
           name: "Dwelling classification",
           fields: [
-            { name: "dwellingClassificationDetached", fType: "radio", friendlyName: "Detached" },
-            { name: "dwellingClassificationAttached", fType: "radio", friendlyName: "Attached" },
-            { name: "dwellingClassificationMultifamily", fType: "radio", friendlyName: "Multifamily" }
+            { 
+              name: "dwellingClassification",
+              fType: "radio",
+              friendlyName: "Detached",
+              options: [
+                { name: "dwellingClassificationDetached", friendlyName: "Detached" },
+                { name: "dwellingClassificationAttached", friendlyName: "Attached" },
+                { name: "dwellingClassificationMultifamily", friendlyName: "Multifamily" }
+              ]
+            }
           ]
         },
         {

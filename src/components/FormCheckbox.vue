@@ -33,6 +33,7 @@ export default {
   },
   props: [
     'friendlyName',
+    'fType',
     'name',
     'options'
   ]

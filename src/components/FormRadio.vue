@@ -1,9 +1,14 @@
 <template>
 
-  <div class="container">
-  
-    <PrimeRadio :id="name" :value="name" v-model="testing" />
-    <label :for="name">{{ friendlyName }}</label>
+  <div class="container" v-for="option in options" :key="option.name">
+
+    <PrimeRadio
+      :id="option.name"
+      :name="name"
+      :value="option.name"
+      v-model="testing"
+    />
+    <label :for="option.name">{{ option.friendlyName }}</label>
 
   </div>
 
@@ -28,7 +33,8 @@ export default {
   },
   props: [
     'friendlyName',
-    'name'
+    'name',
+    'options'
   ]
 }
 

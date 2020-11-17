@@ -32,7 +32,7 @@ import FormRadio from './FormRadio.vue'
 
 export default {
   
-  name: 'ListingGroup',
+  name: 'FieldGroup',
   components: {
     'FormText': FormText,
     'FormDropdown': FormDropdown,

@@ -2,7 +2,7 @@
 
   <h1>Create a new listing</h1>
 
-  <ListingGroup
+  <FieldGroup
     v-for="group in groups"
     :key="group.name"
     :name="group.name"
@@ -15,13 +15,13 @@
 
 <script>
 
-import ListingGroup from './components/ListingGroup.vue'
+import FieldGroup from './components/FieldGroup.vue'
 
 export default {
 
   name: 'App',
   components: {
-    ListingGroup
+    FieldGroup
   },
   data() {
     return {

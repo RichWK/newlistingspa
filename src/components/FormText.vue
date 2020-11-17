@@ -2,7 +2,7 @@
   
   <div class="container p-float-label">
     
-    <PrimeInputText
+    <PrimeText
       :id="name"
       v-model="textTest"
       :type="textOrTel"
@@ -23,7 +23,7 @@ export default {
   
   name: 'FormText',
   components: {
-    'PrimeInputText': InputText
+    'PrimeText': InputText
   },
   computed: {
     textOrTel() {

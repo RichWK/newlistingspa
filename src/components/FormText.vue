@@ -36,11 +36,11 @@ export default {
       textTest: null
     }
   },
-  props: [
-    'friendlyName',
-    'fType',
-    'name'
-  ]
+  props: {
+    'friendlyName': String,
+    'fType': String,
+    'name': String
+  }
 }
 
 </script>

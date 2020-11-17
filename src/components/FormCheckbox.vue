@@ -31,12 +31,12 @@ export default {
       'testing': [] 
     }
   },
-  props: [
-    'friendlyName',
-    'fType',
-    'name',
-    'options'
-  ]
+  props: {
+    'friendlyName': String,
+    'fType': String,
+    'name': String,
+    'options': Array
+  }
 }
 
 </script>

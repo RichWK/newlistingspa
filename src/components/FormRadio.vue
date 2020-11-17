@@ -31,12 +31,12 @@ export default {
       'testing': null 
     }
   },
-  props: [
-    'friendlyName',
-    'fType',
-    'name',
-    'options'
-  ]
+  props: {
+    'friendlyName': String,
+    'fType': String,
+    'name': String,
+    'options': Array
+  }
 }
 
 </script>
@@ -62,3 +62,4 @@ label {
 }
 
 </style>
+

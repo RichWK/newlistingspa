@@ -11,10 +11,10 @@
 export default {
   
   name: 'FormNumber',
-  props: [
-    'friendlyName',
-    'name'
-  ]
+  props: {
+    'friendlyName': String,
+    'name': String
+  }
 }
 
 </script>
@@ -26,3 +26,4 @@ export default {
 
 
 </style>
+

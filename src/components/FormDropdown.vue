@@ -27,11 +27,11 @@ export default {
       'testing': null
     }
   },
-  props: [
-    'options',
-    'friendlyName',
-    'name'
-  ]
+  props: {
+    'friendlyName': String,
+    'name': String,
+    'options': Array
+  }
 }
 
 </script>

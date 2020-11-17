@@ -33,6 +33,9 @@ export default {
 
 <style scoped>
 
+.p-calendar {
 
+  margin-bottom: 10px;
+}
 
 </style>

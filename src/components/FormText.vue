@@ -3,9 +3,11 @@
   <div class="container p-float-label">
     
     <PrimeText
-      :id="name"
       v-model="textTest"
-      :type="textOrTel"
+      :id="name"
+      :type="type"
+      :inputmode="inputMode"
+      :pattern="pattern"
     />
     <label :for="name">{{ friendlyName }}</label>
     
@@ -26,8 +28,13 @@ export default {
     'PrimeText': InputText
   },
   computed: {
-    textOrTel() {
-      // Adjusts <input> to accomodate phone number entry.
+    inputMode() {
+      return this.fType === 'number' ? 'numeric' : undefined
+    },
+    pattern() {
+      return this.fType === 'number' ? '[0-9]' : undefined
+    },
+    type() {
       return this.fType === 'phone' ? 'tel' : 'text'
     }
   },

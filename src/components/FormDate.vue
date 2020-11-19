@@ -1,7 +1,7 @@
 <template>
   
   <PrimeCalendar
-    v-model="calendarTest"
+    v-model="userInput"
     dateFormat="MM d, yy"
     showIcon
   />
@@ -22,7 +22,7 @@ export default {
   },
   data () {
     return {
-      calendarTest: null
+      userInput: null
     }
   }
 }

@@ -3,10 +3,10 @@
   <div class="container" v-for="option in options" :key="option.name">
 
     <PrimeRadio
+      v-model="userInput"
       :id="option.name"
       :name="name"
       :value="option.name"
-      v-model="testing"
     />
     <label :for="option.name">{{ option.friendlyName }}</label>
 
@@ -28,7 +28,7 @@ export default {
   },
   data () {
     return {
-      'testing': null 
+      'userInput': null 
     }
   },
   props: {

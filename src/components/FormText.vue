@@ -3,7 +3,7 @@
   <div class="container p-float-label">
     
     <PrimeText
-      v-model="textTest"
+      v-model="userInput"
       :id="name"
       :type="type"
       :inputmode="inputMode"
@@ -40,7 +40,7 @@ export default {
   },
   data () {
     return {
-      textTest: null
+      userInput: null
     }
   },
   props: {

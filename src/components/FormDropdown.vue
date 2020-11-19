@@ -1,7 +1,7 @@
 <template>
   
   <PrimeDropdown
-    v-model="testing"
+    v-model="userInput"
     :placeholder="friendlyName"
     :options="options"
     optionLabel="name"
@@ -24,7 +24,7 @@ export default {
   },
   data () {
     return {
-      'testing': null
+      'userInput': null
     }
   },
   props: {

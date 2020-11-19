@@ -3,10 +3,10 @@
   <div class="container" v-for="option in options" :key="option.name">
   
     <PrimeCheckbox
+      v-model="userInput"
       :id="option.name"
-      v-model="testing"
-      :value="option.friendlyName"
       :name="name"
+      :value="option.friendlyName"
     />
     <label :for="option.name">{{ option.friendlyName }}</label>
 
@@ -28,7 +28,7 @@ export default {
   },
   data () {
     return {
-      'testing': [] 
+      'userInput': [] 
     }
   },
   props: {

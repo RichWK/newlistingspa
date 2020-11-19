@@ -2,12 +2,16 @@
 
   <h1>Create a new listing</h1>
 
-  <FieldGroup
-    v-for="group in groups"
-    :key="group.name"
-    :name="group.name"
-    :fields="group.fields"
-  />
+  <form>
+
+    <FieldGroup
+      v-for="group in groups"
+      :key="group.name"
+      :name="group.name"
+      :fields="group.fields"
+    />
+
+  </form>
 
 </template>
 

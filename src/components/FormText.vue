@@ -8,6 +8,7 @@
       :type="type"
       :inputmode="inputMode"
       :pattern="pattern"
+      @change="onChange"
     />
     <label :for="name">{{ friendlyName }}</label>
     
@@ -41,6 +42,16 @@ export default {
   data () {
     return {
       userInput: null
+    }
+  },
+  methods: {
+    onChange() {
+      this.$emit( 'new-user-input',
+        {
+          name: this.name,
+          value: this.userInput
+        }
+      );
     }
   },
   props: {

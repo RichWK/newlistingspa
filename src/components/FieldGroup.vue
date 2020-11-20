@@ -4,11 +4,32 @@
 
   <h2>{{ name }}</h2>
 
-  <FormText v-for="field in textFields" :key="field.name" v-bind="field" />
-  <FormDate v-for="field in dateFields" :key="field.name" v-bind="field"/>
-  <FormDropdown v-for="field in dropdownFields" :key="field.name" v-bind="field"/>
-  <FormCheckbox v-for="field in checkboxFields" :key="field.name" v-bind="field"/>
-  <FormRadio v-for="field in radioFields" :key="field.name" v-bind="field"/>
+  <FormText
+    v-for="field in textFields"
+    :key="field.name"
+    v-bind="field"
+    @new-user-input="newUserInput"
+  />
+  <FormDate
+    v-for="field in dateFields"
+    :key="field.name"
+    v-bind="field"
+  />
+  <FormDropdown
+    v-for="field in dropdownFields"
+    :key="field.name"
+    v-bind="field"
+  />
+  <FormCheckbox
+    v-for="field in checkboxFields"
+    :key="field.name"
+    v-bind="field"
+  />
+  <FormRadio
+    v-for="field in radioFields"
+    :key="field.name"
+    v-bind="field"
+  />
 
 </div>
 
@@ -53,7 +74,15 @@ export default {
   },
   data() {
     return {
-      textFieldTypes: ['number','phone','text']
+      textFieldTypes: ['number','phone','text'],
+      userInputs: {}
+    }
+  },
+  methods: {
+    newUserInput(userInput) {
+      let { name, value } = userInput;
+      this.userInputs[name] = value;
+      this.$emit( 'new-user-input', this.userInputs );
     }
   },
   props: {

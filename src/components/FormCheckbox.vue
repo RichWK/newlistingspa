@@ -4,6 +4,7 @@
   
     <PrimeCheckbox
       v-model="userInput"
+      v-bind="$attrs"
       :id="option.name"
       :name="name"
       :value="option.name"

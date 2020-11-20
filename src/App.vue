@@ -106,13 +106,13 @@ export default {
               fType: "checkbox",
               friendlyName: "Keybox or appointment not required",
               options: [
-                { name: "showingsNoRequirements", friendlyName: "Keybox or appointment not required" },
-                { name: "showingsPhoneListingRealtorFirst", friendlyName: "Phone listing agent first" },
-                { name: "showingsPhoneSellerFirst", friendlyName: "Phone seller first" },
-                { name: "showingsPhoneTenantFirst", friendlyName: "Phone tenant first" },
-                { name: "showingsPhoneOther", friendlyName: "Phone other" },
-                { name: "showingsTouchbase", friendlyName: "Touchbase" },
-                { name: "showingsShowingTime", friendlyName: "Showing Time (BC Northern only)" }
+                { name: "noRequirements", friendlyName: "Keybox or appointment not required" },
+                { name: "phoneListingRealtorFirst", friendlyName: "Phone listing agent first" },
+                { name: "phoneSellerFirst", friendlyName: "Phone seller first" },
+                { name: "phoneTenantFirst", friendlyName: "Phone tenant first" },
+                { name: "phoneOther", friendlyName: "Phone other" },
+                { name: "touchbase", friendlyName: "Touchbase" },
+                { name: "showingTime", friendlyName: "Showing Time (BC Northern only)" }
               ]
             }
           ]
@@ -132,9 +132,9 @@ export default {
               fType: "radio",
               friendlyName: "Detached",
               options: [
-                { name: "dwellingClassificationDetached", friendlyName: "Detached" },
-                { name: "dwellingClassificationAttached", friendlyName: "Attached" },
-                { name: "dwellingClassificationMultifamily", friendlyName: "Multifamily" }
+                { name: "detached", friendlyName: "Detached" },
+                { name: "attached", friendlyName: "Attached" },
+                { name: "multifamily", friendlyName: "Multifamily" }
               ]
             }
           ]

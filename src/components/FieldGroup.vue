@@ -14,21 +14,25 @@
     v-for="field in dateFields"
     :key="field.name"
     v-bind="field"
+    @new-user-input="newUserInput"
   />
   <FormDropdown
     v-for="field in dropdownFields"
     :key="field.name"
     v-bind="field"
+    @new-user-input="newUserInput"
   />
   <FormCheckbox
     v-for="field in checkboxFields"
     :key="field.name"
     v-bind="field"
+    @new-user-input="newUserInput"
   />
   <FormRadio
     v-for="field in radioFields"
     :key="field.name"
     v-bind="field"
+    @new-user-input="newUserInput"
   />
 
 </div>
@@ -78,6 +82,7 @@ export default {
       userInputs: {}
     }
   },
+  emits: ['new-user-input'],
   methods: {
     newUserInput(userInput) {
       let { name, value } = userInput;

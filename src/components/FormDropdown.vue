@@ -6,6 +6,7 @@
     :options="options"
     optionLabel="name"
     filter
+    @change="onChange"
   />
 
 </template>
@@ -25,6 +26,17 @@ export default {
   data () {
     return {
       'userInput': null
+    }
+  },
+  emits: ['new-user-input'],
+  methods: {
+    onChange() {
+      this.$emit( 'new-user-input',
+        {
+          name: this.name,
+          value: this.userInput
+        }
+      );
     }
   },
   props: {

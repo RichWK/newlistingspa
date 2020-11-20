@@ -7,6 +7,7 @@
       :id="option.name"
       :name="name"
       :value="option.friendlyName"
+      @change="onChange"
     />
     <label :for="option.name">{{ option.friendlyName }}</label>
 
@@ -29,6 +30,17 @@ export default {
   data () {
     return {
       'userInput': [] 
+    }
+  },
+  emits: ['new-user-input'],
+  methods: {
+    onChange() {
+      this.$emit( 'new-user-input',
+        {
+          name: this.name,
+          value: this.userInput
+        }
+      );
     }
   },
   props: {

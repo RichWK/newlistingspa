@@ -1,41 +1,41 @@
 <template>
   
-<div class="group">
+  <div class="group">
 
-  <h2>{{ name }}</h2>
+    <h2>{{ name }}</h2>
 
-  <FormText
-    v-for="field in textFields"
-    :key="field.name"
-    v-bind="field"
-    @new-user-input="newUserInput"
-  />
-  <FormDate
-    v-for="field in dateFields"
-    :key="field.name"
-    v-bind="field"
-    @new-user-input="newUserInput"
-  />
-  <FormDropdown
-    v-for="field in dropdownFields"
-    :key="field.name"
-    v-bind="field"
-    @new-user-input="newUserInput"
-  />
-  <FormCheckbox
-    v-for="field in checkboxFields"
-    :key="field.name"
-    v-bind="field"
-    @new-user-input="newUserInput"
-  />
-  <FormRadio
-    v-for="field in radioFields"
-    :key="field.name"
-    v-bind="field"
-    @new-user-input="newUserInput"
-  />
+    <FormText
+      v-for="field in textFields"
+      :key="field.name"
+      v-bind="field"
+      @new-user-input="newUserInput"
+    />
+    <FormDate
+      v-for="field in dateFields"
+      :key="field.name"
+      v-bind="field"
+      @new-user-input="newUserInput"
+    />
+    <FormDropdown
+      v-for="field in dropdownFields"
+      :key="field.name"
+      v-bind="field"
+      @new-user-input="newUserInput"
+    />
+    <FormCheckbox
+      v-for="field in checkboxFields"
+      :key="field.name"
+      v-bind="field"
+      @new-user-input="newUserInput"
+    />
+    <FormRadio
+      v-for="field in radioFields"
+      :key="field.name"
+      v-bind="field"
+      @new-user-input="newUserInput"
+    />
 
-</div>
+  </div>
 
 </template>
 

@@ -175,8 +175,16 @@ export default {
     }
   },
   methods: {
-    storeUserInputs(newInputs) {
+    storeUserInputs( newInputs ) {
+      
+      // Add new input to any existing values.
       this.userInputs = { ...this.userInputs, ...newInputs };
+
+      // Iterate over the new object and remove any blank values.
+      for (const [key, value] of Object.entries( this.userInputs ) ) {
+
+        if (value.length <= 0 ) { delete this.userInputs[key] }
+      }
     }
   }
 }

@@ -44,6 +44,7 @@ export default {
       userInput: null
     }
   },
+  emits: ['new-user-input'],
   methods: {
     onChange() {
       this.$emit( 'new-user-input',

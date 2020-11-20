@@ -9,6 +9,7 @@
       :key="group.name"
       :name="group.name"
       :fields="group.fields"
+      @new-user-input="storeUserInputs"
     />
 
   </form>
@@ -169,7 +170,13 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      userInputs: {}
+    }
+  },
+  methods: {
+    storeUserInputs(newInputs) {
+      this.userInputs = { ...this.userInputs, ...newInputs };
     }
   }
 }

@@ -6,7 +6,7 @@
       v-model="userInput"
       :id="option.name"
       :name="name"
-      :value="option.friendlyName"
+      :value="option.name"
       @change="onChange"
     />
     <label :for="option.name">{{ option.friendlyName }}</label>

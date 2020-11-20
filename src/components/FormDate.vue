@@ -4,7 +4,7 @@
     v-model="userInput"
     dateFormat="MM d, yy"
     showIcon
-    @change="onChange"
+    @date-select="onSelection"
   />
 
 </template>
@@ -28,7 +28,7 @@ export default {
   },
   emits: ['new-user-input'],
   methods: {
-    onChange() {
+    onSelection() {
       this.$emit( 'new-user-input',
         {
           name: this.name,
@@ -36,6 +36,9 @@ export default {
         }
       );
     }
+  },
+  props: {
+    'name': String
   }
 }
 

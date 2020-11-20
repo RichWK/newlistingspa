@@ -34,7 +34,7 @@ export default {
       this.$emit( 'new-user-input',
         {
           name: this.name,
-          value: this.userInput
+          value: this.userInput.name
         }
       );
     }

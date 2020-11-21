@@ -1,5 +1,13 @@
 <template>
 
+  <!-- Future to-do for the data: 
+  
+  - Add a 'rules' attribute, e.g. "max 2 selected", etc.
+  - Check order of fields in the 'Title to Land' section.
+  - Fields need to be able to define a pattern, especially for number fields.
+  
+  -->
+
   <h1>Create a new listing</h1>
 
   <form>
@@ -168,6 +176,125 @@ export default {
                 { name: "multifamilyOther", friendlyName: "Other multifamily" }
               ]
             }
+          ]
+        },
+        {
+          name: "Style of home",
+          fields: [
+            { 
+              name: "styleOfHome",
+              fType: "checkbox",
+              friendlyName: "Style of home",
+              options: [
+                { name: "basementEntry", friendlyName: "Basement entry" },
+                { name: "splitEntry", friendlyName: "Split entry" },
+                { name: "oneStorey", friendlyName: "1 storey" },
+                { name: "oneHalfStorey", friendlyName: "1½ storey" },
+                { name: "twoStorey", friendlyName: "2 storey" },
+                { name: "reverseTwoStorey", friendlyName: "Reverse 2 storey" },
+                { name: "reverseTwoStoreyWithBasement", friendlyName: "Reverse 2 storey with basement" },
+                { name: "twoStoreyWithBasement", friendlyName: "2 storey with basement" },
+                { name: "threeStorey", friendlyName: "3 storey" },
+                { name: "threeStoreyWithBasement", friendlyName: "3 storey with basement" },
+                { name: "rancherOrBungalow", friendlyName: "Rancher or bungalow" },
+                { name: "rancherOrBungalowWithBasement", friendlyName: "Rancher or bungalow with basement" },
+                { name: "rancherOrBungalowWithLoft", friendlyName: "Rancher or bungalow with loft" },
+                { name: "threeLevelSplit", friendlyName: "3 level split" },
+                { name: "fourLevelSplit", friendlyName: "4 level split" },
+                { name: "fivePlusLevel", friendlyName: "5+ level" },
+                { name: "cabin", friendlyName: "Cabin" },
+                { name: "lanewayHouse", friendlyName: "Laneway house" },
+                { name: "carriageCoachHouse", friendlyName: "Carriage / coach house" },
+                { name: "floatingHome", friendlyName: "Floating home" },
+                { name: "manufacturedOrMobile", friendlyName: "Manufactured or mobile" },
+                { name: "cornerUnit", friendlyName: "Corner unit" },
+                { name: "endUnit", friendlyName: "End unit" },
+                { name: "groundLevelUnit", friendlyName: "Ground level unit" },
+                { name: "insideUnit", friendlyName: "Inside unit" },
+                { name: "upperUnit", friendlyName: "Upper unit" },
+                { name: "bachelorOrStudio", friendlyName: "Bachelor or studio" },
+                { name: "liveWorkStudio", friendlyName: "Live / work studio" },
+                { name: "loftWarehouseConversion", friendlyName: "Loft or warehouse conversion" },
+                { name: "other", friendlyName: "Other" },
+                { name: "penthouse", friendlyName: "Penthouse" }
+              ]
+            }
+          ]
+        },
+        {
+          name: "Title to land",
+          fields: [
+            {
+              name: "titleToLand",
+              fType: "radio",
+              friendlyName: "Title to land",
+              options: [
+                { name: "freeholdNonStrata", friendlyName: "Freehold non-strata" },
+                { name: "freeholdStrata", friendlyName: "Freehold strata" },
+                { name: "firstNationsLease", friendlyName: "First Nations lease" },
+                { name: "leaseholdPrepaidNonStrata", friendlyName: "Leasehold prepaid, non-strata" },
+                { name: "leaseholdNotPrepaidNonStrata", friendlyName: "Leasehold not prepaid, non-strata" },
+                { name: "leaseholdPrepaidStrata", friendlyName: "Leasehold prepaid, strata" },
+                { name: "leaseholdNotPrepaidStrata", friendlyName: "Leasehold not prepaid, non-strata" },
+                { name: "sharesInCooperative", friendlyName: "Shares in cooperative" },
+                { name: "timeShare", friendlyName: "Time share" },
+                { name: "undividedInterest", friendlyName: "Undivided interest" },
+                { name: "vacationOwnership", friendlyName: "Vacation ownership" },
+                { name: "other", friendlyName: "Other" }
+              ]
+            },
+            { name: "landLeaseExpiryYear", fType: "number", friendlyName: "Land lease expiry year" }
+          ]
+        },
+        {
+          name: "Seller's interest",
+          fields: [
+            {
+              name: "sellersInterest",
+              fType: "checkbox",
+              friendlyName: "Seller's interest",
+              options: [
+                { name: "registeredOwner", friendlyName: "Registered owner" },
+                { name: "powerofAttorney", friendlyName: "Power of attorney" },
+                { name: "committeeOrTrustee", friendlyName: "Committee or trustee" },
+                { name: "courtOrderedSale", friendlyName: "Court ordered sale" },
+                { name: "estateSale", friendlyName: "Estate sale" },
+                { name: "contractualInterest", friendlyName: "Contractual interest" },
+                { name: "option", friendlyName: "Option" },
+                { name: "assignmentOfContract", friendlyName: "Assignment of contract" }
+              ]
+            }
+          ]
+        },
+        {
+          name: "Occupancy",
+          fields: [
+            {
+              name: "occupancy",
+              fType: "checkbox",
+              friendlyName: "Occupancy",
+              options: [
+                { name: "owner", friendlyName: "Owner" },
+                { name: "tenant", friendlyName: "Tenant" },
+                { name: "underConstruction", friendlyName: "Under construction" },
+                { name: "vacant", friendlyName: "Vacant" }
+              ]
+            }
+          ]
+        },
+        {
+          name: "Property disclosure statement completed?",
+          fields: [
+            {
+              name: "propertyDisclosureStatement",
+              fType: "radio",
+              friendlyName: "Property disclosure statement completed?",
+              options: [
+                { name: "completed", friendlyName: "Yes" },
+                { name: "notCompleted", friendlyName: "No" }
+              ]
+            },
+            { name: "propertyDisclosureStatementNotCompletedExplanation", fType: "text", friendlyName: "If not, please explain" }
           ]
         }
       ],

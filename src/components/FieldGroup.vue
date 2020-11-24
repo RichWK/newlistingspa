@@ -4,36 +4,35 @@
 
     <h2>{{ name }}</h2>
 
-    <FormText
-      v-for="field in textFields"
-      :key="field.name"
-      v-bind="field"
-      @new-user-input="newUserInput"
-    />
-    <FormDate
-      v-for="field in dateFields"
-      :key="field.name"
-      v-bind="field"
-      @new-user-input="newUserInput"
-    />
-    <FormDropdown
-      v-for="field in dropdownFields"
-      :key="field.name"
-      v-bind="field"
-      @new-user-input="newUserInput"
-    />
-    <FormCheckbox
-      v-for="field in checkboxFields"
-      :key="field.name"
-      v-bind="field"
-      @new-user-input="newUserInput"
-    />
-    <FormRadio
-      v-for="field in radioFields"
-      :key="field.name"
-      v-bind="field"
-      @new-user-input="newUserInput"
-    />
+    <template v-for="field in fields" :key="field.name">
+
+      <FormText
+        v-if="this.textFieldTypes.includes( field.fType )"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
+      <FormDate
+        v-if="field.fType === 'date'"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
+      <FormDropdown
+        v-if="field.fType === 'dropdown'"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
+      <FormCheckbox
+        v-if="field.fType === 'checkbox'"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
+      <FormRadio
+        v-if="field.fType === 'radio'"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
+
+    </template>
 
   </div>
 
@@ -52,23 +51,6 @@ import FormRadio from './FormRadio.vue'
 export default {
   
   name: 'FieldGroup',
-  computed: {
-    textFields() {
-      return this.fields.filter( f => this.textFieldTypes.includes( f.fType ) );
-    },
-    dateFields() {
-      return this.fields.filter( f => f.fType === 'date' );
-    },
-    dropdownFields() {
-      return this.fields.filter( f => f.fType === 'dropdown' );
-    },
-    checkboxFields() {
-      return this.fields.filter( f => f.fType === 'checkbox' );
-    },
-    radioFields() {
-      return this.fields.filter( f => f.fType === 'radio' );
-    }
-  },
   components: {
     'FormText': FormText,
     'FormDate': FormDate,

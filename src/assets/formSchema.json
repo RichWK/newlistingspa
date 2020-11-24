@@ -19,41 +19,42 @@
   {
     "name": "General location",
     "fields": [
-    { 
-      "name": "area",
-      "fType": "dropdown",
-      "friendlyName": "Area",
-      "options": [
-        { "name": "Burnaby East" },
-        { "name": "Burnaby North" },
-        { "name": "Burnaby South" },
-        { "name": "Coquitlam" },
-        { "name": "Islands Van and Gulf" },
-        { "name": "Ladner" },
-        { "name": "Maple Ridge" },
-        { "name": "New Westminster" },
-        { "name": "North Vancouver" },
-        { "name": "Pemberton" },
-        { "name": "Pitt Meadows" },
-        { "name": "Port Coquitlam" },
-        { "name": "Port Moody" },
-        { "name": "Richmond" },
-        { "name": "Squamish" },
-        { "name": "Sunshine Coast" },
-        { "name": "Tsawwassen" },
-        { "name": "Vancouver East" },
-        { "name": "Vancouver West" },
-        { "name": "West Vancouver" },
-        { "name": "Whistler" }
-      ]
-    },
-    { 
-      "name": "subarea",
-      "fType": "dropdown",
-      "friendlyName": "Subarea",
-      "options": [
-        { "name": "Subareas" }
-    ] }
+      { 
+        "name": "area",
+        "fType": "dropdown",
+        "friendlyName": "Area",
+        "options": [
+          { "name": "Burnaby East" },
+          { "name": "Burnaby North" },
+          { "name": "Burnaby South" },
+          { "name": "Coquitlam" },
+          { "name": "Islands Van and Gulf" },
+          { "name": "Ladner" },
+          { "name": "Maple Ridge" },
+          { "name": "New Westminster" },
+          { "name": "North Vancouver" },
+          { "name": "Pemberton" },
+          { "name": "Pitt Meadows" },
+          { "name": "Port Coquitlam" },
+          { "name": "Port Moody" },
+          { "name": "Richmond" },
+          { "name": "Squamish" },
+          { "name": "Sunshine Coast" },
+          { "name": "Tsawwassen" },
+          { "name": "Vancouver East" },
+          { "name": "Vancouver West" },
+          { "name": "West Vancouver" },
+          { "name": "Whistler" }
+        ]
+      },
+      { 
+        "name": "subarea",
+        "fType": "dropdown",
+        "friendlyName": "Subarea",
+        "options": [
+          { "name": "Subareas" }
+        ]
+      }
     ]
   },
   {
@@ -70,20 +71,20 @@
   {
     "name": "Showing information",
     "fields": [
-    { 
-      "name": "showingInformation",
-      "fType": "checkbox",
-      "friendlyName": "Keybox or appointment not required",
-      "options": [
-        { "name": "showingsNoRequirements", "friendlyName": "Keybox or appointment not required" },
-        { "name": "showingsPhoneListingRealtorFirst", "friendlyName": "Phone listing agent first" },
-        { "name": "showingsPhoneSellerFirst", "friendlyName": "Phone seller first" },
-        { "name": "showingsPhoneTenantFirst", "friendlyName": "Phone tenant first" },
-        { "name": "showingsPhoneOther", "friendlyName": "Phone other" },
-        { "name": "showingsTouchbase", "friendlyName": "Touchbase" },
-        { "name": "showingsShowingTime", "friendlyName": "Showing Time (BC Northern only)" }
-      ]
-    }
+      { 
+        "name": "showingInformation",
+        "fType": "checkbox",
+        "friendlyName": "Keybox or appointment not required",
+        "options": [
+          { "name": "showingsNoRequirements", "friendlyName": "Keybox or appointment not required" },
+          { "name": "showingsPhoneListingRealtorFirst", "friendlyName": "Phone listing agent first" },
+          { "name": "showingsPhoneSellerFirst", "friendlyName": "Phone seller first" },
+          { "name": "showingsPhoneTenantFirst", "friendlyName": "Phone tenant first" },
+          { "name": "showingsPhoneOther", "friendlyName": "Phone other" },
+          { "name": "showingsTouchbase", "friendlyName": "Touchbase" },
+          { "name": "showingsShowingTime", "friendlyName": "Showing Time (BC Northern only)" }
+        ]
+      }
     ]
   },
   {
@@ -96,182 +97,182 @@
   {
     "name": "Dwelling classification",
     "fields": [
-    { 
-      "name": "dwellingClassification",
-      "fType": "radio",
-      "friendlyName": "Detached",
-      "options": [
-        { "name": "dwellingClassificationDetached", "friendlyName": "Detached" },
-        { "name": "dwellingClassificationAttached", "friendlyName": "Attached" },
-        { "name": "dwellingClassificationMultifamily", "friendlyName": "Multifamily" }
-      ]
-    }
+      { 
+        "name": "dwellingClassification",
+        "fType": "radio",
+        "friendlyName": "Detached",
+        "options": [
+          { "name": "dwellingClassificationDetached", "friendlyName": "Detached" },
+          { "name": "dwellingClassificationAttached", "friendlyName": "Attached" },
+          { "name": "dwellingClassificationMultifamily", "friendlyName": "Multifamily" }
+        ]
+      }
     ]
   },
   {
     "name": "Type of dwelling",
     "fields": [
-    { 
-      "name": "typeOfDwelling",
-      "fType": "radio",
-      "friendlyName": "Type of dwelling",
-      "options": [
-        { "name": "typeOfDwellingDetachedHouseSingleFamily", "friendlyName": "House / single family" },
-        { "name": "typeOfDwellingDetachedHouseWithAcreage", "friendlyName": "House with acreage" },
-        { "name": "typeOfDwellingDetachedTownhouse", "friendlyName": "Detached townhouse" },
-        { "name": "typeOfDwellingDetachedManufactured", "friendlyName": "Manufactured" },
-        { "name": "typeOfDwellingDetachedManufacturedWithLand", "friendlyName": "Manufactured with land" },
-        { "name": "typeOfDwellingDetachedRecreational", "friendlyName": "Recreational detached" },
-        { "name": "typeOfDwellingDetachedOther", "friendlyName": "Other detached" },
-        { "name": "typeOfDwellingAttachedApartmentCondo", "friendlyName": "Apartment / condo" },
-        { "name": "typeOfDwellingAttachedHalfDuplex", "friendlyName": "1/2 duplex" },
-        { "name": "typeOfDwellingAttachedRecreational", "friendlyName": "Recreational attached" },
-        { "name": "typeOfDwellingAttachedTownhouse", "friendlyName": "Attached townhouse" },
-        { "name": "typeOfDwellingAttachedRowHouseNonStrata", "friendlyName": "Row house (non-strata)" },
-        { "name": "typeOfDwellingAttachedOther", "friendlyName": "Other attached" },
-        { "name": "typeOfDwellingMultifamilyDuplex", "friendlyName": "Duplex" },
-        { "name": "typeOfDwellingMultifamilyTriplex", "friendlyName": "Triplex" },
-        { "name": "typeOfDwellingMultifamilyFourplex", "friendlyName": "Fourplex" },
-        { "name": "typeOfDwellingMultifamilyRecreational", "friendlyName": "Recreational multifamily" },
-        { "name": "typeOfDwellingMultifamilyOther", "friendlyName": "Other multifamily" }
-      ]
-    }
+      { 
+        "name": "typeOfDwelling",
+        "fType": "radio",
+        "friendlyName": "Type of dwelling",
+        "options": [
+          { "name": "typeOfDwellingDetachedHouseSingleFamily", "friendlyName": "House / single family" },
+          { "name": "typeOfDwellingDetachedHouseWithAcreage", "friendlyName": "House with acreage" },
+          { "name": "typeOfDwellingDetachedTownhouse", "friendlyName": "Detached townhouse" },
+          { "name": "typeOfDwellingDetachedManufactured", "friendlyName": "Manufactured" },
+          { "name": "typeOfDwellingDetachedManufacturedWithLand", "friendlyName": "Manufactured with land" },
+          { "name": "typeOfDwellingDetachedRecreational", "friendlyName": "Recreational detached" },
+          { "name": "typeOfDwellingDetachedOther", "friendlyName": "Other detached" },
+          { "name": "typeOfDwellingAttachedApartmentCondo", "friendlyName": "Apartment / condo" },
+          { "name": "typeOfDwellingAttachedHalfDuplex", "friendlyName": "1/2 duplex" },
+          { "name": "typeOfDwellingAttachedRecreational", "friendlyName": "Recreational attached" },
+          { "name": "typeOfDwellingAttachedTownhouse", "friendlyName": "Attached townhouse" },
+          { "name": "typeOfDwellingAttachedRowHouseNonStrata", "friendlyName": "Row house (non-strata)" },
+          { "name": "typeOfDwellingAttachedOther", "friendlyName": "Other attached" },
+          { "name": "typeOfDwellingMultifamilyDuplex", "friendlyName": "Duplex" },
+          { "name": "typeOfDwellingMultifamilyTriplex", "friendlyName": "Triplex" },
+          { "name": "typeOfDwellingMultifamilyFourplex", "friendlyName": "Fourplex" },
+          { "name": "typeOfDwellingMultifamilyRecreational", "friendlyName": "Recreational multifamily" },
+          { "name": "typeOfDwellingMultifamilyOther", "friendlyName": "Other multifamily" }
+        ]
+      }
     ]
   },
   {
     "name": "Style of home",
     "fields": [
-    { 
-      "name": "styleOfHome",
-      "fType": "checkbox",
-      "friendlyName": "Style of home",
-      "options": [
-        { "name": "styleOfHomeBasementEntry", "friendlyName": "Basement entry" },
-        { "name": "styleOfHomeSplitEntry", "friendlyName": "Split entry" },
-        { "name": "styleOfHomeOneStorey", "friendlyName": "1 storey" },
-        { "name": "styleOfHomeOneHalfStorey", "friendlyName": "1½ storey" },
-        { "name": "styleOfHomeTwoStorey", "friendlyName": "2 storey" },
-        { "name": "styleOfHomeReverseTwoStorey", "friendlyName": "Reverse 2 storey" },
-        { "name": "styleOfHomeReverseTwoStoreyWithBasement", "friendlyName": "Reverse 2 storey with basement" },
-        { "name": "styleOfHomeTwoStoreyWithBasement", "friendlyName": "2 storey with basement" },
-        { "name": "styleOfHomeThreeStorey", "friendlyName": "3 storey" },
-        { "name": "styleOfHomeThreeStoreyWithBasement", "friendlyName": "3 storey with basement" },
-        { "name": "styleOfHomeRancherOrBungalow", "friendlyName": "Rancher or bungalow" },
-        { "name": "styleOfHomeRancherOrBungalowWithBasement", "friendlyName": "Rancher or bungalow with basement" },
-        { "name": "styleOfHomeRancherOrBungalowWithLoft", "friendlyName": "Rancher or bungalow with loft" },
-        { "name": "styleOfHomeThreeLevelSplit", "friendlyName": "3 level split" },
-        { "name": "styleOfHomeFourLevelSplit", "friendlyName": "4 level split" },
-        { "name": "styleOfHomeFivePlusLevel", "friendlyName": "5+ level" },
-        { "name": "styleOfHomeCabin", "friendlyName": "Cabin" },
-        { "name": "styleOfHomeLanewayHouse", "friendlyName": "Laneway house" },
-        { "name": "styleOfHomeCarriageCoachHouse", "friendlyName": "Carriage / coach house" },
-        { "name": "styleOfHomeFloatingHome", "friendlyName": "Floating home" },
-        { "name": "styleOfHomeManufacturedOrMobile", "friendlyName": "Manufactured or mobile" },
-        { "name": "styleOfHomeCornerUnit", "friendlyName": "Corner unit" },
-        { "name": "styleOfHomeEndUnit", "friendlyName": "End unit" },
-        { "name": "styleOfHomeGroundLevelUnit", "friendlyName": "Ground level unit" },
-        { "name": "styleOfHomeInsideUnit", "friendlyName": "Inside unit" },
-        { "name": "styleOfHomeUpperUnit", "friendlyName": "Upper unit" },
-        { "name": "styleOfHomeBachelorOrStudio", "friendlyName": "Bachelor or studio" },
-        { "name": "styleOfHomeLiveWorkStudio", "friendlyName": "Live / work studio" },
-        { "name": "styleOfHomeLoftWarehouseConversion", "friendlyName": "Loft or warehouse conversion" },
-        { "name": "styleOfHomeOther", "friendlyName": "Other" },
-        { "name": "styleOfHomePenthouse", "friendlyName": "Penthouse" }
-      ]
-    }
+      { 
+        "name": "styleOfHome",
+        "fType": "checkbox",
+        "friendlyName": "Style of home",
+        "options": [
+          { "name": "styleOfHomeBasementEntry", "friendlyName": "Basement entry" },
+          { "name": "styleOfHomeSplitEntry", "friendlyName": "Split entry" },
+          { "name": "styleOfHomeOneStorey", "friendlyName": "1 storey" },
+          { "name": "styleOfHomeOneHalfStorey", "friendlyName": "1½ storey" },
+          { "name": "styleOfHomeTwoStorey", "friendlyName": "2 storey" },
+          { "name": "styleOfHomeReverseTwoStorey", "friendlyName": "Reverse 2 storey" },
+          { "name": "styleOfHomeReverseTwoStoreyWithBasement", "friendlyName": "Reverse 2 storey with basement" },
+          { "name": "styleOfHomeTwoStoreyWithBasement", "friendlyName": "2 storey with basement" },
+          { "name": "styleOfHomeThreeStorey", "friendlyName": "3 storey" },
+          { "name": "styleOfHomeThreeStoreyWithBasement", "friendlyName": "3 storey with basement" },
+          { "name": "styleOfHomeRancherOrBungalow", "friendlyName": "Rancher or bungalow" },
+          { "name": "styleOfHomeRancherOrBungalowWithBasement", "friendlyName": "Rancher or bungalow with basement" },
+          { "name": "styleOfHomeRancherOrBungalowWithLoft", "friendlyName": "Rancher or bungalow with loft" },
+          { "name": "styleOfHomeThreeLevelSplit", "friendlyName": "3 level split" },
+          { "name": "styleOfHomeFourLevelSplit", "friendlyName": "4 level split" },
+          { "name": "styleOfHomeFivePlusLevel", "friendlyName": "5+ level" },
+          { "name": "styleOfHomeCabin", "friendlyName": "Cabin" },
+          { "name": "styleOfHomeLanewayHouse", "friendlyName": "Laneway house" },
+          { "name": "styleOfHomeCarriageCoachHouse", "friendlyName": "Carriage / coach house" },
+          { "name": "styleOfHomeFloatingHome", "friendlyName": "Floating home" },
+          { "name": "styleOfHomeManufacturedOrMobile", "friendlyName": "Manufactured or mobile" },
+          { "name": "styleOfHomeCornerUnit", "friendlyName": "Corner unit" },
+          { "name": "styleOfHomeEndUnit", "friendlyName": "End unit" },
+          { "name": "styleOfHomeGroundLevelUnit", "friendlyName": "Ground level unit" },
+          { "name": "styleOfHomeInsideUnit", "friendlyName": "Inside unit" },
+          { "name": "styleOfHomeUpperUnit", "friendlyName": "Upper unit" },
+          { "name": "styleOfHomeBachelorOrStudio", "friendlyName": "Bachelor or studio" },
+          { "name": "styleOfHomeLiveWorkStudio", "friendlyName": "Live / work studio" },
+          { "name": "styleOfHomeLoftWarehouseConversion", "friendlyName": "Loft or warehouse conversion" },
+          { "name": "styleOfHomeOther", "friendlyName": "Other" },
+          { "name": "styleOfHomePenthouse", "friendlyName": "Penthouse" }
+        ]
+      }
     ]
   },
   {
     "name": "Title to land",
     "fields": [
-    {
-      "name": "titleToLand",
-      "fType": "radio",
-      "friendlyName": "Title to land",
-      "options": [
-        { "name": "titleToLandFreeholdNonStrata", "friendlyName": "Freehold non-strata" },
-        { "name": "titleToLandFreeholdStrata", "friendlyName": "Freehold strata" },
-        { "name": "titleToLandFirstNationsLease", "friendlyName": "First Nations lease" },
-        { "name": "titleToLandLeaseholdPrepaidNonStrata", "friendlyName": "Leasehold prepaid, non-strata" },
-        { "name": "titleToLandLeaseholdNotPrepaidNonStrata", "friendlyName": "Leasehold not prepaid, non-strata" },
-        { "name": "titleToLandLeaseholdPrepaidStrata", "friendlyName": "Leasehold prepaid, strata" },
-        { "name": "titleToLandLeaseholdNotPrepaidStrata", "friendlyName": "Leasehold not prepaid, non-strata" },
-        { "name": "titleToLandSharesInCooperative", "friendlyName": "Shares in cooperative" },
-        { "name": "titleToLandTimeShare", "friendlyName": "Time share" },
-        { "name": "titleToLandUndividedInterest", "friendlyName": "Undivided interest" },
-        { "name": "titleToLandVacationOwnership", "friendlyName": "Vacation ownership" },
-        { "name": "titleToLandOther", "friendlyName": "Other" }
-      ]
-    },
-    { "name": "landLeaseExpiryYear", "fType": "number", "friendlyName": "Land lease expiry year" }
+      {
+        "name": "titleToLand",
+        "fType": "radio",
+        "friendlyName": "Title to land",
+        "options": [
+          { "name": "titleToLandFreeholdNonStrata", "friendlyName": "Freehold non-strata" },
+          { "name": "titleToLandFreeholdStrata", "friendlyName": "Freehold strata" },
+          { "name": "titleToLandFirstNationsLease", "friendlyName": "First Nations lease" },
+          { "name": "titleToLandLeaseholdPrepaidNonStrata", "friendlyName": "Leasehold prepaid, non-strata" },
+          { "name": "titleToLandLeaseholdNotPrepaidNonStrata", "friendlyName": "Leasehold not prepaid, non-strata" },
+          { "name": "titleToLandLeaseholdPrepaidStrata", "friendlyName": "Leasehold prepaid, strata" },
+          { "name": "titleToLandLeaseholdNotPrepaidStrata", "friendlyName": "Leasehold not prepaid, non-strata" },
+          { "name": "titleToLandSharesInCooperative", "friendlyName": "Shares in cooperative" },
+          { "name": "titleToLandTimeShare", "friendlyName": "Time share" },
+          { "name": "titleToLandUndividedInterest", "friendlyName": "Undivided interest" },
+          { "name": "titleToLandVacationOwnership", "friendlyName": "Vacation ownership" },
+          { "name": "titleToLandOther", "friendlyName": "Other" }
+        ]
+      },
+      { "name": "landLeaseExpiryYear", "fType": "number", "friendlyName": "Land lease expiry year" }
     ]
   },
   {
     "name": "Seller's interest",
     "fields": [
-    {
-      "name": "sellersInterest",
-      "fType": "checkbox",
-      "friendlyName": "Seller's interest",
-      "options": [
-        { "name": "sellersInterestRegisteredOwner", "friendlyName": "Registered owner" },
-        { "name": "sellersInterestPowerofAttorney", "friendlyName": "Power of attorney" },
-        { "name": "sellersInterestCommitteeOrTrustee", "friendlyName": "Committee or trustee" },
-        { "name": "sellersInterestCourtOrderedSale", "friendlyName": "Court ordered sale" },
-        { "name": "sellersInterestEstateSale", "friendlyName": "Estate sale" },
-        { "name": "sellersInterestContractualInterest", "friendlyName": "Contractual interest" },
-        { "name": "sellersInterestOption", "friendlyName": "Option" },
-        { "name": "sellersInterestAssignmentOfContract", "friendlyName": "Assignment of contract" }
-      ]
-    }
+      {
+        "name": "sellersInterest",
+        "fType": "checkbox",
+        "friendlyName": "Seller's interest",
+        "options": [
+          { "name": "sellersInterestRegisteredOwner", "friendlyName": "Registered owner" },
+          { "name": "sellersInterestPowerofAttorney", "friendlyName": "Power of attorney" },
+          { "name": "sellersInterestCommitteeOrTrustee", "friendlyName": "Committee or trustee" },
+          { "name": "sellersInterestCourtOrderedSale", "friendlyName": "Court ordered sale" },
+          { "name": "sellersInterestEstateSale", "friendlyName": "Estate sale" },
+          { "name": "sellersInterestContractualInterest", "friendlyName": "Contractual interest" },
+          { "name": "sellersInterestOption", "friendlyName": "Option" },
+          { "name": "sellersInterestAssignmentOfContract", "friendlyName": "Assignment of contract" }
+        ]
+      }
     ]
   },
   {
     "name": "Occupancy",
     "fields": [
-    {
-      "name": "occupancy",
-      "fType": "checkbox",
-      "friendlyName": "Occupancy",
-      "options": [
-        { "name": "occupancyOwner", "friendlyName": "Owner" },
-        { "name": "occupancyTenant", "friendlyName": "Tenant" },
-        { "name": "occupancyUnderConstruction", "friendlyName": "Under construction" },
-        { "name": "occupancyVacant", "friendlyName": "Vacant" }
-      ]
-    }
+      {
+        "name": "occupancy",
+        "fType": "checkbox",
+        "friendlyName": "Occupancy",
+        "options": [
+          { "name": "occupancyOwner", "friendlyName": "Owner" },
+          { "name": "occupancyTenant", "friendlyName": "Tenant" },
+          { "name": "occupancyUnderConstruction", "friendlyName": "Under construction" },
+          { "name": "occupancyVacant", "friendlyName": "Vacant" }
+        ]
+      }
     ]
   },
   {
     "name": "Property disclosure statement completed?",
     "fields": [
-    {
-      "name": "propertyDisclosureStatement",
-      "fType": "radio",
-      "friendlyName": "Property disclosure statement completed?",
-      "options": [
-        { "name": "propertyDisclosureStatementCompleted", "friendlyName": "Yes" },
-        { "name": "propertyDisclosureStatementNotCompleted", "friendlyName": "No" }
-      ]
-    },
-    { "name": "propertyDisclosureStatementNotCompletedExplanation", "fType": "text", "friendlyName": "If not, please explain" }
+      {
+        "name": "propertyDisclosureStatement",
+        "fType": "radio",
+        "friendlyName": "Property disclosure statement completed?",
+        "options": [
+          { "name": "propertyDisclosureStatementCompleted", "friendlyName": "Yes" },
+          { "name": "propertyDisclosureStatementNotCompleted", "friendlyName": "No" }
+        ]
+      },
+      { "name": "propertyDisclosureStatementNotCompletedExplanation", "fType": "text", "friendlyName": "If not, please explain" }
     ]
   },
   {
     "name": "Age details",
     "fields": [
-    { "name": "approximateYearBuilt", "fType": "number", "friendlyName": "Approximate year built" },
-    {
-      "name": "ageType",
-      "fType": "radio",
-      "friendlyName": "Age type",
-      "options": [
-        { "name": "ageTypeoldTimer", "friendlyName": "Old timer" },
-        { "name": "ageTypeNew", "friendlyName": "New" },
-        { "name": "ageTypeUnderConstruction", "friendlyName": "Under construction" }
-      ]
-    },
-    { "name": "approximateYearOfRenovations", "fType": "number", "friendlyName": "Approximate year of renovations" }
+      { "name": "approximateYearBuilt", "fType": "number", "friendlyName": "Approximate year built" },
+      {
+        "name": "ageType",
+        "fType": "radio",
+        "friendlyName": "Age type",
+        "options": [
+          { "name": "ageTypeoldTimer", "friendlyName": "Old timer" },
+          { "name": "ageTypeNew", "friendlyName": "New" },
+          { "name": "ageTypeUnderConstruction", "friendlyName": "Under construction" }
+        ]
+      },
+      { "name": "approximateYearOfRenovations", "fType": "number", "friendlyName": "Approximate year of renovations" }
     ]
   },
   {
@@ -285,6 +286,61 @@
           { "name": "isGstIncludedYes", "friendlyName": "Yes" },
           { "name": "isGstIncludedNo", "friendlyName": "No" },
           { "name": "isGstIncludedNotApplicable", "friendlyName": "Not applicable" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Renovations",
+    "fields": [
+      {
+        "name": "renovations",
+        "fType": "checkbox",
+        "friendlyName": "Renovations",
+        "options": [
+          { "name": "renovationsAddition", "friendlyName": "Addition" },
+          { "name": "renovationsCompletely", "friendlyName": "Completely" },
+          { "name": "renovationsPartly", "friendlyName": "Partly" },
+          { "name": "renovationsRaised", "friendlyName": "Raised" },
+          { "name": "renovationsSubstantiallyRebuilt", "friendlyName": "Substantially rebuilt" },
+          { "name": "renovationsOther", "friendlyName": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Suites",
+    "fields": [
+      {
+        "name": "suites",
+        "fType": "checkbox",
+        "friendlyName": "Suites",
+        "options": [
+          { "name": "suitesLegal", "friendlyName": "Legal suite(s)" },
+          { "name": "suitesLicensed", "friendlyName": "Licensed suite(s)" },
+          { "name": "suitesNone", "friendlyName": "None" },
+          { "name": "suitesUnauthorized", "friendlyName": "Unauthorized suite(s)" },
+          { "name": "suitesOther", "friendlyName": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Basement area",
+    "fields": [
+      {
+        "name": "basementArea",
+        "fType": "checkbox",
+        "friendlyName": "Basement area",
+        "options": [
+          { "name": "basementCrawl", "friendlyName": "Crawl" },
+          { "name": "basementFull", "friendlyName": "Full" },
+          { "name": "basementNone", "friendlyName": "None" },
+          { "name": "basementPart", "friendlyName": "Part" },
+          { "name": "basementFullyFinished", "friendlyName": "Fully finished" },
+          { "name": "basementPartlyFinished", "friendlyName": "Partly finished" },
+          { "name": "basementSeparateEntry", "friendlyName": "Separate entry" },
+          { "name": "basementUnfinished", "friendlyName": "Unfinished" }
         ]
       }
     ]

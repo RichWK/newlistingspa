@@ -3,7 +3,6 @@
   <!-- Future to-do for the data:
   
   - Add a 'rules' attribute, e.g. "max 2 selected", etc.
-  - Check order of fields in the 'Title to Land' section: radio and checkbox "blocks" need to be preserved across lines.
   - Fields need to be able to define a pattern, especially for number fields.
   - Fields need the ability to specify notes? e.g. first page, 'Age Type'
   

@@ -4,7 +4,17 @@
   
   - Add a 'rules' attribute, e.g. "max 2 selected", etc.
   - Fields need to be able to define a pattern, especially for number fields.
-  - Fields need the ability to specify notes? e.g. first page, 'Age Type'
+  - Do fields need the ability to specify notes? e.g. first page, 'Age Type'
+  - New field types?
+    - Currency?
+    - Textarea
+    - PrimeVue toggle button for switching between feet and metres, etc?
+    - Decimal?
+    - North, South, etc dropdown?
+
+  For the design:
+
+  - Look at SimpleTax for inspiration?
   
   -->
 
@@ -29,7 +39,7 @@
 <script>
 
 import FieldGroup from './components/FieldGroup.vue'
-import FormSchema from "./assets/formSchema.json";
+import Schema from "./assets/schema.json";
 
 export default {
 
@@ -57,7 +67,7 @@ export default {
     }
   },
   mounted() {
-    this.groups = FormSchema
+    this.groups = Schema
   }
 }
 

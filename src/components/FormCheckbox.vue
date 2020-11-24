@@ -73,13 +73,10 @@ export default {
   margin-bottom: 20px;
 }
 
-.p-checkbox {
-
-  margin-right: 10px;
-}
-
 label {
 
+  padding: 5px;
+  padding-left: 10px;
   margin-right: 20px;
 }
 

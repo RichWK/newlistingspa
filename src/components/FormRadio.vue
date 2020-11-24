@@ -73,13 +73,11 @@ export default {
   margin-bottom: 20px;
 }
 
-.p-radiobutton {
-
-  margin-right: 10px;
-}
-
 label {
 
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
   margin-right: 20px;
 }
 

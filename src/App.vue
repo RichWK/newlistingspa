@@ -116,13 +116,13 @@ export default {
               fType: "checkbox",
               friendlyName: "Keybox or appointment not required",
               options: [
-                { name: "noRequirements", friendlyName: "Keybox or appointment not required" },
-                { name: "phoneListingRealtorFirst", friendlyName: "Phone listing agent first" },
-                { name: "phoneSellerFirst", friendlyName: "Phone seller first" },
-                { name: "phoneTenantFirst", friendlyName: "Phone tenant first" },
-                { name: "phoneOther", friendlyName: "Phone other" },
-                { name: "touchbase", friendlyName: "Touchbase" },
-                { name: "showingTime", friendlyName: "Showing Time (BC Northern only)" }
+                { name: "showingsNoRequirements", friendlyName: "Keybox or appointment not required" },
+                { name: "showingsPhoneListingRealtorFirst", friendlyName: "Phone listing agent first" },
+                { name: "showingsPhoneSellerFirst", friendlyName: "Phone seller first" },
+                { name: "showingsPhoneTenantFirst", friendlyName: "Phone tenant first" },
+                { name: "showingsPhoneOther", friendlyName: "Phone other" },
+                { name: "showingsTouchbase", friendlyName: "Touchbase" },
+                { name: "showingsShowingTime", friendlyName: "Showing Time (BC Northern only)" }
               ]
             }
           ]
@@ -142,9 +142,9 @@ export default {
               fType: "radio",
               friendlyName: "Detached",
               options: [
-                { name: "detached", friendlyName: "Detached" },
-                { name: "attached", friendlyName: "Attached" },
-                { name: "multifamily", friendlyName: "Multifamily" }
+                { name: "dwellingClassificationDetached", friendlyName: "Detached" },
+                { name: "dwellingClassificationAttached", friendlyName: "Attached" },
+                { name: "dwellingClassificationMultifamily", friendlyName: "Multifamily" }
               ]
             }
           ]
@@ -157,24 +157,24 @@ export default {
               fType: "radio",
               friendlyName: "Type of dwelling",
               options: [
-                { name: "detachedHouseSingleFamily", friendlyName: "House / single family" },
-                { name: "detachedHouseWithAcreage", friendlyName: "House with acreage" },
-                { name: "detachedTownhouse", friendlyName: "Detached townhouse" },
-                { name: "detachedManufactured", friendlyName: "Manufactured" },
-                { name: "detachedManufacturedWithLand", friendlyName: "Manufactured with land" },
-                { name: "detachedRecreational", friendlyName: "Recreational detached" },
-                { name: "detachedOther", friendlyName: "Other detached" },
-                { name: "attachedApartmentCondo", friendlyName: "Apartment / condo" },
-                { name: "attachedHalfDuplex", friendlyName: "1/2 duplex" },
-                { name: "attachedRecreational", friendlyName: "Recreational attached" },
-                { name: "attachedTownhouse", friendlyName: "Attached townhouse" },
-                { name: "attachedRowHouseNonStrata", friendlyName: "Row house (non-strata)" },
-                { name: "attachedOther", friendlyName: "Other attached" },
-                { name: "multifamilyDuplex", friendlyName: "Duplex" },
-                { name: "multifamilyTriplex", friendlyName: "Triplex" },
-                { name: "multifamilyFourplex", friendlyName: "Fourplex" },
-                { name: "multifamilyRecreational", friendlyName: "Recreational multifamily" },
-                { name: "multifamilyOther", friendlyName: "Other multifamily" }
+                { name: "typeOfDwellingDetachedHouseSingleFamily", friendlyName: "House / single family" },
+                { name: "typeOfDwellingDetachedHouseWithAcreage", friendlyName: "House with acreage" },
+                { name: "typeOfDwellingDetachedTownhouse", friendlyName: "Detached townhouse" },
+                { name: "typeOfDwellingDetachedManufactured", friendlyName: "Manufactured" },
+                { name: "typeOfDwellingDetachedManufacturedWithLand", friendlyName: "Manufactured with land" },
+                { name: "typeOfDwellingDetachedRecreational", friendlyName: "Recreational detached" },
+                { name: "typeOfDwellingDetachedOther", friendlyName: "Other detached" },
+                { name: "typeOfDwellingAttachedApartmentCondo", friendlyName: "Apartment / condo" },
+                { name: "typeOfDwellingAttachedHalfDuplex", friendlyName: "1/2 duplex" },
+                { name: "typeOfDwellingAttachedRecreational", friendlyName: "Recreational attached" },
+                { name: "typeOfDwellingAttachedTownhouse", friendlyName: "Attached townhouse" },
+                { name: "typeOfDwellingAttachedRowHouseNonStrata", friendlyName: "Row house (non-strata)" },
+                { name: "typeOfDwellingAttachedOther", friendlyName: "Other attached" },
+                { name: "typeOfDwellingMultifamilyDuplex", friendlyName: "Duplex" },
+                { name: "typeOfDwellingMultifamilyTriplex", friendlyName: "Triplex" },
+                { name: "typeOfDwellingMultifamilyFourplex", friendlyName: "Fourplex" },
+                { name: "typeOfDwellingMultifamilyRecreational", friendlyName: "Recreational multifamily" },
+                { name: "typeOfDwellingMultifamilyOther", friendlyName: "Other multifamily" }
               ]
             }
           ]
@@ -187,37 +187,37 @@ export default {
               fType: "checkbox",
               friendlyName: "Style of home",
               options: [
-                { name: "basementEntry", friendlyName: "Basement entry" },
-                { name: "splitEntry", friendlyName: "Split entry" },
-                { name: "oneStorey", friendlyName: "1 storey" },
-                { name: "oneHalfStorey", friendlyName: "1½ storey" },
-                { name: "twoStorey", friendlyName: "2 storey" },
-                { name: "reverseTwoStorey", friendlyName: "Reverse 2 storey" },
-                { name: "reverseTwoStoreyWithBasement", friendlyName: "Reverse 2 storey with basement" },
-                { name: "twoStoreyWithBasement", friendlyName: "2 storey with basement" },
-                { name: "threeStorey", friendlyName: "3 storey" },
-                { name: "threeStoreyWithBasement", friendlyName: "3 storey with basement" },
-                { name: "rancherOrBungalow", friendlyName: "Rancher or bungalow" },
-                { name: "rancherOrBungalowWithBasement", friendlyName: "Rancher or bungalow with basement" },
-                { name: "rancherOrBungalowWithLoft", friendlyName: "Rancher or bungalow with loft" },
-                { name: "threeLevelSplit", friendlyName: "3 level split" },
-                { name: "fourLevelSplit", friendlyName: "4 level split" },
-                { name: "fivePlusLevel", friendlyName: "5+ level" },
-                { name: "cabin", friendlyName: "Cabin" },
-                { name: "lanewayHouse", friendlyName: "Laneway house" },
-                { name: "carriageCoachHouse", friendlyName: "Carriage / coach house" },
-                { name: "floatingHome", friendlyName: "Floating home" },
-                { name: "manufacturedOrMobile", friendlyName: "Manufactured or mobile" },
-                { name: "cornerUnit", friendlyName: "Corner unit" },
-                { name: "endUnit", friendlyName: "End unit" },
-                { name: "groundLevelUnit", friendlyName: "Ground level unit" },
-                { name: "insideUnit", friendlyName: "Inside unit" },
-                { name: "upperUnit", friendlyName: "Upper unit" },
-                { name: "bachelorOrStudio", friendlyName: "Bachelor or studio" },
-                { name: "liveWorkStudio", friendlyName: "Live / work studio" },
-                { name: "loftWarehouseConversion", friendlyName: "Loft or warehouse conversion" },
-                { name: "other", friendlyName: "Other" },
-                { name: "penthouse", friendlyName: "Penthouse" }
+                { name: "styleOfHomeBasementEntry", friendlyName: "Basement entry" },
+                { name: "styleOfHomeSplitEntry", friendlyName: "Split entry" },
+                { name: "styleOfHomeOneStorey", friendlyName: "1 storey" },
+                { name: "styleOfHomeOneHalfStorey", friendlyName: "1½ storey" },
+                { name: "styleOfHomeTwoStorey", friendlyName: "2 storey" },
+                { name: "styleOfHomeReverseTwoStorey", friendlyName: "Reverse 2 storey" },
+                { name: "styleOfHomeReverseTwoStoreyWithBasement", friendlyName: "Reverse 2 storey with basement" },
+                { name: "styleOfHomeTwoStoreyWithBasement", friendlyName: "2 storey with basement" },
+                { name: "styleOfHomeThreeStorey", friendlyName: "3 storey" },
+                { name: "styleOfHomeThreeStoreyWithBasement", friendlyName: "3 storey with basement" },
+                { name: "styleOfHomeRancherOrBungalow", friendlyName: "Rancher or bungalow" },
+                { name: "styleOfHomeRancherOrBungalowWithBasement", friendlyName: "Rancher or bungalow with basement" },
+                { name: "styleOfHomeRancherOrBungalowWithLoft", friendlyName: "Rancher or bungalow with loft" },
+                { name: "styleOfHomeThreeLevelSplit", friendlyName: "3 level split" },
+                { name: "styleOfHomeFourLevelSplit", friendlyName: "4 level split" },
+                { name: "styleOfHomeFivePlusLevel", friendlyName: "5+ level" },
+                { name: "styleOfHomeCabin", friendlyName: "Cabin" },
+                { name: "styleOfHomeLanewayHouse", friendlyName: "Laneway house" },
+                { name: "styleOfHomeCarriageCoachHouse", friendlyName: "Carriage / coach house" },
+                { name: "styleOfHomeFloatingHome", friendlyName: "Floating home" },
+                { name: "styleOfHomeManufacturedOrMobile", friendlyName: "Manufactured or mobile" },
+                { name: "styleOfHomeCornerUnit", friendlyName: "Corner unit" },
+                { name: "styleOfHomeEndUnit", friendlyName: "End unit" },
+                { name: "styleOfHomeGroundLevelUnit", friendlyName: "Ground level unit" },
+                { name: "styleOfHomeInsideUnit", friendlyName: "Inside unit" },
+                { name: "styleOfHomeUpperUnit", friendlyName: "Upper unit" },
+                { name: "styleOfHomeBachelorOrStudio", friendlyName: "Bachelor or studio" },
+                { name: "styleOfHomeLiveWorkStudio", friendlyName: "Live / work studio" },
+                { name: "styleOfHomeLoftWarehouseConversion", friendlyName: "Loft or warehouse conversion" },
+                { name: "styleOfHomeOther", friendlyName: "Other" },
+                { name: "styleOfHomePenthouse", friendlyName: "Penthouse" }
               ]
             }
           ]
@@ -230,18 +230,18 @@ export default {
               fType: "radio",
               friendlyName: "Title to land",
               options: [
-                { name: "freeholdNonStrata", friendlyName: "Freehold non-strata" },
-                { name: "freeholdStrata", friendlyName: "Freehold strata" },
-                { name: "firstNationsLease", friendlyName: "First Nations lease" },
-                { name: "leaseholdPrepaidNonStrata", friendlyName: "Leasehold prepaid, non-strata" },
-                { name: "leaseholdNotPrepaidNonStrata", friendlyName: "Leasehold not prepaid, non-strata" },
-                { name: "leaseholdPrepaidStrata", friendlyName: "Leasehold prepaid, strata" },
-                { name: "leaseholdNotPrepaidStrata", friendlyName: "Leasehold not prepaid, non-strata" },
-                { name: "sharesInCooperative", friendlyName: "Shares in cooperative" },
-                { name: "timeShare", friendlyName: "Time share" },
-                { name: "undividedInterest", friendlyName: "Undivided interest" },
-                { name: "vacationOwnership", friendlyName: "Vacation ownership" },
-                { name: "other", friendlyName: "Other" }
+                { name: "titleToLandFreeholdNonStrata", friendlyName: "Freehold non-strata" },
+                { name: "titleToLandFreeholdStrata", friendlyName: "Freehold strata" },
+                { name: "titleToLandFirstNationsLease", friendlyName: "First Nations lease" },
+                { name: "titleToLandLeaseholdPrepaidNonStrata", friendlyName: "Leasehold prepaid, non-strata" },
+                { name: "titleToLandLeaseholdNotPrepaidNonStrata", friendlyName: "Leasehold not prepaid, non-strata" },
+                { name: "titleToLandLeaseholdPrepaidStrata", friendlyName: "Leasehold prepaid, strata" },
+                { name: "titleToLandLeaseholdNotPrepaidStrata", friendlyName: "Leasehold not prepaid, non-strata" },
+                { name: "titleToLandSharesInCooperative", friendlyName: "Shares in cooperative" },
+                { name: "titleToLandTimeShare", friendlyName: "Time share" },
+                { name: "titleToLandUndividedInterest", friendlyName: "Undivided interest" },
+                { name: "titleToLandVacationOwnership", friendlyName: "Vacation ownership" },
+                { name: "titleToLandOther", friendlyName: "Other" }
               ]
             },
             { name: "landLeaseExpiryYear", fType: "number", friendlyName: "Land lease expiry year" }
@@ -255,14 +255,14 @@ export default {
               fType: "checkbox",
               friendlyName: "Seller's interest",
               options: [
-                { name: "registeredOwner", friendlyName: "Registered owner" },
-                { name: "powerofAttorney", friendlyName: "Power of attorney" },
-                { name: "committeeOrTrustee", friendlyName: "Committee or trustee" },
-                { name: "courtOrderedSale", friendlyName: "Court ordered sale" },
-                { name: "estateSale", friendlyName: "Estate sale" },
-                { name: "contractualInterest", friendlyName: "Contractual interest" },
-                { name: "option", friendlyName: "Option" },
-                { name: "assignmentOfContract", friendlyName: "Assignment of contract" }
+                { name: "sellersInterestRegisteredOwner", friendlyName: "Registered owner" },
+                { name: "sellersInterestPowerofAttorney", friendlyName: "Power of attorney" },
+                { name: "sellersInterestCommitteeOrTrustee", friendlyName: "Committee or trustee" },
+                { name: "sellersInterestCourtOrderedSale", friendlyName: "Court ordered sale" },
+                { name: "sellersInterestEstateSale", friendlyName: "Estate sale" },
+                { name: "sellersInterestContractualInterest", friendlyName: "Contractual interest" },
+                { name: "sellersInterestOption", friendlyName: "Option" },
+                { name: "sellersInterestAssignmentOfContract", friendlyName: "Assignment of contract" }
               ]
             }
           ]
@@ -275,10 +275,10 @@ export default {
               fType: "checkbox",
               friendlyName: "Occupancy",
               options: [
-                { name: "owner", friendlyName: "Owner" },
-                { name: "tenant", friendlyName: "Tenant" },
-                { name: "underConstruction", friendlyName: "Under construction" },
-                { name: "vacant", friendlyName: "Vacant" }
+                { name: "occupancyOwner", friendlyName: "Owner" },
+                { name: "occupancyTenant", friendlyName: "Tenant" },
+                { name: "occupancyUnderConstruction", friendlyName: "Under construction" },
+                { name: "occupancyVacant", friendlyName: "Vacant" }
               ]
             }
           ]
@@ -291,8 +291,8 @@ export default {
               fType: "radio",
               friendlyName: "Property disclosure statement completed?",
               options: [
-                { name: "completed", friendlyName: "Yes" },
-                { name: "notCompleted", friendlyName: "No" }
+                { name: "propertyDisclosureStatementCompleted", friendlyName: "Yes" },
+                { name: "propertyDisclosureStatementNotCompleted", friendlyName: "No" }
               ]
             },
             { name: "propertyDisclosureStatementNotCompletedExplanation", fType: "text", friendlyName: "If not, please explain" }

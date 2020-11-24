@@ -316,9 +316,9 @@
         "fType": "checkbox",
         "label": "Suites",
         "options": [
+          { "name": "suitesNone", "label": "None" },
           { "name": "suitesLegal", "label": "Legal suite(s)" },
           { "name": "suitesLicensed", "label": "Licensed suite(s)" },
-          { "name": "suitesNone", "label": "None" },
           { "name": "suitesUnauthorized", "label": "Unauthorized suite(s)" },
           { "name": "suitesOther", "label": "Other" }
         ]
@@ -333,9 +333,9 @@
         "fType": "checkbox",
         "label": "Basement area",
         "options": [
+          { "name": "basementNone", "label": "None" },
           { "name": "basementCrawl", "label": "Crawl" },
           { "name": "basementFull", "label": "Full" },
-          { "name": "basementNone", "label": "None" },
           { "name": "basementPart", "label": "Part" },
           { "name": "basementFullyFinished", "label": "Fully finished" },
           { "name": "basementPartlyFinished", "label": "Partly finished" },
@@ -364,12 +364,241 @@
   {
     "name": "Property size",
     "fields": [
-      { "name": "propertySizeFrontageFeet", "fType": "number", "label": "Frontage in feet" },
-      { "name": "propertySizeDepthFeet", "fType": "number", "label": "Depth in feet" },
-      { "name": "propertySizeFrontageMetres", "fType": "number", "label": "Frontage in metres" },
-      { "name": "propertySizeDepthMetres", "fType": "number", "label": "Depth in metres" },
-      { "name": "lotSizeSqFt", "fType": "number", "label": "Lot size in square feet" },
-      { "name": "lotSizeAcres", "fType": "number", "label": "Lot size in acres" }
+      { "name": "propertySizeFrontageFeet", "fType": "decimal", "label": "Frontage in feet" },
+      { "name": "propertySizeDepthFeet", "fType": "decimal", "label": "Depth in feet" },
+      { "name": "propertySizeFrontageMetres", "fType": "decimal", "label": "Frontage in metres" },
+      { "name": "propertySizeDepthMetres", "fType": "decimal", "label": "Depth in metres" },
+      { "name": "lotSizeSqFt", "fType": "decimal", "label": "Lot size in square feet" },
+      { "name": "lotSizeAcres", "fType": "decimal", "label": "Lot size in acres" }
+    ]
+  },
+  {
+    "name": "Services connected",
+    "fields": [
+      {
+        "name": "servicesConnected",
+        "fType": "checkbox",
+        "label": "Services connected",
+        "options": [
+          { "name": "servicesConnectedNone", "label": "None" },
+          { "name": "servicesConnectedCommunity", "label": "Community" },
+          { "name": "servicesConnectedElectricity", "label": "Electricity" },
+          { "name": "servicesConnectedLagoon", "label": "Lagoon" },
+          { "name": "servicesConnectedNaturalGas", "label": "Natural gas" },
+          { "name": "servicesConnectedSanitarySewer", "label": "Sanitary sewer" },
+          { "name": "servicesConnectedStormSewer", "label": "Storm sewer" },
+          { "name": "servicesConnectedSeptic", "label": "Septic" },
+          { "name": "servicesConnectedUnknown", "label": "Water" },
+          { "name": "servicesConnectedWater", "label": "Unknown" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sewer type",
+    "fields": [
+      {
+        "name": "sewerType",
+        "fType": "checkbox",
+        "label": "Sewer type",
+        "options": [
+          { "name": "sewerTypeNone", "label": "None" },
+          { "name": "sewerTypeCityOrMunicipal", "label": "City or municipal" },
+          { "name": "sewerTypeCommunity", "label": "Community" },
+          { "name": "sewerTypeHoldingTank", "label": "Holding tank" },
+          { "name": "sewerTypeLagoon", "label": "Lagoon" },
+          { "name": "sewerTypeSanitation", "label": "Sanitation" },
+          { "name": "sewerTypeSeptic", "label": "Septic" },
+          { "name": "sewerTypeOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Water supply",
+    "fields": [
+      {
+        "name": "waterSupply",
+        "fType": "checkbox",
+        "label": "Water supply",
+        "options": [
+          { "name": "waterSupplyNone", "label": "None" },
+          { "name": "waterSupplyCityOrMunicipal", "label": "City or municipal" },
+          { "name": "waterSupplyCistern", "label": "Cistern" },
+          { "name": "waterSupplyCommunity", "label": "Community" },
+          { "name": "waterSupplySandpoint", "label": "Sandpoint" },
+          { "name": "waterSupplyWellDrilled", "label": "Well (drilled)" },
+          { "name": "waterSupplyWellShallow", "label": "Well (shallow)" },
+          { "name": "waterSupplyOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Metered water?",
+    "fields": [
+      {
+        "name": "meteredWater",
+        "fType": "radio",
+        "label": "Metered water?",
+        "options": [
+          { "name": "meteredWaterYes", "label": "Yes" },
+          { "name": "meteredWaterNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flood plain?",
+    "fields": [
+      {
+        "name": "floodPlain",
+        "fType": "radio",
+        "label": "Flood plain?",
+        "options": [
+          { "name": "floodPlainYes", "label": "Yes" },
+          { "name": "floodPlainNo", "label": "No" },
+          { "name": "floodPlainExempt", "label": "Exempt" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Taxes",
+    "fields": [
+      { "name": "grossTaxes", "fType": "currency", "label": "Gross taxes" },
+      { "name": "forTaxYear", "fType": "number", "label": "For tax year" },
+      {
+        "name": "taxIncludesUtilities",
+        "fType": "checkbox",
+        "label": "Tax includes utilties?",
+        "options": [
+          { "name": "taxIncludesUtilitiesYes", "label": "Yes" },
+          { "name": "taxIncludesUtilitiesNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Additional charges not included in taxes",
+    "fields": [
+      { "name": "additionalChargesGarbage", "fType": "currency", "label": "Garbage" },
+      { "name": "additionalChargesWater", "fType": "currency", "label": "Water" },
+      { "name": "additionalChargesDyking", "fType": "currency", "label": "Dyking" },
+      { "name": "additionalChargesSewer", "fType": "currency", "label": "Sewer" },
+      { "name": "additionalChargesOther", "fType": "currency", "label": "Other" }
+    ]
+  },
+  {
+    "name": "Zoning",
+    "fields": [
+      { "name": "zoningCode", "fType": "text", "label": "Municipal code" }
+    ]
+  },
+  {
+    "name": "Complex or subdivision",
+    "fields": [
+      { "name": "complexOrSubdivision", "fType": "text", "label": "Name" }
+    ]
+  },
+  {
+    "name": "Rear yard directional exposure — detached only",
+    "fields": [
+      {
+        "name": "rearYardDirectionalExposure",
+        "fType": "checkbox",
+        "label": "Rear yard directional exposure — detached only",
+        "options": [
+          { "name": "rearYardDirectionalExposureNorth", "label": "North" },
+          { "name": "rearYardDirectionalExposureSouth", "label": "South" },
+          { "name": "rearYardDirectionalExposureEast", "label": "East" },
+          { "name": "rearYardDirectionalExposureWest", "label": "West" },
+          { "name": "rearYardDirectionalExposureNorthEast", "label": "North-east" },
+          { "name": "rearYardDirectionalExposureNorthWest", "label": "North-west" },
+          { "name": "rearYardDirectionalExposureSouthEast", "label": "South-east" },
+          { "name": "rearYardDirectionalExposureSouthWest", "label": "South-west" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Construction",
+    "fields": [
+      {
+        "name": "construction",
+        "fType": "checkbox",
+        "label": "Construction",
+        "options": [
+          { "name": "constructionBrick", "label": "Brick" },
+          { "name": "constructionConcrete", "label": "Concrete" },
+          { "name": "constructionConcreteBlock", "label": "Concrete block" },
+          { "name": "constructionConcreteFrame", "label": "Concrete frame" },
+          { "name": "constructionLog", "label": "Log" },
+          { "name": "constructionManufacturedOrMobile", "label": "Manufactured or mobile" },
+          { "name": "constructionMetalFrame", "label": "Metal frame" },
+          { "name": "constructionModularOrPrefabricated", "label": "Modular or prefabricated" },
+          { "name": "constructionWoodFrame", "label": "Wood frame" },
+          { "name": "constructionOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Foundation",
+    "fields": [
+      {
+        "name": "foundation",
+        "fType": "checkbox",
+        "label": "Foundation",
+        "options": [
+          { "name": "foundationNone", "label": "None" },
+          { "name": "foundationConcreteBlock", "label": "Concrete block" },
+          { "name": "foundationConcretePerimeter", "label": "Concrete perimeter" },
+          { "name": "foundationConcreteSlab", "label": "Concrete slab" },
+          { "name": "foundationPreservedWood", "label": "Preserved wood" },
+          { "name": "foundationOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Exterior finish",
+    "fields": [
+      {
+        "name": "exteriorFinish",
+        "fType": "checkbox",
+        "label": "Exterior finish",
+        "options": [
+          { "name": "exteriorFinishAluminum", "label": "Aluminum" },
+          { "name": "exteriorFinishBrick", "label": "Brick" },
+          { "name": "exteriorFinishConcrete", "label": "Concrete" },
+          { "name": "exteriorFinishGlass", "label": "Glass" },
+          { "name": "exteriorFinishFibreCementBoard", "label": "Fibre cement board" },
+          { "name": "exteriorFinishLog", "label": "Log" },
+          { "name": "exteriorFinishMetal", "label": "Metal" },
+          { "name": "exteriorFinishMixed", "label": "Mixed" },
+          { "name": "exteriorFinishStone", "label": "Stone" },
+          { "name": "exteriorFinishStucco", "label": "Stucco" },
+          { "name": "exteriorFinishVinyl", "label": "Vinyl" },
+          { "name": "exteriorFinishWood", "label": "Wood" },
+          { "name": "exteriorFinishOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rain screen",
+    "fields": [
+      {
+        "name": "rainScreen",
+        "fType": "checkbox",
+        "label": "Rain screen",
+        "options": [
+          { "name": "rainScreenFull", "label": "Full" },
+          { "name": "rainScreenPartial", "label": "Partial" },
+          { "name": "rainScreenNone", "label": "None" }
+        ]
+      }
     ]
   }
 ]

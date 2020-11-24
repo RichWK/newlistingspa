@@ -1,10 +1,11 @@
 <template>
 
-  <!-- Future to-do for the data: 
+  <!-- Future to-do for the data:
   
   - Add a 'rules' attribute, e.g. "max 2 selected", etc.
-  - Check order of fields in the 'Title to Land' section.
+  - Check order of fields in the 'Title to Land' section: radio and checkbox "blocks" need to be preserved across lines.
   - Fields need to be able to define a pattern, especially for number fields.
+  - Fields need the ability to specify notes? e.g. first page, 'Age Type'
   
   -->
 
@@ -295,6 +296,38 @@ export default {
               ]
             },
             { name: "propertyDisclosureStatementNotCompletedExplanation", fType: "text", friendlyName: "If not, please explain" }
+          ]
+        },
+        {
+          name: "Age details",
+          fields: [
+            { name: "approximateYearBuilt", fType: "number", friendlyName: "Approximate year built" },
+            {
+              name: "ageType",
+              fType: "radio",
+              friendlyName: "Age type",
+              options: [
+                { name: "ageTypeoldTimer", friendlyName: "Old timer" },
+                { name: "ageTypeNew", friendlyName: "New" },
+                { name: "ageTypeUnderConstruction", friendlyName: "Under construction" }
+              ]
+            },
+            { name: "approximateYearOfRenovations", fType: "number", friendlyName: "Approximate year of renovations" }
+          ]
+        },
+        {
+          name: "Is GST included in the price?",
+          fields: [
+            {
+              name: "isGstIncluded",
+              fType: "radio",
+              friendlyName: "Is GST included in the price?",
+              options: [
+                { name: "isGstIncludedYes", friendlyName: "Yes" },
+                { name: "isGstIncludedNo", friendlyName: "No" },
+                { name: "isGstIncludedNotApplicable", friendlyName: "Not applicable" }
+              ]
+            }
           ]
         }
       ],

@@ -2,7 +2,7 @@
   
   <PrimeDropdown
     v-model="userInput"
-    :placeholder="friendlyName"
+    :placeholder="label"
     :options="options"
     optionLabel="name"
     filter
@@ -40,7 +40,7 @@ export default {
     }
   },
   props: {
-    'friendlyName': String,
+    'label': String,
     'name': String,
     'options': Array
   }

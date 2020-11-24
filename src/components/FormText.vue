@@ -10,7 +10,7 @@
       :pattern="pattern"
       @change="onChange"
     />
-    <label :for="name">{{ friendlyName }}</label>
+    <label :for="name">{{ label }}</label>
     
   </div>
 
@@ -56,7 +56,7 @@ export default {
     }
   },
   props: {
-    'friendlyName': String,
+    'label': String,
     'fType': String,
     'name': String
   }

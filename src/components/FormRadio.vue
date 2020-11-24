@@ -10,7 +10,7 @@
       :value="option.name"
       @change="onChange"
     />
-    <label :for="option.name">{{ option.friendlyName }}</label>
+    <label :for="option.name">{{ option.label }}</label>
 
   </div>
 
@@ -45,7 +45,7 @@ export default {
     }
   },
   props: {
-    'friendlyName': String,
+    'label': String,
     'fType': String,
     'name': String,
     'options': Array

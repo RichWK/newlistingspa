@@ -1,16 +1,20 @@
 <template>
+
+  <div class="checkboxContainer">
   
-  <div class="container" v-for="option in options" :key="option.name">
-  
-    <PrimeCheckbox
-      v-model="userInput"
-      v-bind="$attrs"
-      :id="option.name"
-      :name="name"
-      :value="option.name"
-      @change="onChange"
-    />
-    <label :for="option.name">{{ option.label }}</label>
+    <div class="container" v-for="option in options" :key="option.name">
+    
+      <PrimeCheckbox
+        v-model="userInput"
+        v-bind="$attrs"
+        :id="option.name"
+        :name="name"
+        :value="option.name"
+        @change="onChange"
+      />
+      <label :for="option.name">{{ option.label }}</label>
+
+    </div>
 
   </div>
 

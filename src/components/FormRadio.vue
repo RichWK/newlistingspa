@@ -62,6 +62,11 @@ export default {
 
 <style scoped>
 
+.radioFields {
+
+  margin-bottom: 15px;
+}
+
 .container {
 
   display: inline-block;

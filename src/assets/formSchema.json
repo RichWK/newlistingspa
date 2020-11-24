@@ -347,5 +347,29 @@
       { "name": "basementFullHeight", "fType": "number", "label": "Full height" },
       { "name": "basementPartHeight", "fType": "number", "label": "Part height" }
     ]
+  },
+  {
+    "name": "Measurements",
+    "fields": [
+      { "name": "numberOfFloorLevels", "fType": "number", "label": "Number of floor levels" },
+      { "name": "floorAreaFinishedMainFloor", "fType": "number", "label": "Floor area finished, main floor" },
+      { "name": "floorAreaFinishedAboveMain", "fType": "number", "label": "Floor area finished, above main" },
+      { "name": "floorAreaFinishedBelowMain", "fType": "number", "label": "Floor area finished, below main" },
+      { "name": "floorAreaFinishedBasement", "fType": "number", "label": "Floor area finished, basement" },
+      { "name": "floorAreaFinishedTotal", "fType": "number", "label": "Floor area finished, total" },
+      { "name": "floorAreaFinishedUnfinished", "fType": "number", "label": "Floor area finished, unfinished" },
+      { "name": "floorAreaFinishedGrandTotal", "fType": "number", "label": "Floor area finished, grand total" }
+    ]
+  },
+  {
+    "name": "Property size",
+    "fields": [
+      { "name": "propertySizeFrontageFeet", "fType": "number", "label": "Frontage in feet" },
+      { "name": "propertySizeDepthFeet", "fType": "number", "label": "Depth in feet" },
+      { "name": "propertySizeFrontageMetres", "fType": "number", "label": "Frontage in metres" },
+      { "name": "propertySizeDepthMetres", "fType": "number", "label": "Depth in metres" },
+      { "name": "lotSizeSqFt", "fType": "number", "label": "Lot size in square feet" },
+      { "name": "lotSizeAcres", "fType": "number", "label": "Lot size in acres" }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="checkboxContainer">
+  <div class="checkboxFields">
   
     <div class="container" v-for="option in options" :key="option.name">
     
@@ -61,6 +61,11 @@ export default {
 
 
 <style scoped>
+
+.checkboxFields {
+
+  margin-bottom: 15px;
+}
 
 .container {
 

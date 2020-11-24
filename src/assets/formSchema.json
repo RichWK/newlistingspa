@@ -272,7 +272,7 @@
           { "name": "ageTypeUnderConstruction", "friendlyName": "Under construction" }
         ]
       },
-      { "name": "approximateYearOfRenovations", "fType": "number", "friendlyName": "Approximate year of renovations" }
+      { "name": "approximateYearOfRenovations", "fType": "number", "friendlyName": "Approximate renovation year" }
     ]
   },
   {
@@ -342,7 +342,10 @@
           { "name": "basementSeparateEntry", "friendlyName": "Separate entry" },
           { "name": "basementUnfinished", "friendlyName": "Unfinished" }
         ]
-      }
+      },
+      { "name": "basementCrawlHeight", "fType": "number", "friendlyName": "Crawl height" },
+      { "name": "basementFullHeight", "fType": "number", "friendlyName": "Full height" },
+      { "name": "basementPartHeight", "fType": "number", "friendlyName": "Part height" }
     ]
   }
 ]

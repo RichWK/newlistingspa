@@ -470,7 +470,7 @@
       { "name": "forTaxYear", "fType": "number", "label": "For tax year" },
       {
         "name": "taxIncludesUtilities",
-        "fType": "checkbox",
+        "fType": "radio",
         "label": "Tax includes utilties?",
         "options": [
           { "name": "taxIncludesUtilitiesYes", "label": "Yes" },
@@ -548,7 +548,7 @@
     "fields": [
       {
         "name": "foundation",
-        "fType": "checkbox",
+        "fType": "radio",
         "label": "Foundation",
         "options": [
           { "name": "foundationNone", "label": "None" },
@@ -591,7 +591,7 @@
     "fields": [
       {
         "name": "rainScreen",
-        "fType": "checkbox",
+        "fType": "radio",
         "label": "Rain screen",
         "options": [
           { "name": "rainScreenFull", "label": "Full" },
@@ -599,6 +599,86 @@
           { "name": "rainScreenNone", "label": "None" }
         ]
       }
+    ]
+  },
+  {
+    "name": "Roof",
+    "fields": [
+      {
+        "name": "roof",
+        "fType": "checkbox",
+        "label": "Roof",
+        "options": [
+          { "name": "roofAsphalt", "label": "Asphalt" },
+          { "name": "roofFibreglass", "label": "Fibreglass" },
+          { "name": "roofMetal", "label": "Metal" },
+          { "name": "rooftarAndGravel", "label": "Tar and gravel" },
+          { "name": "roofTileComposite", "label": "Tile (composite)" },
+          { "name": "roofTileConcrete", "label": "Tile (concrete)" },
+          { "name": "roofTorchOn", "label": "Torch on" },
+          { "name": "roofWood", "label": "Wood" },
+          { "name": "roofOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Parking",
+    "fields": [
+      {
+        "name": "parking",
+        "fType": "checkbox",
+        "label": "Parking",
+        "options": [
+          { "name": "parkingNone", "label": "None" },
+          { "name": "parkingAdditionalAvailable", "label": "Additional available" },
+          { "name": "parkingCarportSingle", "label": "Carport single" },
+          { "name": "parkingCarportMultiple", "label": "Carport multiple" },
+          { "name": "parkingCarportAndGarage", "label": "Carport and garage" },
+          { "name": "parkingDetachedCarportAndGarage", "label": "Detached carport and garage" },
+          { "name": "parkingGarageSingle", "label": "Garage single" },
+          { "name": "parkingGarageDouble", "label": "Garage double" },
+          { "name": "parkingGarageDoubleTandem", "label": "Garage double tandem" },
+          { "name": "parkingGarageTriple", "label": "Garage triple" },
+          { "name": "parkingGarageUnderBuilding", "label": "Garage under building" },
+          { "name": "parkingGarageUnderground", "label": "Garage underground" },
+          { "name": "parkingOpen", "label": "Open" },
+          { "name": "parkingRv", "label": "RV parking" },
+          { "name": "parkingTandem", "label": "Tandem parking" },
+          { "name": "parkingVisitor", "label": "Visitor parking" },
+          { "name": "parkingOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Parking places",
+    "fields": [
+      { "name": "parkingPlacesCovered", "fType": "number", "label": "Covered" },
+      { "name": "parkingPlacesTotal", "fType": "number", "label": "Total" }
+    ]
+  },
+  {
+    "name": "Parking access",
+    "fields": [
+      {
+        "name": "parkingAccess",
+        "fType": "checkbox",
+        "label": "Parking access",
+        "options": [
+          { "name": "parkingAccessFront", "label": "Front" },
+          { "name": "parkingAccessRear", "label": "Rear" },
+          { "name": "parkingAccessLane", "label": "Lane" },
+          { "name": "parkingAccessSide", "label": "Side" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Garage",
+    "fields": [
+      { "name": "garageSize", "fType": "number", "label": "Dimensions" },
+      { "name": "garageDoorHeight", "fType": "number", "label": "Door height" }
     ]
   }
 ]

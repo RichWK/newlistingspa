@@ -60,7 +60,13 @@ export default {
   },
   data() {
     return {
-      textFieldTypes: ['number','phone','text'],
+      textFieldTypes: [
+        'text',
+        'number',
+        'decimal',
+        'currency',
+        'phone',
+      ],
       userInputs: {}
     }
   },

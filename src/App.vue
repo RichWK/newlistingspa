@@ -5,16 +5,17 @@
   - Add a 'rules' attribute, e.g. "max 2 selected", etc.
   - Fields need to be able to define a pattern, especially for number fields.
   - Do fields need the ability to specify notes? e.g. first page, 'Age Type'
+
+  For the design:
+
+  - Look at SimpleTax for inspiration?
   - New field types?
     - Currency?
     - Textarea
     - PrimeVue toggle button for switching between feet and metres, etc?
     - Decimal?
     - North, South, etc dropdown?
-
-  For the design:
-
-  - Look at SimpleTax for inspiration?
+  - Merge <FormRadio> into <FormCheckbox>, name it <FormSelection>.
   
   -->
 

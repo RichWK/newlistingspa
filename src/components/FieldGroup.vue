@@ -67,6 +67,10 @@ export default {
         'currency',
         'phone',
       ],
+      selectionFieldTypes: [
+        'checkbox',
+        'radio'
+      ],
       userInputs: {}
     }
   },

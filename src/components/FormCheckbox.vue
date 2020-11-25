@@ -4,6 +4,8 @@
   
     <div class="container" v-for="option in options" :key="option.name">
     
+      <label :for="option.name">{{ option.label }}</label>
+
       <PrimeCheckbox
         v-model="userInput"
         v-bind="$attrs"
@@ -12,7 +14,6 @@
         :value="option.name"
         @change="onChange"
       />
-      <label :for="option.name">{{ option.label }}</label>
 
     </div>
 
@@ -65,12 +66,15 @@ export default {
 .checkboxFields {
 
   margin-bottom: 15px;
+  padding-left: 2px;
 }
 
 .container {
 
-  display: inline-block;
-  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 label {
@@ -78,6 +82,19 @@ label {
   padding: 5px;
   padding-left: 10px;
   margin-right: 20px;
+}
+
+</style>
+
+
+
+<style>
+
+/* Unscoped. */
+
+label:hover + div.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box {
+
+  border-color: #4caf50;
 }
 
 </style>

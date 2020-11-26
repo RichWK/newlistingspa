@@ -680,5 +680,146 @@
       { "name": "garageSize", "fType": "number", "label": "Dimensions" },
       { "name": "garageDoorHeight", "fType": "number", "label": "Door height" }
     ]
+  },
+  {
+    "name": "Driveway finish",
+    "fields": [
+      {
+        "name": "drivewayFinish",
+        "fType": "radio",
+        "label": "Driveway finish",
+        "options": [
+          { "name": "drivewayFinishAggregate", "label": "Aggregate" },
+          { "name": "drivewayFinishAsphalt", "label": "Asphalt" },
+          { "name": "drivewayFinishConcrete", "label": "Concrete" },
+          { "name": "drivewayFinishGravel", "label": "Gravel" },
+          { "name": "drivewayFinishPavingStone", "label": "Paving stone" },
+          { "name": "drivewayFinishOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Distance to...",
+    "fields": [
+      { "name": "distanceToTransit", "fType": "text", "label": "Transit" },
+      { "name": "distanceToSchool", "fType": "text", "label": "School or school bus" }
+    ]
+  },
+  {
+    "name": "Site influences",
+    "fields": [
+      {
+        "name": "siteInfluences",
+        "fType": "checkbox",
+        "label": "Site influences",
+        "options": [
+          { "name": "siteInfluencesAdultOriented", "label": "Adult oriented" },
+          { "name": "siteInfluencesCleared", "label": "Cleared" },
+          { "name": "siteInfluencesCentralLocation", "label": "Central location" },
+          { "name": "siteInfluencesCulDeSac", "label": "Cul-de-sac" },
+          { "name": "siteInfluencesGatedComplex", "label": "Gated complex" },
+          { "name": "siteInfluencesGolfCourseDev", "label": "Golf course dev." },
+          { "name": "siteInfluencesGolfCourseNearby", "label": "Golf course nearby" },
+          { "name": "siteInfluencesGravelRoad", "label": "Gravel road" },
+          { "name": "siteInfluencesGreenbelt", "label": "Greenbelt" },
+          { "name": "siteInfluencesLaneAccess", "label": "Lane access" },
+          { "name": "siteInfluencesMarinaNearby", "label": "Marina nearby" },
+          { "name": "siteInfluencesPavedRoad", "label": "Paved road" },
+          { "name": "siteInfluencesPrivateSetting", "label": "Private setting" },
+          { "name": "siteInfluencesPrivateYard", "label": "Private yard" },
+          { "name": "siteInfluencesRecreationNearby", "label": "Recreation nearby" },
+          { "name": "siteInfluencesRetirementCommunity", "label": "Retirement community" },
+          { "name": "siteInfluencesRuralSetting", "label": "Rural setting" },
+          { "name": "siteInfluencesShoppingNearby", "label": "Shopping nearby" },
+          { "name": "siteInfluencesSkiHillNearby", "label": "Ski hill nearby" },
+          { "name": "siteInfluencesTreed", "label": "Treed" },
+          { "name": "siteInfluencesWaterfrontProperty", "label": "Waterfront property" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "View — displays on board reports",
+    "fields": [
+      {
+        "name": "viewForBoardReports",
+        "fType": "radio",
+        "label": "View, for board reports",
+        "options": [
+          { "name": "viewForBoardReportsYes", "label": "Yes" },
+          { "name": "viewForBoardReportsNo", "label": "No" }
+        ]
+      },
+      { "name": "viewForBoardReportsSpecify", "fType": "text", "label": "If yes, please specify details" }
+    ]
+  },
+  {
+    "name": "View — displays on realtor.ca",
+    "fields": [
+      {
+        "name": "viewForRealtorCa",
+        "fType": "checkbox",
+        "label": "View, for realtor.ca",
+        "options": [
+          { "name": "viewForRealtorCaCity", "label": "City" },
+          { "name": "viewForRealtorCaLake", "label": "Lake" },
+          { "name": "viewForRealtorCaMountain", "label": "Mountain" },
+          { "name": "viewForRealtorCaOcean", "label": "Ocean" },
+          { "name": "viewForRealtorCaPanoramic", "label": "Panoramic" },
+          { "name": "viewForRealtorCaRavine", "label": "Ravine" },
+          { "name": "viewForRealtorCaRiver", "label": "River" },
+          { "name": "viewForRealtorCaValley", "label": "Valley" },
+          { "name": "viewForRealtorCaView", "label": "View" },
+          { "name": "viewForRealtorCaWater", "label": "Water" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Outdoor area",
+    "fields": [
+      {
+        "name": "outdoorArea",
+        "fType": "checkbox",
+        "label": "Outdoor area",
+        "options": [
+          { "name": "outdoorAreaNone", "label": "None" },
+          { "name": "outdoorAreaBalcony", "label": "Balcony" },
+          { "name": "outdoorAreaBalconyPatioDeck", "label": "Balcony, patio and deck" },
+          { "name": "outdoorAreaFencedYard", "label": "Fenced yard" },
+          { "name": "outdoorAreaPatio", "label": "Patio" },
+          { "name": "outdoorAreaPatioDeck", "label": "Patio and deck" },
+          { "name": "outdoorAreaRooftopDeck", "label": "Rooftop deck" },
+          { "name": "outdoorAreaSundeck", "label": "Sundeck" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fuel and heating",
+    "fields": [
+      {
+        "name": "fuelHeating",
+        "fType": "checkbox",
+        "label": "Fuel and heating",
+        "options": [
+          { "name": "fuelHeatingBaseboard", "label": "Baseboard" },
+          { "name": "fuelHeatingElectric", "label": "Electric" },
+          { "name": "fuelHeatingForcedAir", "label": "Forced air" },
+          { "name": "fuelHeatingGeothermal", "label": "Geothermal" },
+          { "name": "fuelHeatingHeatPump", "label": "Heat pump" },
+          { "name": "fuelHeatingHotWater", "label": "Hot water" },
+          { "name": "fuelHeatingMixed", "label": "Mixed" },
+          { "name": "fuelHeatingNaturalGas", "label": "Natural gas" },
+          { "name": "fuelHeatingOil", "label": "Oil" },
+          { "name": "fuelHeatingPropaneGas", "label": "Propane gas" },
+          { "name": "fuelHeatingRadiant", "label": "Radiant" },
+          { "name": "fuelHeatingSolar", "label": "Solar" },
+          { "name": "fuelHeatingWood", "label": "Wood" },
+          { "name": "fuelHeatingOther", "label": "Other" }
+        ]
+      }
+    ]
   }
 ]

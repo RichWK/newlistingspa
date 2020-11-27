@@ -1,26 +1,5 @@
 <template>
 
-  <!-- Future to-do for the data:
-  
-  - Add a 'rules' attribute, e.g. "max 2 selected", etc.
-  - Fields need to be able to define a pattern, especially for number fields.
-  - Do fields need the ability to specify notes? e.g. 'Age Type', 'Units in Development.'
-    - Maybe this could be question mark icon? Mouseover / tap.
-
-  For the design:
-
-  - Look at SimpleTax for inspiration?
-  - New field types?
-    - Currency?
-    - Textarea
-    - PrimeVue toggle button for switching between feet and metres, etc?
-    - Decimal?
-    - North, South, etc dropdown?
-  - Merge <FormRadio> into <FormCheckbox>, name it <FormSelection>.
-  - Filter subsequent fields based on property type! Simplifies for the user
-  
-  -->
-
   <h1>Create a new listing</h1>
 
   <form>

@@ -259,20 +259,25 @@
     ]
   },
   {
-    "name": "Age details",
+    "name": "Year details",
     "fields": [
       { "name": "approximateYearBuilt", "fType": "number", "label": "Approximate year built" },
+      { "name": "approximateYearRenovated", "fType": "number", "label": "Approximate year renovated" }
+    ]
+  },
+  {
+    "name": "Age type",
+    "fields": [
       {
         "name": "ageType",
         "fType": "radio",
         "label": "Age type",
         "options": [
-          { "name": "ageTypeoldTimer", "label": "Old timer" },
+          { "name": "ageTypeOldTimer", "label": "Old timer" },
           { "name": "ageTypeNew", "label": "New" },
           { "name": "ageTypeUnderConstruction", "label": "Under construction" }
         ]
-      },
-      { "name": "approximateYearOfRenovations", "fType": "number", "label": "Approximate renovation year" }
+      }
     ]
   },
   {

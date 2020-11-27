@@ -76,3 +76,13 @@ export default {
 
 </script>
 
+<style scoped>
+
+  h1 {
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+</style>
+

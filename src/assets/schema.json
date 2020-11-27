@@ -349,16 +349,15 @@
     ]
   },
   {
-    "name": "Measurements",
+    "name": "Floor area",
     "fields": [
-      { "name": "numberOfFloorLevels", "fType": "number", "label": "Number of floor levels" },
-      { "name": "floorAreaFinishedMainFloor", "fType": "number", "label": "Floor area finished, main floor" },
-      { "name": "floorAreaFinishedAboveMain", "fType": "number", "label": "Floor area finished, above main" },
-      { "name": "floorAreaFinishedBelowMain", "fType": "number", "label": "Floor area finished, below main" },
-      { "name": "floorAreaFinishedBasement", "fType": "number", "label": "Floor area finished, basement" },
-      { "name": "floorAreaFinishedTotal", "fType": "number", "label": "Floor area finished, total" },
-      { "name": "floorAreaFinishedUnfinished", "fType": "number", "label": "Floor area finished, unfinished" },
-      { "name": "floorAreaFinishedGrandTotal", "fType": "number", "label": "Floor area finished, grand total" }
+      { "name": "floorAreaFinishedMainFloor", "fType": "number", "label": "Finished, main floor" },
+      { "name": "floorAreaFinishedAboveMain", "fType": "number", "label": "Finished, above main" },
+      { "name": "floorAreaFinishedBelowMain", "fType": "number", "label": "Finished, below main" },
+      { "name": "floorAreaFinishedBasement", "fType": "number", "label": "Finished, basement" },
+      { "name": "floorAreaFinishedTotal", "fType": "number", "label": "Finished, total" },
+      { "name": "floorAreaFinishedUnfinished", "fType": "number", "label": "Finished, unfinished" },
+      { "name": "floorAreaFinishedGrandTotal", "fType": "number", "label": "Finished, grand total" }
     ]
   },
   {
@@ -369,7 +368,8 @@
       { "name": "propertySizeFrontageMetres", "fType": "decimal", "label": "Frontage in metres" },
       { "name": "propertySizeDepthMetres", "fType": "decimal", "label": "Depth in metres" },
       { "name": "lotSizeSqFt", "fType": "decimal", "label": "Lot size in square feet" },
-      { "name": "lotSizeAcres", "fType": "decimal", "label": "Lot size in acres" }
+      { "name": "lotSizeAcres", "fType": "decimal", "label": "Lot size in acres" },
+      { "name": "numberOfFloorLevels", "fType": "number", "label": "Number of floor levels" }
     ]
   },
   {
@@ -751,7 +751,7 @@
           { "name": "viewForBoardReportsNo", "label": "No" }
         ]
       },
-      { "name": "viewForBoardReportsSpecify", "fType": "text", "label": "If yes, please specify details" }
+      { "name": "viewForBoardReportsDetails", "fType": "text", "label": "If yes, please provide details" }
     ]
   },
   {
@@ -818,6 +818,328 @@
           { "name": "fuelHeatingSolar", "label": "Solar" },
           { "name": "fuelHeatingWood", "label": "Wood" },
           { "name": "fuelHeatingOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Number of fireplaces",
+    "fields": [
+      { "name": "fireplacesFinished", "fType": "number", "label": "Finished" },
+      { "name": "fireplacesRoughedIn", "fType": "number", "label": "Roughed in" }
+    ]
+  },
+  {
+    "name": "Fireplace fuel",
+    "fields": [
+      {
+        "name": "fireplaceFuel",
+        "fType": "checkbox",
+        "label": "Fireplace fuel",
+        "options": [
+          { "name": "fireplaceFuelNone", "label": "None" },
+          { "name": "fireplaceFuelGasNatural", "label": "Gas, natural" },
+          { "name": "fireplaceFuelGasPropane", "label": "Gas, propane" },
+          { "name": "fireplaceFuelElectric", "label": "Electric" },
+          { "name": "fireplaceFuelPellet", "label": "Pellet" },
+          { "name": "fireplaceFuelWood", "label": "Wood" },
+          { "name": "fireplaceFuelOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Roughed in plumbing?",
+    "fields": [
+      {
+        "name": "roughedInPlumbing",
+        "fType": "radio",
+        "label": "Roughed in plumbing?",
+        "options": [
+          { "name": "roughedInPlumbingYes", "label": "Yes" },
+          { "name": "roughedInPlumbingNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Floor finish",
+    "fields": [
+      {
+        "name": "floorFinish",
+        "fType": "checkbox",
+        "label": "Floor finish",
+        "options": [
+          { "name": "floorFinishConcrete", "label": "Concrete" },
+          { "name": "floorFinishHardwood", "label": "Hardwood" },
+          { "name": "floorFinishLaminate", "label": "Laminate" },
+          { "name": "floorFinishMixed", "label": "Mixed" },
+          { "name": "floorFinishSoftwood", "label": "Softwood" },
+          { "name": "floorFinishTile", "label": "Tile" },
+          { "name": "floorFinishVinylOrLino", "label": "Vinyl or lino" },
+          { "name": "floorFinishWallOrMixed", "label": "Wall or mixed" },
+          { "name": "floorFinishOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Features included",
+    "fields": [
+      {
+        "name": "featuresIncluded",
+        "fType": "checkbox",
+        "label": "Features included",
+        "options": [
+          { "name": "featuresIncludedAirConditioning", "label": "Air conditioning" },
+          { "name": "featuresIncludedClothesDryer", "label": "Clothes dryer" },
+          { "name": "featuresIncludedClothesWasher", "label": "Clothes washer" },
+          { "name": "featuresIncludedClothesWasherDryer", "label": "Clothes washer and dryer" },
+          { "name": "featuresIncludedClothesWasherDryerFridgeStoveDishwasher", "label": "Clothes washer, dryer, fridge, stove and dishwasher" },
+          { "name": "featuresIncludedDishwasher", "label": "Dishwasher" },
+          { "name": "featuresIncludedDrapesOrWindowCover", "label": "Drapes or window cover" },
+          { "name": "featuresIncludedFireplaceInsert", "label": "Fireplace insert" },
+          { "name": "featuresIncludedFreeStandingFireplaceOrWoodstove", "label": "Free standing fireplace or woodstove" },
+          { "name": "featuresIncludedFreezer", "label": "Freezer" },
+          { "name": "featuresIncludedGarageDoorOpener", "label": "Garage door opener" },
+          { "name": "featuresIncludedGarbageCompactor", "label": "Garbage compactor" },
+          { "name": "featuresIncludedHeatRecoveryVent", "label": "Heat recovery vent" },
+          { "name": "featuresIncludedHotTubSpaOrSwirlpool", "label": "Hot tub spa or swirlpool" },
+          { "name": "featuresIncludedHotWaterDispenser", "label": "Hot water dispenser" },
+          { "name": "featuresIncludedHumidifier", "label": "Humidifier" },
+          { "name": "featuresIncludedIntercom", "label": "Intercom" },
+          { "name": "featuresIncludedJettedBathtub", "label": "Jetted bathtub" },
+          { "name": "featuresIncludedMicrowave", "label": "Microwave" },
+          { "name": "featuresIncludedOvenBuiltIn", "label": "Oven, built in" },
+          { "name": "featuresIncludedPantry", "label": "Pantry" },
+          { "name": "featuresIncludedRangeTop", "label": "Range top" },
+          { "name": "featuresIncludedRefrigerator", "label": "Refrigerator" },
+          { "name": "featuresIncludedSatelliteDish", "label": "Satellite dish" },
+          { "name": "featuresIncludedSecurityRoughedIn", "label": "Security, roughed in" },
+          { "name": "featuresIncludedSecuritySystem", "label": "Security system" },
+          { "name": "featuresIncludedSmokeAlarm", "label": "Smoke alarm" },
+          { "name": "featuresIncludedSprinklerFire", "label": "Sprinkler, fire" },
+          { "name": "featuresIncludedSprinklerInground", "label": "Sprinkler, inground" },
+          { "name": "featuresIncludedStorageShed", "label": "Storage shed" },
+          { "name": "featuresIncludedStove", "label": "Stove" },
+          { "name": "featuresIncludedSwimmingPoolEquipment", "label": "Swimming pool equipment" },
+          { "name": "featuresIncludedVacuumBuiltIn", "label": "Vacuum, built in" },
+          { "name": "featuresIncludedVacuumRoughedIn", "label": "Vacuum, roughed in" },
+          { "name": "featuresIncludedVaultedCeiling", "label": "Vaulted ceiling" },
+          { "name": "featuresIncludedWasteDisposal", "label": "Waste disposal" },
+          { "name": "featuresIncludedWaterTreatment", "label": "Water treatment" },
+          { "name": "featuresIncludedWetBar", "label": "Wet bar" },
+          { "name": "featuresIncludedWindowsStorm", "label": "Windows, storm" },
+          { "name": "featuresIncludedWindowsThermo", "label": "Windows, thermo" },
+          { "name": "featuresIncludedWineCooler", "label": "Wine cooler" },
+          { "name": "featuresIncludedOther", "label": "Other, see remarks" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Will fixtures be removed?",
+    "fields": [
+      {
+        "name": "fixturesToBeRemoved",
+        "fType": "radio",
+        "label": "Will fixtures be removed?",
+        "options": [
+          { "name": "fixturesToBeRemovedYes", "label": "Yes" },
+          { "name": "fixturesToBeRemovedNo", "label": "No" }
+        ]
+      },
+      { "name": "fixturesToBeRemovedDetails", "fType": "text", "label": "If yes, please provide details" }
+    ]
+  },
+  {
+    "name": "Are fixtures rented or leased?",
+    "fields": [
+      {
+        "name": "fixturesRentedOrLeased",
+        "fType": "radio",
+        "label": "Are fixtures rented or leased?",
+        "options": [
+          { "name": "fixturesRentedOrLeasedYes", "label": "Yes" },
+          { "name": "fixturesRentedOrLeasedNo", "label": "No" }
+        ]
+      },
+      { "name": "fixturesRentedOrLeasedDetails", "fType": "text", "label": "If yes, please provide details" }
+    ]
+  },
+  {
+    "name": "Outbuildings",
+    "fields": [
+      { "name": "outbuildingsBarnDimensions", "fType": "text", "label": "Barn dimensions" },
+      { "name": "outbuildingsWorkshopShedDimensions", "fType": "text", "label": "Workshop or shed dimensions" },
+      { "name": "outbuildingsPoolDimensions", "fType": "text", "label": "Pool dimensions" }
+    ]
+  },
+  {
+    "name": "Amenities",
+    "fields": [
+      {
+        "name": "amenities",
+        "fType": "checkbox",
+        "label": "Amenities",
+        "options": [
+          { "name": "amenitiesNone", "label": "None" },
+          { "name": "amenitiesAirConditioningCentral", "label": "Air conditioning, central" },
+          { "name": "amenitiesAssistedLiving", "label": "Assisted living" },
+          { "name": "amenitiesBarn", "label": "Barn" },
+          { "name": "amenitiesBikeRoom", "label": "Bike room" },
+          { "name": "amenitiesClubHouse", "label": "Club house" },
+          { "name": "amenitiesCommunityMeals", "label": "Community meals" },
+          { "name": "amenitiesConcierge", "label": "Concierge" },
+          { "name": "amenitiesDaycareCentre", "label": "Daycare centre" },
+          { "name": "amenitiesElevator", "label": "Elevator" },
+          { "name": "amenitiesExerciseCentre", "label": "Exercise centre" },
+          { "name": "amenitiesGarden", "label": "Garden" },
+          { "name": "amenitiesGreenHouse", "label": "Green house" },
+          { "name": "amenitiesGuestSuite", "label": "Guest suite" },
+          { "name": "amenitiesIndependentLiving", "label": "Independent living" },
+          { "name": "amenitiesInSuiteLaundry", "label": "In-suite laundry" },
+          { "name": "amenitiesPlayground", "label": "Playground" },
+          { "name": "amenitiesPoolIndoor", "label": "Pool, indoor" },
+          { "name": "amenitiesPoolOutdoor", "label": "Pool, outdoor" },
+          { "name": "amenitiesRecreationCentre", "label": "Recreation centre" },
+          { "name": "amenitiesRestaurant", "label": "Restaurant" },
+          { "name": "amenitiesSaunaOrSteamRoom", "label": "Sauna or steam room" },
+          { "name": "amenitiesSharedLaundry", "label": "Shared laundry" },
+          { "name": "amenitiesStorage", "label": "Storage" },
+          { "name": "amenitiesSwirlpoolOrHotTub", "label": "Swirlpool or hot tub" },
+          { "name": "amenitiesTennisCourt", "label": "Tennis court" },
+          { "name": "amenitiesWeeklyHousekeeping", "label": "Weekly housekeeping" },
+          { "name": "amenitiesWheelchairAccess", "label": "Wheelchair access" },
+          { "name": "amenitiesWorkshopAttached", "label": "Workshop, attached" },
+          { "name": "amenitiesWorkshopDetached", "label": "Workshop, detached" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rooms",
+    "fields": [
+      
+    ]
+  },
+  {
+    "name": "REALTOR® remarks",
+    "fields": [
+      
+    ]
+  },
+  {
+    "name": "Public remarks",
+    "fields": [
+      
+    ]
+  },
+  {
+    "name": "Publish listing on internet?",
+    "fields": [
+      {
+        "name": "publishListingOnInternet",
+        "fType": "radio",
+        "label": "Publish listing on internet?",
+        "options": [
+          { "name": "publishListingOnInternetYes", "label": "Yes" },
+          { "name": "publishListingOnInternetNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Display address on internet?",
+    "fields": [
+      {
+        "name": "displayAddressOnInternet",
+        "fType": "radio",
+        "label": "Display address on internet?",
+        "options": [
+          { "name": "displayAddressOnInternetYes", "label": "Yes" },
+          { "name": "displayAddressOnInternetNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Links",
+    "fields": [
+      { "name": "virtualTourUrl", "fType": "text", "label": "Virtual tour" },
+      { "name": "propertyBrochureUrl", "fType": "text", "label": "Property brochure" }
+    ]
+  },
+  {
+    "name": "Open houses and tours",
+    "fields": [
+      
+    ]
+  },
+  {
+    "name": "Strata information",
+    "fields": [
+      { "name": "strataMaintenanceFee", "fType": "currency", "label": "Monthly maintenance fee" },
+      { "name": "strataUnitsInDevelopment", "fType": "number", "label": "Units in development" },
+      { "name": "strataTotalUnits", "fType": "number", "label": "Total units in plan" },
+      { "name": "strataStoreysInBuilding", "fType": "number", "label": "Storeys in building" },
+      { "name": "strataManagementCompanyName", "fType": "text", "label": "Management company name" },
+      { "name": "strataManagementCompanyPhone", "fType": "phone", "label": "Management company phone" }
+    ]
+  },
+  {
+    "name": "Locker available?",
+    "fields": [
+      {
+        "name": "strataLocker",
+        "fType": "radio",
+        "label": "Locker available?",
+        "options": [
+          { "name": "strataLockerYes", "label": "Yes" },
+          { "name": "strataLockerNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Is council or board approval required for purchase?",
+    "fields": [
+      {
+        "name": "strataCouncilOrBoardApprovalRequired",
+        "fType": "radio",
+        "label": "Locker available?",
+        "options": [
+          { "name": "strataCouncilOrBoardApprovalRequiredYes", "label": "Yes" },
+          { "name": "strataCouncilOrBoardApprovalRequiredNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "What does the monthly maintenance fee cover?",
+    "fields": [
+      {
+        "name": "strataMaintenanceFee",
+        "fType": "checkbox",
+        "label": "What does the monthly maintenance fee cover?",
+        "options": [
+          { "name": "strataMaintenanceFeeCableOrSatellite", "label": "Cable or satellite" },
+          { "name": "strataMaintenanceFeeCaretaker", "label": "Caretaker" },
+          { "name": "strataMaintenanceFeeElectricity", "label": "Electricity" },
+          { "name": "strataMaintenanceFeeGardening", "label": "Gardening" },
+          { "name": "strataMaintenanceFeeGarbagePickup", "label": "Garbage pickup" },
+          { "name": "strataMaintenanceFeeGas", "label": "Gas" },
+          { "name": "strataMaintenanceFeeGeothermal", "label": "Geothermal" },
+          { "name": "strataMaintenanceFeeHeat", "label": "Heat" },
+          { "name": "strataMaintenanceFeeHotWater", "label": "Hot water" },
+          { "name": "strataMaintenanceFeeManagement", "label": "Management" },
+          { "name": "strataMaintenanceFeeRecreationFacility", "label": "Recreation facility" },
+          { "name": "strataMaintenanceFeeRvParking", "label": "RV parking" },
+          { "name": "strataMaintenanceFeeSewer", "label": "Sewer" },
+          { "name": "strataMaintenanceFeeSnowRemoval", "label": "Snow removal" },
+          { "name": "strataMaintenanceFeeTaxes", "label": "Taxes" },
+          { "name": "strataMaintenanceFeeWater", "label": "Water" },
+          { "name": "strataMaintenanceFeeOther", "label": "Other" }
         ]
       }
     ]

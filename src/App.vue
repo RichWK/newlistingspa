@@ -4,7 +4,8 @@
   
   - Add a 'rules' attribute, e.g. "max 2 selected", etc.
   - Fields need to be able to define a pattern, especially for number fields.
-  - Do fields need the ability to specify notes? e.g. first page, 'Age Type'
+  - Do fields need the ability to specify notes? e.g. 'Age Type', 'Units in Development.'
+    - Maybe this could be question mark icon? Mouseover / tap.
 
   For the design:
 

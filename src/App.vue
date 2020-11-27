@@ -16,6 +16,7 @@
     - Decimal?
     - North, South, etc dropdown?
   - Merge <FormRadio> into <FormCheckbox>, name it <FormSelection>.
+  - Filter subsequent fields based on property type! Simplifies for the user
   
   -->
 

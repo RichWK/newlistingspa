@@ -1116,12 +1116,12 @@
     ]
   },
   {
-    "name": "What does the monthly maintenance fee cover?",
+    "name": "What does the monthly maintenance fee include?",
     "fields": [
       {
         "name": "strataMaintenanceFee",
         "fType": "checkbox",
-        "label": "What does the monthly maintenance fee cover?",
+        "label": "What does the monthly maintenance fee include?",
         "options": [
           { "name": "strataMaintenanceFeeCableOrSatellite", "label": "Cable or satellite" },
           { "name": "strataMaintenanceFeeCaretaker", "label": "Caretaker" },
@@ -1142,6 +1142,190 @@
           { "name": "strataMaintenanceFeeOther", "label": "Other" }
         ]
       }
+    ]
+  },
+  {
+    "name": "Bylaw restrictions",
+    "fields": [
+      {
+        "name": "bylawRestrictions",
+        "fType": "checkbox",
+        "label": "Bylaw restrictions",
+        "options": [
+          { "name": "bylawRestrictionsAgeRestrictions", "label": "Age restrictions" },
+          { "name": "bylawRestrictionsPetsAllowed", "label": "Pets allowed" },
+          { "name": "bylawRestrictionsPetsAllowedWithRestrictions", "label": "Pets allowed with restrictions" },
+          { "name": "bylawRestrictionsPetsNotAllowed", "label": "Pets not allowed" },
+          { "name": "bylawRestrictionsRentalsAllowed", "label": "Rentals allowed" },
+          { "name": "bylawRestrictionsRentalsAllowedWithRestrictions", "label": "Rentals allowed with restrictions" },
+          { "name": "bylawRestrictionsRentalsNotAllowed", "label": "Rentals not allowed" },
+          { "name": "bylawRestrictionsSmokingRestrictions", "label": "Smoking restrictions" },
+          { "name": "bylawRestrictionsNoRestrictions", "label": "No restrictions" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Restricted age",
+    "fields": [
+      {
+        "name": "restrictedAge",
+        "fType": "radio",
+        "label": "Restricted age",
+        "options": [
+          { "name": "restrictedAge19Plus", "label": "19+" },
+          { "name": "restrictedAge35Plus", "label": "35+" },
+          { "name": "restrictedAge45Plus", "label": "45+" },
+          { "name": "restrictedAge55Plus", "label": "55+" },
+          { "name": "restrictedAge65Plus", "label": "65+" },
+          { "name": "restrictedAgeOther", "label": "Other" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pets",
+    "fields": [
+      {
+        "name": "petsNumberPermitted",
+        "fType": "radio",
+        "label": "Number permitted",
+        "options": [
+          { "name": "petsNumberPermitted1", "label": "1" },
+          { "name": "petsNumberPermitted2", "label": "2" },
+          { "name": "petsNumberPermittedNoRestriction", "label": "No restriction" }
+        ]
+      },
+      {
+        "name": "petsCats",
+        "fType": "radio",
+        "label": "Cats permitted?",
+        "options": [
+          { "name": "petsCatsYes", "label": "Yes" },
+          { "name": "petsCatsNo", "label": "No" }
+        ]
+      },
+      {
+        "name": "petsDogs",
+        "fType": "radio",
+        "label": "Dogs permitted?",
+        "options": [
+          { "name": "petsDogsYes", "label": "Yes" },
+          { "name": "petsDogsNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Allowed rentals",
+    "fields": [
+      { "name": "allowedRentalsNumber", "fType": "number", "label": "Number" },
+      { "name": "allowedRentalsPercentage", "fType": "number", "label": "Percentage" }
+    ]
+  },
+  {
+    "name": "Strata directional exposure",
+    "fields": [
+      {
+        "name": "strataDirectionalExposure",
+        "fType": "checkbox",
+        "label": "Strata directional exposure",
+        "options": [
+          { "name": "strataDirectionalExposureNorth", "label": "North" },
+          { "name": "strataDirectionalExposureSouth", "label": "South" },
+          { "name": "strataDirectionalExposureEast", "label": "East" },
+          { "name": "strataDirectionalExposureWest", "label": "West" },
+          { "name": "strataDirectionalExposureNorthEast", "label": "North-east" },
+          { "name": "strataDirectionalExposureNorthWest", "label": "North-west" },
+          { "name": "strataDirectionalExposureSouthEast", "label": "South-east" },
+          { "name": "strataDirectionalExposureSouthWest", "label": "South-west" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Number of multifamily units",
+    "fields": [
+      { "name": "multifamilyUnitsBachelorStudio", "fType": "number", "label": "Bachelor or studio units" },
+      { "name": "multifamilyUnits1Bedroom", "fType": "number", "label": "1 bedroom units" },
+      { "name": "multifamilyUnits2Bedroom", "fType": "number", "label": "2 bedroom units" },
+      { "name": "multifamilyUnits3Bedroom", "fType": "number", "label": "3 bedroom units" },
+      { "name": "multifamilyUnitsOther", "fType": "number", "label": "Other units" }
+    ]
+  },
+  {
+    "name": "Multifamily income",
+    "fields": [
+      { "name": "multifamilyIncomePerAnnum", "fType": "currency", "label": "Yearly income" },
+      { "name": "multifamilyIncomeYear", "fType": "number", "label": "As of which year?" },
+      { "name": "multifamilyIncomeLessOperatingExpenses", "fType": "currency", "label": "Operating expenses" },
+      { "name": "multifamilyIncomeNetAmount", "fType": "number", "label": "Net income" }
+    ]
+  },
+  {
+    "name": "Fire sprinker system?",
+    "fields": [
+      {
+        "name": "multifamilyFireSprinkler",
+        "fType": "radio",
+        "label": "Fire sprinkler system?",
+        "options": [
+          { "name": "multifamilyFireSprinklerYes", "label": "Yes" },
+          { "name": "multifamilyFireSprinklerNo", "label": "No" },
+          { "name": "multifamilyFireSprinklerPartial", "label": "Partial" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Smoke detectors?",
+    "fields": [
+      {
+        "name": "multifamilySmokeDetectors",
+        "fType": "radio",
+        "label": "Smoke detectors?",
+        "options": [
+          { "name": "multifamilySmokeDetectorsYes", "label": "Yes" },
+          { "name": "multifamilySmokeDetectorsNo", "label": "No" },
+          { "name": "multifamilySmokeDetectorsPartial", "label": "Partial" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Are there any outstanding fire orders or bylaw infractions, which have been disclosed by the seller(s)?",
+    "fields": [
+      {
+        "name": "multifamilyOutstandingOrdersInfractions",
+        "fType": "radio",
+        "label": "Smoke detectors?",
+        "options": [
+          { "name": "multifamilyOutstandingOrdersInfractionsYes", "label": "Yes" },
+          { "name": "multifamilyOutstandingOrdersInfractionsNo", "label": "No" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Is this a registered manufactured home?",
+    "fields": [
+      {
+        "name": "manufacturedHomesRegistered",
+        "fType": "radio",
+        "label": "Is this a registered manufactured home?",
+        "options": [
+          { "name": "manufacturedHomesRegisteredYes", "label": "Yes" },
+          { "name": "manufacturedHomesRegisteredNo", "label": "No" }
+        ]
+      },
+      { "name": "manufacturedHomesMhrNumber", "fType": "text", "label": "If yes, please provide MHR #" }
+    ]
+  },
+  {
+    "name": "Other manufactured home details",
+    "fields": [
+      { "name": "manufacturedHomesElectricalNumber", "fType": "text", "label": "CSA / BC electrical number" },
+      { "name": "manufacturedHomesPadRental", "fType": "currency", "label": "Pad rental" }
     ]
   }
 ]

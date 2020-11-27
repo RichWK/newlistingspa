@@ -1082,7 +1082,7 @@
     ]
   },
   {
-    "name": "Strata information",
+    "name": "Strata details",
     "fields": [
       { "name": "strataMaintenanceFee", "fType": "currency", "label": "Monthly maintenance fee" },
       { "name": "strataUnitsInDevelopment", "fType": "number", "label": "Units in development" },
@@ -1189,31 +1189,41 @@
     ]
   },
   {
-    "name": "Pets",
+    "name": "Number of pets allowed",
     "fields": [
       {
-        "name": "petsNumberPermitted",
+        "name": "petsNumberAllowed",
         "fType": "radio",
-        "label": "Number permitted",
+        "label": "Number allowed",
         "options": [
-          { "name": "petsNumberPermitted1", "label": "1" },
-          { "name": "petsNumberPermitted2", "label": "2" },
-          { "name": "petsNumberPermittedNoRestriction", "label": "No restriction" }
+          { "name": "petsNumberAllowed1", "label": "1" },
+          { "name": "petsNumberAllowed2", "label": "2" },
+          { "name": "petsNumberAllowedNoRestriction", "label": "No restriction" }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Are cats allowed?",
+    "fields": [
       {
         "name": "petsCats",
         "fType": "radio",
-        "label": "Cats permitted?",
+        "label": "Are cats allowed?",
         "options": [
           { "name": "petsCatsYes", "label": "Yes" },
           { "name": "petsCatsNo", "label": "No" }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Are dogs allowed?",
+    "fields": [
       {
         "name": "petsDogs",
         "fType": "radio",
-        "label": "Dogs permitted?",
+        "label": "Are dogs allowed?",
         "options": [
           { "name": "petsDogsYes", "label": "Yes" },
           { "name": "petsDogsNo", "label": "No" }
@@ -1222,10 +1232,10 @@
     ]
   },
   {
-    "name": "Allowed rentals",
+    "name": "Maximum rentals allowed",
     "fields": [
-      { "name": "allowedRentalsNumber", "fType": "number", "label": "Number" },
-      { "name": "allowedRentalsPercentage", "fType": "number", "label": "Percentage" }
+      { "name": "rentalsAllowedNumber", "fType": "number", "label": "Number of units" },
+      { "name": "rentalsAllowedPercentage", "fType": "number", "label": "Percentage of units" }
     ]
   },
   {

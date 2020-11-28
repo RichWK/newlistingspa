@@ -74,7 +74,6 @@
       { 
         "name": "showingInformation",
         "fType": "checkbox",
-        "label": "Keybox or appointment not required",
         "options": [
           { "name": "showingsNoRequirements", "label": "Keybox or appointment not required" },
           { "name": "showingsPhoneListingRealtorFirst", "label": "Phone listing agent first" },
@@ -100,7 +99,6 @@
       { 
         "name": "dwellingClassification",
         "fType": "radio",
-        "label": "Detached",
         "options": [
           { "name": "dwellingClassificationDetached", "label": "Detached" },
           { "name": "dwellingClassificationAttached", "label": "Attached" },
@@ -115,7 +113,6 @@
       { 
         "name": "typeOfDwelling",
         "fType": "radio",
-        "label": "Type of dwelling",
         "options": [
           { "name": "typeOfDwellingDetachedHouseSingleFamily", "label": "House / single family" },
           { "name": "typeOfDwellingDetachedHouseWithAcreage", "label": "House with acreage" },
@@ -145,7 +142,6 @@
       { 
         "name": "styleOfHome",
         "fType": "checkbox",
-        "label": "Style of home",
         "options": [
           { "name": "styleOfHomeBasementEntry", "label": "Basement entry" },
           { "name": "styleOfHomeSplitEntry", "label": "Split entry" },
@@ -188,7 +184,6 @@
       {
         "name": "titleToLand",
         "fType": "radio",
-        "label": "Title to land",
         "options": [
           { "name": "titleToLandFreeholdNonStrata", "label": "Freehold non-strata" },
           { "name": "titleToLandFreeholdStrata", "label": "Freehold strata" },
@@ -213,7 +208,6 @@
       {
         "name": "sellersInterest",
         "fType": "checkbox",
-        "label": "Seller's interest",
         "options": [
           { "name": "sellersInterestRegisteredOwner", "label": "Registered owner" },
           { "name": "sellersInterestPowerofAttorney", "label": "Power of attorney" },
@@ -233,7 +227,6 @@
       {
         "name": "occupancy",
         "fType": "checkbox",
-        "label": "Occupancy",
         "options": [
           { "name": "occupancyOwner", "label": "Owner" },
           { "name": "occupancyTenant", "label": "Tenant" },
@@ -249,7 +242,6 @@
       {
         "name": "propertyDisclosureStatement",
         "fType": "radio",
-        "label": "Property disclosure statement completed?",
         "options": [
           { "name": "propertyDisclosureStatementCompleted", "label": "Yes" },
           { "name": "propertyDisclosureStatementNotCompleted", "label": "No" }
@@ -271,7 +263,6 @@
       {
         "name": "ageType",
         "fType": "radio",
-        "label": "Age type",
         "options": [
           { "name": "ageTypeOldTimer", "label": "Old timer" },
           { "name": "ageTypeNew", "label": "New" },
@@ -286,7 +277,6 @@
       {
         "name": "isGstIncluded",
         "fType": "radio",
-        "label": "Is GST included in the price?",
         "options": [
           { "name": "isGstIncludedYes", "label": "Yes" },
           { "name": "isGstIncludedNo", "label": "No" },
@@ -301,7 +291,6 @@
       {
         "name": "renovations",
         "fType": "checkbox",
-        "label": "Renovations",
         "options": [
           { "name": "renovationsAddition", "label": "Addition" },
           { "name": "renovationsCompletely", "label": "Completely" },
@@ -319,7 +308,6 @@
       {
         "name": "suites",
         "fType": "checkbox",
-        "label": "Suites",
         "options": [
           { "name": "suitesNone", "label": "None" },
           { "name": "suitesLegal", "label": "Legal suite(s)" },
@@ -336,7 +324,6 @@
       {
         "name": "basementArea",
         "fType": "checkbox",
-        "label": "Basement area",
         "options": [
           { "name": "basementNone", "label": "None" },
           { "name": "basementCrawl", "label": "Crawl" },
@@ -383,7 +370,6 @@
       {
         "name": "servicesConnected",
         "fType": "checkbox",
-        "label": "Services connected",
         "options": [
           { "name": "servicesConnectedNone", "label": "None" },
           { "name": "servicesConnectedCommunity", "label": "Community" },
@@ -405,7 +391,6 @@
       {
         "name": "sewerType",
         "fType": "checkbox",
-        "label": "Sewer type",
         "options": [
           { "name": "sewerTypeNone", "label": "None" },
           { "name": "sewerTypeCityOrMunicipal", "label": "City or municipal" },
@@ -425,7 +410,6 @@
       {
         "name": "waterSupply",
         "fType": "checkbox",
-        "label": "Water supply",
         "options": [
           { "name": "waterSupplyNone", "label": "None" },
           { "name": "waterSupplyCityOrMunicipal", "label": "City or municipal" },
@@ -445,7 +429,6 @@
       {
         "name": "meteredWater",
         "fType": "radio",
-        "label": "Metered water?",
         "options": [
           { "name": "meteredWaterYes", "label": "Yes" },
           { "name": "meteredWaterNo", "label": "No" }
@@ -459,7 +442,6 @@
       {
         "name": "floodPlain",
         "fType": "radio",
-        "label": "Flood plain?",
         "options": [
           { "name": "floodPlainYes", "label": "Yes" },
           { "name": "floodPlainNo", "label": "No" },
@@ -476,7 +458,7 @@
       {
         "name": "taxIncludesUtilities",
         "fType": "radio",
-        "label": "Tax includes utilties?",
+        "label": "Does tax include utilties?",
         "options": [
           { "name": "taxIncludesUtilitiesYes", "label": "Yes" },
           { "name": "taxIncludesUtilitiesNo", "label": "No" }
@@ -512,7 +494,6 @@
       {
         "name": "rearYardDirectionalExposure",
         "fType": "checkbox",
-        "label": "Rear yard directional exposure — detached only",
         "options": [
           { "name": "rearYardDirectionalExposureNorth", "label": "North" },
           { "name": "rearYardDirectionalExposureSouth", "label": "South" },
@@ -532,7 +513,6 @@
       {
         "name": "construction",
         "fType": "checkbox",
-        "label": "Construction",
         "options": [
           { "name": "constructionBrick", "label": "Brick" },
           { "name": "constructionConcrete", "label": "Concrete" },
@@ -554,7 +534,6 @@
       {
         "name": "foundation",
         "fType": "radio",
-        "label": "Foundation",
         "options": [
           { "name": "foundationNone", "label": "None" },
           { "name": "foundationConcreteBlock", "label": "Concrete block" },
@@ -572,7 +551,6 @@
       {
         "name": "exteriorFinish",
         "fType": "checkbox",
-        "label": "Exterior finish",
         "options": [
           { "name": "exteriorFinishAluminum", "label": "Aluminum" },
           { "name": "exteriorFinishBrick", "label": "Brick" },
@@ -597,7 +575,6 @@
       {
         "name": "rainScreen",
         "fType": "radio",
-        "label": "Rain screen",
         "options": [
           { "name": "rainScreenFull", "label": "Full" },
           { "name": "rainScreenPartial", "label": "Partial" },
@@ -612,7 +589,6 @@
       {
         "name": "roof",
         "fType": "checkbox",
-        "label": "Roof",
         "options": [
           { "name": "roofAsphalt", "label": "Asphalt" },
           { "name": "roofFibreglass", "label": "Fibreglass" },
@@ -633,7 +609,6 @@
       {
         "name": "parking",
         "fType": "checkbox",
-        "label": "Parking",
         "options": [
           { "name": "parkingNone", "label": "None" },
           { "name": "parkingAdditionalAvailable", "label": "Additional available" },
@@ -669,7 +644,6 @@
       {
         "name": "parkingAccess",
         "fType": "checkbox",
-        "label": "Parking access",
         "options": [
           { "name": "parkingAccessFront", "label": "Front" },
           { "name": "parkingAccessRear", "label": "Rear" },
@@ -692,7 +666,6 @@
       {
         "name": "drivewayFinish",
         "fType": "radio",
-        "label": "Driveway finish",
         "options": [
           { "name": "drivewayFinishAggregate", "label": "Aggregate" },
           { "name": "drivewayFinishAsphalt", "label": "Asphalt" },
@@ -717,7 +690,6 @@
       {
         "name": "siteInfluences",
         "fType": "checkbox",
-        "label": "Site influences",
         "options": [
           { "name": "siteInfluencesAdultOriented", "label": "Adult oriented" },
           { "name": "siteInfluencesCleared", "label": "Cleared" },
@@ -750,7 +722,6 @@
       {
         "name": "viewForBoardReports",
         "fType": "radio",
-        "label": "View, for board reports",
         "options": [
           { "name": "viewForBoardReportsYes", "label": "Yes" },
           { "name": "viewForBoardReportsNo", "label": "No" }
@@ -765,7 +736,6 @@
       {
         "name": "viewForRealtorCa",
         "fType": "checkbox",
-        "label": "View, for realtor.ca",
         "options": [
           { "name": "viewForRealtorCaCity", "label": "City" },
           { "name": "viewForRealtorCaLake", "label": "Lake" },
@@ -787,7 +757,6 @@
       {
         "name": "outdoorArea",
         "fType": "checkbox",
-        "label": "Outdoor area",
         "options": [
           { "name": "outdoorAreaNone", "label": "None" },
           { "name": "outdoorAreaBalcony", "label": "Balcony" },
@@ -807,7 +776,6 @@
       {
         "name": "fuelHeating",
         "fType": "checkbox",
-        "label": "Fuel and heating",
         "options": [
           { "name": "fuelHeatingBaseboard", "label": "Baseboard" },
           { "name": "fuelHeatingElectric", "label": "Electric" },
@@ -840,7 +808,6 @@
       {
         "name": "fireplaceFuel",
         "fType": "checkbox",
-        "label": "Fireplace fuel",
         "options": [
           { "name": "fireplaceFuelNone", "label": "None" },
           { "name": "fireplaceFuelGasNatural", "label": "Gas, natural" },
@@ -859,7 +826,6 @@
       {
         "name": "roughedInPlumbing",
         "fType": "radio",
-        "label": "Roughed in plumbing?",
         "options": [
           { "name": "roughedInPlumbingYes", "label": "Yes" },
           { "name": "roughedInPlumbingNo", "label": "No" }
@@ -873,7 +839,6 @@
       {
         "name": "floorFinish",
         "fType": "checkbox",
-        "label": "Floor finish",
         "options": [
           { "name": "floorFinishConcrete", "label": "Concrete" },
           { "name": "floorFinishHardwood", "label": "Hardwood" },
@@ -894,7 +859,6 @@
       {
         "name": "featuresIncluded",
         "fType": "checkbox",
-        "label": "Features included",
         "options": [
           { "name": "featuresIncludedAirConditioning", "label": "Air conditioning" },
           { "name": "featuresIncludedClothesDryer", "label": "Clothes dryer" },
@@ -948,7 +912,6 @@
       {
         "name": "fixturesToBeRemoved",
         "fType": "radio",
-        "label": "Will fixtures be removed?",
         "options": [
           { "name": "fixturesToBeRemovedYes", "label": "Yes" },
           { "name": "fixturesToBeRemovedNo", "label": "No" }
@@ -963,7 +926,6 @@
       {
         "name": "fixturesRentedOrLeased",
         "fType": "radio",
-        "label": "Are fixtures rented or leased?",
         "options": [
           { "name": "fixturesRentedOrLeasedYes", "label": "Yes" },
           { "name": "fixturesRentedOrLeasedNo", "label": "No" }
@@ -986,7 +948,6 @@
       {
         "name": "amenities",
         "fType": "checkbox",
-        "label": "Amenities",
         "options": [
           { "name": "amenitiesNone", "label": "None" },
           { "name": "amenitiesAirConditioningCentral", "label": "Air conditioning, central" },
@@ -1046,7 +1007,6 @@
       {
         "name": "publishListingOnInternet",
         "fType": "radio",
-        "label": "Publish listing on internet?",
         "options": [
           { "name": "publishListingOnInternetYes", "label": "Yes" },
           { "name": "publishListingOnInternetNo", "label": "No" }
@@ -1060,7 +1020,6 @@
       {
         "name": "displayAddressOnInternet",
         "fType": "radio",
-        "label": "Display address on internet?",
         "options": [
           { "name": "displayAddressOnInternetYes", "label": "Yes" },
           { "name": "displayAddressOnInternetNo", "label": "No" }
@@ -1098,7 +1057,6 @@
       {
         "name": "strataLocker",
         "fType": "radio",
-        "label": "Locker available?",
         "options": [
           { "name": "strataLockerYes", "label": "Yes" },
           { "name": "strataLockerNo", "label": "No" }
@@ -1112,7 +1070,6 @@
       {
         "name": "strataCouncilOrBoardApprovalRequired",
         "fType": "radio",
-        "label": "Locker available?",
         "options": [
           { "name": "strataCouncilOrBoardApprovalRequiredYes", "label": "Yes" },
           { "name": "strataCouncilOrBoardApprovalRequiredNo", "label": "No" }
@@ -1126,7 +1083,6 @@
       {
         "name": "strataMaintenanceFee",
         "fType": "checkbox",
-        "label": "What does the monthly maintenance fee include?",
         "options": [
           { "name": "strataMaintenanceFeeCableOrSatellite", "label": "Cable or satellite" },
           { "name": "strataMaintenanceFeeCaretaker", "label": "Caretaker" },
@@ -1155,7 +1111,6 @@
       {
         "name": "bylawRestrictions",
         "fType": "checkbox",
-        "label": "Bylaw restrictions",
         "options": [
           { "name": "bylawRestrictionsAgeRestrictions", "label": "Age restrictions" },
           { "name": "bylawRestrictionsPetsAllowed", "label": "Pets allowed" },
@@ -1176,7 +1131,6 @@
       {
         "name": "restrictedAge",
         "fType": "radio",
-        "label": "Restricted age",
         "options": [
           { "name": "restrictedAge19Plus", "label": "19+" },
           { "name": "restrictedAge35Plus", "label": "35+" },
@@ -1194,7 +1148,6 @@
       {
         "name": "petsNumberAllowed",
         "fType": "radio",
-        "label": "Number allowed",
         "options": [
           { "name": "petsNumberAllowed1", "label": "1" },
           { "name": "petsNumberAllowed2", "label": "2" },
@@ -1209,7 +1162,6 @@
       {
         "name": "petsCats",
         "fType": "radio",
-        "label": "Are cats allowed?",
         "options": [
           { "name": "petsCatsYes", "label": "Yes" },
           { "name": "petsCatsNo", "label": "No" }
@@ -1223,7 +1175,6 @@
       {
         "name": "petsDogs",
         "fType": "radio",
-        "label": "Are dogs allowed?",
         "options": [
           { "name": "petsDogsYes", "label": "Yes" },
           { "name": "petsDogsNo", "label": "No" }
@@ -1244,7 +1195,6 @@
       {
         "name": "strataDirectionalExposure",
         "fType": "checkbox",
-        "label": "Strata directional exposure",
         "options": [
           { "name": "strataDirectionalExposureNorth", "label": "North" },
           { "name": "strataDirectionalExposureSouth", "label": "South" },
@@ -1283,7 +1233,6 @@
       {
         "name": "multifamilyFireSprinkler",
         "fType": "radio",
-        "label": "Fire sprinkler system?",
         "options": [
           { "name": "multifamilyFireSprinklerYes", "label": "Yes" },
           { "name": "multifamilyFireSprinklerNo", "label": "No" },
@@ -1298,7 +1247,6 @@
       {
         "name": "multifamilySmokeDetectors",
         "fType": "radio",
-        "label": "Smoke detectors?",
         "options": [
           { "name": "multifamilySmokeDetectorsYes", "label": "Yes" },
           { "name": "multifamilySmokeDetectorsNo", "label": "No" },
@@ -1313,7 +1261,6 @@
       {
         "name": "multifamilyOutstandingOrdersInfractions",
         "fType": "radio",
-        "label": "Smoke detectors?",
         "options": [
           { "name": "multifamilyOutstandingOrdersInfractionsYes", "label": "Yes" },
           { "name": "multifamilyOutstandingOrdersInfractionsNo", "label": "No" }
@@ -1327,7 +1274,6 @@
       {
         "name": "manufacturedHomesRegistered",
         "fType": "radio",
-        "label": "Is this a registered manufactured home?",
         "options": [
           { "name": "manufacturedHomesRegisteredYes", "label": "Yes" },
           { "name": "manufacturedHomesRegisteredNo", "label": "No" }

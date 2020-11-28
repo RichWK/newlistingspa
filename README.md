@@ -10,6 +10,8 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * A few fields need the ability to specify a "note". (e.g. 'Age Type', 'Units in Development'.) Maybe this could be an icon which reveals details when tapped / on mouseover.
   * Area and subarea dropdowns don't yet contain the correct data
 * Refine the design
+  * Follow rebgv.org's style guidelines for branding
+  * Add our logo
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
   * New field types
     * Currency

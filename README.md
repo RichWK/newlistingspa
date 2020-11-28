@@ -16,8 +16,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
     * Textarea
     * PrimeVue toggle button for switching between feet and metres
     * Decimal
-  * Merge `<FormRadio>` into `<FormCheckbox>` and name it `<FormSelection>`
-  * Add `<h2>` to any `<FormSelection>` which specifies a label
+  * Add `<h2>` to any `<FormSelection>` whose data specifies a label attribute
   * Hide fields depending on which property type has been selected. Simplifies for the user 🙂
 
 ### Common commands

@@ -11,6 +11,11 @@
         v-bind="field"
         @new-user-input="newUserInput"
       />
+      <FormSelection
+        v-if="this.selectionFieldTypes.includes( field.fType )"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
       <FormDate
         v-if="field.fType === 'date'"
         v-bind="field"
@@ -18,16 +23,6 @@
       />
       <FormDropdown
         v-if="field.fType === 'dropdown'"
-        v-bind="field"
-        @new-user-input="newUserInput"
-      />
-      <FormCheckbox
-        v-if="field.fType === 'checkbox'"
-        v-bind="field"
-        @new-user-input="newUserInput"
-      />
-      <FormRadio
-        v-if="field.fType === 'radio'"
         v-bind="field"
         @new-user-input="newUserInput"
       />
@@ -44,9 +39,7 @@
 
 import FormText from './FormText.vue'
 import FormDate from './FormDate.vue'
-import FormDropdown from './FormDropdown.vue'
-import FormCheckbox from './FormCheckbox.vue'
-import FormRadio from './FormRadio.vue'
+import FormSelection from './FormSelection.vue'
 
 export default {
   
@@ -54,9 +47,7 @@ export default {
   components: {
     'FormText': FormText,
     'FormDate': FormDate,
-    'FormDropdown': FormDropdown,
-    'FormCheckbox': FormCheckbox,
-    'FormRadio': FormRadio
+    'FormSelection': FormSelection
   },
   data() {
     return {

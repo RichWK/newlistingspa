@@ -1,17 +1,27 @@
 <template>
 
-  <div class="checkboxFields">
+  <div class="selectionFields">
   
     <div class="container" v-for="option in options" :key="option.name">
     
       <label :for="option.name">{{ option.label }}</label>
 
       <PrimeCheckbox
+        v-if="fType === 'checkbox'"
         v-model="userInput"
         v-bind="$attrs"
         :id="option.name"
         :name="name"
-        :value="option.name"
+        :value="option.label"
+        @change="onChange"
+      />
+      <PrimeRadio
+        v-if="fType === 'radio'"
+        v-model="userInput"
+        v-bind="$attrs"
+        :id="option.name"
+        :name="name"
+        :value="option.label"
         @change="onChange"
       />
 
@@ -26,16 +36,18 @@
 <script>
 
 import Checkbox from 'primevue/checkbox';
+import RadioButton from 'primevue/radiobutton';
 
 export default {
   
-  name: 'FormCheckbox',
+  name: 'FormSelection',
   components: {
-    'PrimeCheckbox': Checkbox
+    'PrimeCheckbox': Checkbox,
+    'PrimeRadio': RadioButton
   },
   data () {
     return {
-      'userInput': [] 
+      'userInput': null
     }
   },
   emits: ['new-user-input'],
@@ -63,7 +75,7 @@ export default {
 
 <style scoped>
 
-.checkboxFields {
+.selectionFields {
 
   margin-bottom: 15px;
   padding-left: 2px;
@@ -93,6 +105,11 @@ label {
 /* Unscoped. */
 
 label:hover + div.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box {
+
+  border-color: #4caf50;
+}
+
+label:hover + div.p-radiobutton:not(.p-disabled) .p-radiobutton-box {
 
   border-color: #4caf50;
 }

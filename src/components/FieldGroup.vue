@@ -2,7 +2,7 @@
   
   <div class="group">
 
-    <h2>{{ name }}</h2>
+    <h2>{{ label }}</h2>
 
     <template v-for="field in fields" :key="field.name">
 
@@ -83,7 +83,7 @@ export default {
     }
   },
   props: {
-    'name': String,
+    'label': String,
     'fields': Array
   }
 }

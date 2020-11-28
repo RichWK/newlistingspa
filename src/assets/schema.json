@@ -1,12 +1,12 @@
 [
   {
-    "name": "Date on Multiple Listing Contract",
+    "label": "Date on Multiple Listing Contract",
     "fields": [
       { "name": "contractDate", "fType": "date" }
     ]
   },
   {
-    "name": "Property address",
+    "label": "Property address",
     "fields": [
       { "name": "addressUnitNumber", "fType": "text", "label": "Unit" },
       { "name": "addressHouseNumber", "fType": "text", "label": "House number" },
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "name": "General location",
+    "label": "General location",
     "fields": [
       { 
         "name": "area",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "name": "Agent details",
+    "label": "Agent details",
     "fields": [
       { "name": "designatedAgent1", "fType": "text", "label": "Primary agent's full name" },
       { "name": "userId1", "fType": "text", "label": "Primary agent's ID number" },
@@ -69,7 +69,7 @@
     ]
   },
   {
-    "name": "Showing information",
+    "label": "Showing information",
     "fields": [
       { 
         "name": "showingInformation",
@@ -88,14 +88,14 @@
     ]
   },
   {
-    "name": "Appointment contact",
+    "label": "Appointment contact",
     "fields": [
       { "name": "appointmentPhoneNumber", "fType": "phone", "label": "Phone number" },
       { "name": "forAppointmentCall", "fType": "text", "label": "For appointment call" }
     ]
   },
   {
-    "name": "Dwelling classification",
+    "label": "Dwelling classification",
     "fields": [
       { 
         "name": "dwellingClassification",
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "name": "Type of dwelling",
+    "label": "Type of dwelling",
     "fields": [
       { 
         "name": "typeOfDwelling",
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "name": "Style of home",
+    "label": "Style of home",
     "fields": [
       { 
         "name": "styleOfHome",
@@ -183,7 +183,7 @@
     ]
   },
   {
-    "name": "Title to land",
+    "label": "Title to land",
     "fields": [
       {
         "name": "titleToLand",
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "name": "Seller's interest",
+    "label": "Seller's interest",
     "fields": [
       {
         "name": "sellersInterest",
@@ -228,7 +228,7 @@
     ]
   },
   {
-    "name": "Occupancy",
+    "label": "Occupancy",
     "fields": [
       {
         "name": "occupancy",
@@ -244,7 +244,7 @@
     ]
   },
   {
-    "name": "Property disclosure statement completed?",
+    "label": "Property disclosure statement completed?",
     "fields": [
       {
         "name": "propertyDisclosureStatement",
@@ -259,14 +259,14 @@
     ]
   },
   {
-    "name": "Year details",
+    "label": "Year details",
     "fields": [
       { "name": "approximateYearBuilt", "fType": "number", "label": "Approximate year built" },
       { "name": "approximateYearRenovated", "fType": "number", "label": "Approximate year renovated" }
     ]
   },
   {
-    "name": "Age type",
+    "label": "Age type",
     "fields": [
       {
         "name": "ageType",
@@ -281,7 +281,7 @@
     ]
   },
   {
-    "name": "Is GST included in the price?",
+    "label": "Is GST included in the price?",
     "fields": [
       {
         "name": "isGstIncluded",
@@ -296,7 +296,7 @@
     ]
   },
   {
-    "name": "Renovations",
+    "label": "Renovations",
     "fields": [
       {
         "name": "renovations",
@@ -314,7 +314,7 @@
     ]
   },
   {
-    "name": "Suites",
+    "label": "Suites",
     "fields": [
       {
         "name": "suites",
@@ -331,7 +331,7 @@
     ]
   },
   {
-    "name": "Basement area",
+    "label": "Basement area",
     "fields": [
       {
         "name": "basementArea",
@@ -354,7 +354,7 @@
     ]
   },
   {
-    "name": "Floor area",
+    "label": "Floor area",
     "fields": [
       { "name": "floorAreaFinishedMainFloor", "fType": "number", "label": "Finished, main floor" },
       { "name": "floorAreaFinishedAboveMain", "fType": "number", "label": "Finished, above main" },
@@ -366,7 +366,7 @@
     ]
   },
   {
-    "name": "Property size",
+    "label": "Property size",
     "fields": [
       { "name": "propertySizeFrontageFeet", "fType": "decimal", "label": "Frontage in feet" },
       { "name": "propertySizeDepthFeet", "fType": "decimal", "label": "Depth in feet" },
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "name": "Services connected",
+    "label": "Services connected",
     "fields": [
       {
         "name": "servicesConnected",
@@ -400,7 +400,7 @@
     ]
   },
   {
-    "name": "Sewer type",
+    "label": "Sewer type",
     "fields": [
       {
         "name": "sewerType",
@@ -420,7 +420,7 @@
     ]
   },
   {
-    "name": "Water supply",
+    "label": "Water supply",
     "fields": [
       {
         "name": "waterSupply",
@@ -440,7 +440,7 @@
     ]
   },
   {
-    "name": "Metered water?",
+    "label": "Metered water?",
     "fields": [
       {
         "name": "meteredWater",
@@ -454,7 +454,7 @@
     ]
   },
   {
-    "name": "Flood plain?",
+    "label": "Flood plain?",
     "fields": [
       {
         "name": "floodPlain",
@@ -469,7 +469,7 @@
     ]
   },
   {
-    "name": "Taxes",
+    "label": "Taxes",
     "fields": [
       { "name": "grossTaxes", "fType": "currency", "label": "Gross taxes" },
       { "name": "forTaxYear", "fType": "number", "label": "For tax year" },
@@ -485,7 +485,7 @@
     ]
   },
   {
-    "name": "Additional charges not included in taxes",
+    "label": "Additional charges not included in taxes",
     "fields": [
       { "name": "additionalChargesGarbage", "fType": "currency", "label": "Garbage" },
       { "name": "additionalChargesWater", "fType": "currency", "label": "Water" },
@@ -495,19 +495,19 @@
     ]
   },
   {
-    "name": "Zoning",
+    "label": "Zoning",
     "fields": [
       { "name": "zoningCode", "fType": "text", "label": "Municipal code" }
     ]
   },
   {
-    "name": "Complex or subdivision",
+    "label": "Complex or subdivision",
     "fields": [
       { "name": "complexOrSubdivision", "fType": "text", "label": "Name" }
     ]
   },
   {
-    "name": "Rear yard directional exposure — detached only",
+    "label": "Rear yard directional exposure — detached only",
     "fields": [
       {
         "name": "rearYardDirectionalExposure",
@@ -527,7 +527,7 @@
     ]
   },
   {
-    "name": "Construction",
+    "label": "Construction",
     "fields": [
       {
         "name": "construction",
@@ -549,7 +549,7 @@
     ]
   },
   {
-    "name": "Foundation",
+    "label": "Foundation",
     "fields": [
       {
         "name": "foundation",
@@ -567,7 +567,7 @@
     ]
   },
   {
-    "name": "Exterior finish",
+    "label": "Exterior finish",
     "fields": [
       {
         "name": "exteriorFinish",
@@ -592,7 +592,7 @@
     ]
   },
   {
-    "name": "Rain screen",
+    "label": "Rain screen",
     "fields": [
       {
         "name": "rainScreen",
@@ -607,7 +607,7 @@
     ]
   },
   {
-    "name": "Roof",
+    "label": "Roof",
     "fields": [
       {
         "name": "roof",
@@ -628,7 +628,7 @@
     ]
   },
   {
-    "name": "Parking",
+    "label": "Parking",
     "fields": [
       {
         "name": "parking",
@@ -657,14 +657,14 @@
     ]
   },
   {
-    "name": "Parking places",
+    "label": "Parking places",
     "fields": [
       { "name": "parkingPlacesCovered", "fType": "number", "label": "Covered" },
       { "name": "parkingPlacesTotal", "fType": "number", "label": "Total" }
     ]
   },
   {
-    "name": "Parking access",
+    "label": "Parking access",
     "fields": [
       {
         "name": "parkingAccess",
@@ -680,14 +680,14 @@
     ]
   },
   {
-    "name": "Garage",
+    "label": "Garage",
     "fields": [
       { "name": "garageSize", "fType": "number", "label": "Dimensions" },
       { "name": "garageDoorHeight", "fType": "number", "label": "Door height" }
     ]
   },
   {
-    "name": "Driveway finish",
+    "label": "Driveway finish",
     "fields": [
       {
         "name": "drivewayFinish",
@@ -705,14 +705,14 @@
     ]
   },
   {
-    "name": "Distance to...",
+    "label": "Distance to...",
     "fields": [
       { "name": "distanceToTransit", "fType": "text", "label": "Transit" },
       { "name": "distanceToSchool", "fType": "text", "label": "School or school bus" }
     ]
   },
   {
-    "name": "Site influences",
+    "label": "Site influences",
     "fields": [
       {
         "name": "siteInfluences",
@@ -745,7 +745,7 @@
     ]
   },
   {
-    "name": "View — displays on board reports",
+    "label": "View — displays on board reports",
     "fields": [
       {
         "name": "viewForBoardReports",
@@ -760,7 +760,7 @@
     ]
   },
   {
-    "name": "View — displays on realtor.ca",
+    "label": "View — displays on realtor.ca",
     "fields": [
       {
         "name": "viewForRealtorCa",
@@ -782,7 +782,7 @@
     ]
   },
   {
-    "name": "Outdoor area",
+    "label": "Outdoor area",
     "fields": [
       {
         "name": "outdoorArea",
@@ -802,7 +802,7 @@
     ]
   },
   {
-    "name": "Fuel and heating",
+    "label": "Fuel and heating",
     "fields": [
       {
         "name": "fuelHeating",
@@ -828,14 +828,14 @@
     ]
   },
   {
-    "name": "Number of fireplaces",
+    "label": "Number of fireplaces",
     "fields": [
       { "name": "fireplacesFinished", "fType": "number", "label": "Finished" },
       { "name": "fireplacesRoughedIn", "fType": "number", "label": "Roughed in" }
     ]
   },
   {
-    "name": "Fireplace fuel",
+    "label": "Fireplace fuel",
     "fields": [
       {
         "name": "fireplaceFuel",
@@ -854,7 +854,7 @@
     ]
   },
   {
-    "name": "Roughed in plumbing?",
+    "label": "Roughed in plumbing?",
     "fields": [
       {
         "name": "roughedInPlumbing",
@@ -868,7 +868,7 @@
     ]
   },
   {
-    "name": "Floor finish",
+    "label": "Floor finish",
     "fields": [
       {
         "name": "floorFinish",
@@ -889,7 +889,7 @@
     ]
   },
   {
-    "name": "Features included",
+    "label": "Features included",
     "fields": [
       {
         "name": "featuresIncluded",
@@ -943,7 +943,7 @@
     ]
   },
   {
-    "name": "Will fixtures be removed?",
+    "label": "Will fixtures be removed?",
     "fields": [
       {
         "name": "fixturesToBeRemoved",
@@ -958,7 +958,7 @@
     ]
   },
   {
-    "name": "Are fixtures rented or leased?",
+    "label": "Are fixtures rented or leased?",
     "fields": [
       {
         "name": "fixturesRentedOrLeased",
@@ -973,7 +973,7 @@
     ]
   },
   {
-    "name": "Outbuildings",
+    "label": "Outbuildings",
     "fields": [
       { "name": "outbuildingsBarnDimensions", "fType": "text", "label": "Barn dimensions" },
       { "name": "outbuildingsWorkshopShedDimensions", "fType": "text", "label": "Workshop or shed dimensions" },
@@ -981,7 +981,7 @@
     ]
   },
   {
-    "name": "Amenities",
+    "label": "Amenities",
     "fields": [
       {
         "name": "amenities",
@@ -1023,25 +1023,25 @@
     ]
   },
   {
-    "name": "Rooms",
+    "label": "Rooms",
     "fields": [
       
     ]
   },
   {
-    "name": "REALTOR® remarks",
+    "label": "REALTOR® remarks",
     "fields": [
       
     ]
   },
   {
-    "name": "Public remarks",
+    "label": "Public remarks",
     "fields": [
       
     ]
   },
   {
-    "name": "Publish listing on internet?",
+    "label": "Publish listing on internet?",
     "fields": [
       {
         "name": "publishListingOnInternet",
@@ -1055,7 +1055,7 @@
     ]
   },
   {
-    "name": "Display address on internet?",
+    "label": "Display address on internet?",
     "fields": [
       {
         "name": "displayAddressOnInternet",
@@ -1069,20 +1069,20 @@
     ]
   },
   {
-    "name": "Links",
+    "label": "Links",
     "fields": [
       { "name": "virtualTourUrl", "fType": "text", "label": "Virtual tour" },
       { "name": "propertyBrochureUrl", "fType": "text", "label": "Property brochure" }
     ]
   },
   {
-    "name": "Open houses and tours",
+    "label": "Open houses and tours",
     "fields": [
       
     ]
   },
   {
-    "name": "Strata details",
+    "label": "Strata details",
     "fields": [
       { "name": "strataMaintenanceFee", "fType": "currency", "label": "Monthly maintenance fee" },
       { "name": "strataUnitsInDevelopment", "fType": "number", "label": "Units in development" },
@@ -1093,7 +1093,7 @@
     ]
   },
   {
-    "name": "Locker available?",
+    "label": "Locker available?",
     "fields": [
       {
         "name": "strataLocker",
@@ -1107,7 +1107,7 @@
     ]
   },
   {
-    "name": "Is council or board approval required for purchase?",
+    "label": "Is council or board approval required for purchase?",
     "fields": [
       {
         "name": "strataCouncilOrBoardApprovalRequired",
@@ -1121,7 +1121,7 @@
     ]
   },
   {
-    "name": "What does the monthly maintenance fee include?",
+    "label": "What does the monthly maintenance fee include?",
     "fields": [
       {
         "name": "strataMaintenanceFee",
@@ -1150,7 +1150,7 @@
     ]
   },
   {
-    "name": "Bylaw restrictions",
+    "label": "Bylaw restrictions",
     "fields": [
       {
         "name": "bylawRestrictions",
@@ -1171,7 +1171,7 @@
     ]
   },
   {
-    "name": "Restricted age",
+    "label": "Restricted age",
     "fields": [
       {
         "name": "restrictedAge",
@@ -1189,7 +1189,7 @@
     ]
   },
   {
-    "name": "Number of pets allowed",
+    "label": "Number of pets allowed",
     "fields": [
       {
         "name": "petsNumberAllowed",
@@ -1204,7 +1204,7 @@
     ]
   },
   {
-    "name": "Are cats allowed?",
+    "label": "Are cats allowed?",
     "fields": [
       {
         "name": "petsCats",
@@ -1218,7 +1218,7 @@
     ]
   },
   {
-    "name": "Are dogs allowed?",
+    "label": "Are dogs allowed?",
     "fields": [
       {
         "name": "petsDogs",
@@ -1232,14 +1232,14 @@
     ]
   },
   {
-    "name": "Maximum rentals allowed",
+    "label": "Maximum rentals allowed",
     "fields": [
       { "name": "rentalsAllowedNumber", "fType": "number", "label": "Number of units" },
       { "name": "rentalsAllowedPercentage", "fType": "number", "label": "Percentage of units" }
     ]
   },
   {
-    "name": "Strata directional exposure",
+    "label": "Strata directional exposure",
     "fields": [
       {
         "name": "strataDirectionalExposure",
@@ -1259,7 +1259,7 @@
     ]
   },
   {
-    "name": "Number of multifamily units",
+    "label": "Number of multifamily units",
     "fields": [
       { "name": "multifamilyUnitsBachelorStudio", "fType": "number", "label": "Bachelor or studio units" },
       { "name": "multifamilyUnits1Bedroom", "fType": "number", "label": "1 bedroom units" },
@@ -1269,7 +1269,7 @@
     ]
   },
   {
-    "name": "Multifamily income",
+    "label": "Multifamily income",
     "fields": [
       { "name": "multifamilyIncomePerAnnum", "fType": "currency", "label": "Yearly income" },
       { "name": "multifamilyIncomeYear", "fType": "number", "label": "As of which year?" },
@@ -1278,7 +1278,7 @@
     ]
   },
   {
-    "name": "Fire sprinker system?",
+    "label": "Fire sprinker system?",
     "fields": [
       {
         "name": "multifamilyFireSprinkler",
@@ -1293,7 +1293,7 @@
     ]
   },
   {
-    "name": "Smoke detectors?",
+    "label": "Smoke detectors?",
     "fields": [
       {
         "name": "multifamilySmokeDetectors",
@@ -1308,7 +1308,7 @@
     ]
   },
   {
-    "name": "Are there any outstanding fire orders or bylaw infractions, which have been disclosed by the seller(s)?",
+    "label": "Are there any outstanding fire orders or bylaw infractions, which have been disclosed by the seller(s)?",
     "fields": [
       {
         "name": "multifamilyOutstandingOrdersInfractions",
@@ -1322,7 +1322,7 @@
     ]
   },
   {
-    "name": "Is this a registered manufactured home?",
+    "label": "Is this a registered manufactured home?",
     "fields": [
       {
         "name": "manufacturedHomesRegistered",
@@ -1337,7 +1337,7 @@
     ]
   },
   {
-    "name": "Other manufactured home details",
+    "label": "Other manufactured home details",
     "fields": [
       { "name": "manufacturedHomesElectricalNumber", "fType": "text", "label": "CSA / BC electrical number" },
       { "name": "manufacturedHomesPadRental", "fType": "currency", "label": "Pad rental" }

@@ -6,8 +6,8 @@
 
     <FieldGroup
       v-for="group in groups"
-      :key="group.name"
-      :name="group.name"
+      :key="group.label"
+      :label="group.label"
       :fields="group.fields"
       @new-user-input="storeUserInputs"
     />

@@ -16,8 +16,8 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
     * Textarea
     * PrimeVue toggle button for switching between feet and metres
     * Decimal
-  * Add `<h2>` to any `<FormSelection>` whose data specifies a label attribute
-  * Hide fields depending on which property type has been selected. Simplifies for the user 🙂
+  * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
+  * Hide fields according to the property type selected by the user. Simplifies things 🙂
 
 ### Common commands
 

@@ -75,7 +75,7 @@
         "name": "showingInformation",
         "fType": "checkbox",
         "options": [
-          { "name": "showingsNoRequirements", "label": "Keybox or appointment not required" },
+          { "name": "showingsKeyboxOrNoRequirements", "label": "Keybox or appointment not required" },
           { "name": "showingsPhoneListingRealtorFirst", "label": "Phone listing agent first" },
           { "name": "showingsPhoneSellerFirst", "label": "Phone seller first" },
           { "name": "showingsPhoneTenantFirst", "label": "Phone tenant first" },

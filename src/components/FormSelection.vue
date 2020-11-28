@@ -104,11 +104,9 @@ label {
 
 /* Unscoped. */
 
-label:hover + div.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box {
+/* This rule ensures that mousing over labels also triggers the hover effect. */
 
-  border-color: #4caf50;
-}
-
+label:hover + div.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box,
 label:hover + div.p-radiobutton:not(.p-disabled) .p-radiobutton-box {
 
   border-color: #4caf50;

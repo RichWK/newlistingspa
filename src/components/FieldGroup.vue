@@ -38,16 +38,19 @@
 <script>
 
 import FormText from './FormText.vue'
-import FormDate from './FormDate.vue'
 import FormSelection from './FormSelection.vue'
+import FormDate from './FormDate.vue'
+import FormDropdown from './FormDropdown.vue'
 
 export default {
   
   name: 'FieldGroup',
   components: {
     'FormText': FormText,
+    'FormSelection': FormSelection,
     'FormDate': FormDate,
-    'FormSelection': FormSelection
+    'FormDropdown': FormDropdown,
+    
   },
   data() {
     return {

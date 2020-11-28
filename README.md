@@ -8,6 +8,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Add a "maximum selected" attribute — to limit the number of checkboxes which can be selected. (Different fields have different requirements.)
   * Add a "pattern" attribute — for basic data validation, especially for number fields
   * A few fields need the ability to specify a "note". (e.g. 'Age Type', 'Units in Development'.) Maybe this could be an icon which reveals details when tapped / on mouseover.
+  * Area and subarea dropdowns don't yet contain the correct data
 * Refine the design
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
   * New field types

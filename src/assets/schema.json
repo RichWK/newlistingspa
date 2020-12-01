@@ -1331,13 +1331,13 @@
   {
     "label": "REALTOR® remarks",
     "fields": [
-      
+      { "name": "realtorRemarks", "fType": "textarea" }
     ]
   },
   {
     "label": "Public remarks",
     "fields": [
-      
+      { "name": "publicRemarks", "fType": "textarea" }
     ]
   },
   {

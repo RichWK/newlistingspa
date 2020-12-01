@@ -26,6 +26,11 @@
         v-bind="field"
         @new-user-input="newUserInput"
       />
+      <FormTextarea
+        v-if="field.fType === 'textarea'"
+        v-bind="field"
+        @new-user-input="newUserInput"
+      />
 
     </template>
 
@@ -41,6 +46,7 @@ import FormText from './FormText.vue'
 import FormSelection from './FormSelection.vue'
 import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
+import FormTextarea from './FormTextarea.vue'
 
 export default {
   
@@ -50,7 +56,7 @@ export default {
     'FormSelection': FormSelection,
     'FormDate': FormDate,
     'FormDropdown': FormDropdown,
-    
+    'FormTextarea': FormTextarea
   },
   data() {
     return {

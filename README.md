@@ -8,7 +8,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Add a "maximum selected" attribute — to limit the number of checkboxes which can be selected. (Different fields have different requirements.)
   * Add a "pattern" attribute — for basic data validation, especially for number fields
   * A few fields need the ability to specify a "note". (e.g. 'Age Type', 'Units in Development'.) Maybe this could be an icon which reveals details when tapped / on mouseover.
-  * Area and subarea dropdowns don't yet contain the correct data
+  * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
   * Follow rebgv.org's style guidelines for branding
   * Add our logo

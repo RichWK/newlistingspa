@@ -31,6 +31,10 @@
         v-bind="field"
         @new-user-input="newUserInput"
       />
+      <FormRoom
+        v-if="field.fType === 'room'"
+        @new-user-input="newUserInput"
+      />
 
     </template>
 
@@ -47,6 +51,7 @@ import FormSelection from './FormSelection.vue'
 import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
 import FormTextarea from './FormTextarea.vue'
+import FormRoom from './FormRoom.vue'
 
 export default {
   
@@ -56,7 +61,8 @@ export default {
     'FormSelection': FormSelection,
     'FormDate': FormDate,
     'FormDropdown': FormDropdown,
-    'FormTextarea': FormTextarea
+    'FormTextarea': FormTextarea,
+    'FormRoom': FormRoom
   },
   data() {
     return {

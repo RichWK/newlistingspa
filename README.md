@@ -5,19 +5,20 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
 ### To-dos
 
 * Refine the data structure
-  * Add a "maximum selected" attribute — to limit the number of checkboxes which can be selected. (Different fields have different requirements.)
+  * Fill out the "maximum" attribute for inputs and textareas
   * Add a "pattern" attribute — for basic data validation, especially for number fields
   * A few fields need the ability to specify a "note". (e.g. 'Age Type', 'Units in Development'.) Maybe this could be an icon which reveals details when tapped / on mouseover.
   * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
+  * Rename `<FormText>` to `<FormInput>`...?
   * Follow rebgv.org's style guidelines for branding
   * Add our logo
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
   * New field types
     * Currency
-    * Textarea
     * PrimeVue toggle button for switching between feet and metres
     * Decimal
+  * Limit checkbox selection based on 'maximum' attribute
   * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
   * Hide fields according to the property type selected by the user. Simplifies things 🙂
 

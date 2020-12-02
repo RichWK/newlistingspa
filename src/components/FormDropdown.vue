@@ -23,20 +23,23 @@ export default {
   components: {
     'PrimeDropdown': Dropdown
   },
+  computed: {
+    userInputData() {
+      return {
+        name: this.name,
+        value: this.userInput?.name
+      }
+    }
+  },
   data () {
     return {
       'userInput': null
     }
   },
-  emits: ['new-user-input'],
+  emits: ['change'],
   methods: {
     onChange() {
-      this.$emit( 'new-user-input',
-        {
-          name: this.name,
-          value: this.userInput.name
-        }
-      );
+      this.$emit('change', this.userInputData);
     }
   },
   props: {

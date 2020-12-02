@@ -2,10 +2,10 @@
   
   <PrimeDropdown
     v-model="userInput"
-    :placeholder="label"
+    :filter="filter"
     :options="options"
-    optionLabel="name"
-    filter
+    :optionLabel="optionLabel"
+    :placeholder="label"
     @change="onChange"
   />
 
@@ -40,9 +40,17 @@ export default {
     }
   },
   props: {
+    'filter': {
+      type: Boolean,
+      default: true
+    },
     'label': String,
     'name': String,
-    'options': Array
+    'options': Array,
+    'optionLabel': {
+      type: String,
+      default: 'name'
+    }
   }
 }
 
@@ -59,6 +67,13 @@ export default {
   margin-bottom: 20px;
 }
 
-
 </style>
 
+<style>
+
+.p-dropdown-panel div.p-dropdown-header {
+
+  padding: 0;
+}
+
+</style>

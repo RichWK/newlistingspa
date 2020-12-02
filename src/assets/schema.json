@@ -6,6 +6,12 @@
     ]
   },
   {
+    "label": "Rooms",
+    "fields": [
+      { "name": "rooms", "fType": "room" }
+    ]
+  },
+  {
     "label": "Property address",
     "fields": [
       { "name": "addressUnitNumber", "fType": "text", "label": "Unit" },
@@ -1346,7 +1352,7 @@
   {
     "label": "Rooms",
     "fields": [
-      
+      { "name": "rooms", "fType": "room" }
     ]
   },
   {

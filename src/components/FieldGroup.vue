@@ -32,8 +32,8 @@
         @new-user-input="newUserInput"
       />
       <FormRoom
-        v-if="field.fType === 'room'"
-        @new-user-input="newUserInput"
+        v-if="field.fType === 'rooms'"
+        @change="onChange"
       />
 
     </template>
@@ -80,12 +80,21 @@ export default {
       userInputs: {}
     }
   },
-  emits: ['new-user-input'],
+  emits: ['change','new-user-input'],
   methods: {
     newUserInput(userInput) {
       let { name, value } = userInput;
       this.userInputs[name] = value;
       this.$emit( 'new-user-input', this.userInputs );
+    },
+    onChange(userInput) {
+      Object.entries(userInput).forEach( entry => {
+
+        const { key, value } = entry;
+        this.userInputs[key] = value;
+      });
+      
+      this.$emit( 'change', this.userInputs );
     }
   },
   props: {

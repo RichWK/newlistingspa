@@ -1356,6 +1356,12 @@
     ]
   },
   {
+    "label": "Bathrooms",
+    "fields": [
+      { "name": "bathrooms", "fType": "bathrooms" }
+    ]
+  },
+  {
     "label": "REALTOR® remarks",
     "fields": [
       { "name": "realtorRemarks", "fType": "textarea" }

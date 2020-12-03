@@ -6,6 +6,7 @@
     :options="options"
     :optionLabel="optionLabel"
     :placeholder="label"
+    :showClear="showClearIcon"
     @change="onChange"
   />
 
@@ -45,6 +46,10 @@ export default {
     'optionLabel': {
       type: String,
       default: 'name'
+    },
+    'showClearIcon': {
+      type: Boolean,
+      default: false
     }
   }
 }

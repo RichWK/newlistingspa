@@ -1,14 +1,12 @@
 <template>
 
   <FormDropdown
-    v-model="room"
     placeholder="Room"
     optionLabel="room"
     :options="rooms"
     @change="onChange"
   />
   <FormDropdown
-    v-model="floor"
     placeholder="Floor"
     optionLabel="floor"
     :filter="false"
@@ -16,7 +14,7 @@
     @change="onChange"
   />
   <FormText
-    v-model="dimensions"
+    name="dimensions"
     label="Dimensions"
     @change="onChange"
   />
@@ -37,26 +35,14 @@ export default {
     'FormDropdown': FormDropdown,
     'FormText': FormText
   },
-  computed: {
-    userInputs() {
-      let obj = {};
-      obj.dimensions = this.dimensions;
-      obj.floor = this.floor?.floor;
-      obj.room = this.room?.room;
-      return obj;
-    }
-  },
   data () {
     return {
-      'dimensions': null,
-      'floor': null,
       'floors': [
          { "floor": 'Main' },
          { "floor": 'Above' },
          { "floor": 'Below' },
          { "floor": 'Basement' }
       ],
-      'room': null,
       'rooms': [
         { "room": 'Master Bedroom' },
         { "room": 'Attic' },
@@ -106,8 +92,8 @@ export default {
   },
   emits: ['change'],
   methods: {
-    onChange() {
-      this.$emit( 'change', this.userInputs );
+    onChange(newInput) {
+      this.$emit( 'change', newInput );
     }
   }
 }

@@ -91,7 +91,7 @@ export default {
   emits: ['change','new-user-input'],
   methods: {
     newUserInput(userInput) {
-      
+
       let { name, value } = userInput;
       this.userInputs[name] = value;
       this.$emit( 'new-user-input', this.userInputs );
@@ -103,8 +103,14 @@ export default {
     }
   },
   props: {
-    'label': String,
-    'fields': Array
+    'label': {
+      type: String,
+      required: true
+    },
+    'fields': {
+      type: Array,
+      required: true
+    }
   }
 }
 

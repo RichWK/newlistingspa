@@ -9,7 +9,7 @@
       <FormText
         v-if="this.textFieldTypes.includes( field.fType )"
         v-bind="field"
-        @new-user-input="newUserInput"
+        @change="onChange"
       />
       <FormSelection
         v-if="this.selectionFieldTypes.includes( field.fType )"

@@ -17,7 +17,7 @@ import FormRoom from './FormRoom.vue'
 
 export default {
   
-  name: 'FormRooms',
+  name: 'FormRepeatingField',
   components: {
     'FormRoom': FormRoom
   },

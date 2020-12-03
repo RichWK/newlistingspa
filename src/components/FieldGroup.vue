@@ -4,7 +4,10 @@
 
     <h2>{{ label }}</h2>
 
-    <template v-for="field in fields" :key="field.name">
+    <template
+      v-for="field in fields"
+      :key="field.name"
+    >
 
       <FormText
         v-if="this.textFieldTypes.includes( field.fType )"
@@ -31,8 +34,8 @@
         v-bind="field"
         @new-user-input="newUserInput"
       />
-      <FormRooms
-        v-if="field.fType === 'rooms'"
+      <FormRepeatingField
+        v-if="this.repeatingFieldTypes.includes( field.fType )"
         @change="onChange"
       />
 
@@ -51,7 +54,7 @@ import FormSelection from './FormSelection.vue'
 import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
 import FormTextarea from './FormTextarea.vue'
-import FormRooms from './FormRooms.vue'
+import FormRepeatingField from './FormRepeatingField.vue'
 
 export default {
   
@@ -62,7 +65,7 @@ export default {
     'FormDate': FormDate,
     'FormDropdown': FormDropdown,
     'FormTextarea': FormTextarea,
-    'FormRooms': FormRooms
+    'FormRepeatingField': FormRepeatingField
   },
   data() {
     return {
@@ -72,6 +75,11 @@ export default {
         'decimal',
         'currency',
         'phone',
+      ],
+      repeatingFieldTypes: [
+        'rooms',
+        'bathrooms',
+        'openHouses'
       ],
       selectionFieldTypes: [
         'checkbox',
@@ -83,6 +91,7 @@ export default {
   emits: ['change','new-user-input'],
   methods: {
     newUserInput(userInput) {
+      
       let { name, value } = userInput;
       this.userInputs[name] = value;
       this.$emit( 'new-user-input', this.userInputs );

@@ -1,7 +1,7 @@
 <template>
 
   <FormRoom
-    v-for="n in count"
+    v-for="n in repetitions"
     :index="n"
     :key="n"
     @change="onChange"
@@ -21,9 +21,14 @@ export default {
   components: {
     'FormRoom': FormRoom
   },
+  computed: {
+    repetitions () {
+      return this.fieldsRequested > this.maximum ? this.maximum : this.fieldsRequested;
+    }
+  },
   data () {
     return {
-      'count': 3,
+      'fieldsRequested': 3,
       'userInputs': { rooms: {} }
     }
   },
@@ -33,6 +38,14 @@ export default {
       this.userInputs.rooms = { ...this.userInputs.rooms, ...newInput };
       this.$emit( 'change', this.userInputs );
     }
+  },
+  props: {
+    'name': String,
+    'fType': {
+      type: String,
+      required: true
+    },
+    'maximum': Number
   }
 }
 

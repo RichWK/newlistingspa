@@ -90,14 +90,15 @@ export default {
         { "room": 'Wine Room' },
         { "room": 'Wok Kitchen' },
         { "room": 'Workshop' }
-      ]
+      ],
+      userInputs: { rooms: {} }
     }
   },
   emits: ['change'],
   methods: {
     onChange(newInput) {
-      let inputWithIndex = { id: this.index, ...newInput }
-      this.$emit( 'change', inputWithIndex );
+      this.userInputs.rooms[this.index] = { ...this.userInputs.rooms[this.index], ...newInput }
+      this.$emit( 'change', this.userInputs );
     }
   },
   props: {

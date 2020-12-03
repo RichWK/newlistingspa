@@ -2,6 +2,7 @@
 
   <FormRoom
     v-for="n in count"
+    :index="n"
     :key="n"
     @change="onChange"
   />

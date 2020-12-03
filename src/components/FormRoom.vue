@@ -96,8 +96,12 @@ export default {
   emits: ['change'],
   methods: {
     onChange(newInput) {
-      this.$emit( 'change', newInput );
+      let inputWithIndex = { id: this.index, ...newInput }
+      this.$emit( 'change', inputWithIndex );
     }
+  },
+  props: {
+    index: Number
   }
 }
 

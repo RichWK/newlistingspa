@@ -18,7 +18,7 @@
   <FormText
     v-model="dimensions"
     label="Dimensions"
-    @new-user-input="newUserInput"
+    @change="onChange"
   />
 
 </template>

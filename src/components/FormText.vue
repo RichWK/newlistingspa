@@ -1,6 +1,9 @@
 <template>
-  
-  <div class="container p-float-label">
+
+  <div
+    class="container"
+    :class="{ 'p-float-label' : floatingLabel }"
+  >
     
     <PrimeText
       v-model="userInput"
@@ -8,9 +11,10 @@
       :type="type"
       :inputmode="inputMode"
       :pattern="pattern"
+      :placeholder="placeholderText"
       @change="onChange"
     />
-    <label :for="name">{{ label }}</label>
+    <label v-if="floatingLabel" :for="name">{{ label }}</label>
     
   </div>
 
@@ -35,6 +39,9 @@ export default {
     pattern() {
       return this.fType === 'number' ? '[0-9]*' : undefined
     },
+    placeholderText() {
+      return this.floatingLabel === false ? this.label : ''
+    },
     type() {
       return this.fType === 'phone' ? 'tel' : 'text'
     },
@@ -54,8 +61,12 @@ export default {
     }
   },
   props: {
-    'label': String,
+    'floatingLabel': {
+      type: Boolean,
+      default: true
+    },
     'fType': String,
+    'label': String,
     'name': String
   }
 }

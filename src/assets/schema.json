@@ -8,7 +8,7 @@
   {
     "label": "Rooms",
     "fields": [
-      { "name": "rooms", "fType": "room" }
+      { "name": "rooms", "fType": "rooms" }
     ]
   },
   {
@@ -1352,7 +1352,7 @@
   {
     "label": "Rooms",
     "fields": [
-      { "name": "rooms", "fType": "room" }
+      { "name": "rooms", "fType": "rooms" }
     ]
   },
   {

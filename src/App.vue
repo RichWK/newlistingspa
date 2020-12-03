@@ -9,7 +9,7 @@
       :key="group.label"
       :label="group.label"
       :fields="group.fields"
-      @new-user-input="storeUserInputs"
+      @change="storeUserInputs"
     />
 
   </form>

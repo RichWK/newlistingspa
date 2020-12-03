@@ -37,6 +37,12 @@ export default {
     },
     type() {
       return this.fType === 'phone' ? 'tel' : 'text'
+    },
+    userInputData() {
+      return {
+        name: this.name,
+        value: this.userInput
+      }
     }
   },
   data () {
@@ -44,15 +50,10 @@ export default {
       userInput: null
     }
   },
-  emits: ['new-user-input'],
+  emits: ['change'],
   methods: {
     onChange() {
-      this.$emit( 'new-user-input',
-        {
-          name: this.name,
-          value: this.userInput
-        }
-      );
+      this.$emit( 'change', this.userInputData);
     }
   },
   props: {

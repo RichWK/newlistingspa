@@ -1,7 +1,7 @@
 <template>
   
   <PrimeDropdown
-    v-model="userInput"
+    v-model="userInputAsObject"
     :filter="filter"
     :options="options"
     :optionLabel="optionLabel"
@@ -23,23 +23,15 @@ export default {
   components: {
     'PrimeDropdown': Dropdown
   },
-  computed: {
-    userInputData() {
-      return {
-        name: this.name,
-        value: this.userInput?.name
-      }
-    }
-  },
   data () {
     return {
-      'userInput': null
+      'userInputAsObject': null
     }
   },
   emits: ['change'],
   methods: {
     onChange() {
-      this.$emit('change', this.userInputData);
+      this.$emit('change', this.userInputAsObject);
     }
   },
   props: {

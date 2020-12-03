@@ -88,12 +88,8 @@ export default {
       this.$emit( 'new-user-input', this.userInputs );
     },
     onChange(userInput) {
-      Object.entries(userInput).forEach( entry => {
 
-        const { key, value } = entry;
-        this.userInputs[key] = value;
-      });
-      
+      this.userInputs = { ...this.userInputs, ...userInput };      
       this.$emit( 'change', this.userInputs );
     }
   },

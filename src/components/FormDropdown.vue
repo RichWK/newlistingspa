@@ -19,7 +19,7 @@ import Dropdown from 'primevue/dropdown';
 
 export default {
   
-  name: 'FormCheckbox',
+  name: 'FormDropdown',
   components: {
     'PrimeDropdown': Dropdown
   },

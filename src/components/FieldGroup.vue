@@ -36,6 +36,7 @@
       />
       <FormRepeatingField
         v-if="this.repeatingFieldTypes.includes( field.fType )"
+        v-bind="field"
         @change="onChange"
       />
 

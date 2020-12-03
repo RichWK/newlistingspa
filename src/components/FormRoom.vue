@@ -91,13 +91,13 @@ export default {
         { "room": 'Wok Kitchen' },
         { "room": 'Workshop' }
       ],
-      userInputs: { rooms: {} }
+      userInputs: {}
     }
   },
   emits: ['change'],
   methods: {
     onChange(newInput) {
-      this.userInputs.rooms[this.index] = { ...this.userInputs.rooms[this.index], ...newInput }
+      this.userInputs[this.index] = { ...this.userInputs[this.index], ...newInput }
       this.$emit( 'change', this.userInputs );
     }
   },

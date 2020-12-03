@@ -23,13 +23,15 @@ export default {
   },
   data () {
     return {
-      'count': 1
+      'count': 3,
+      'userInputs': { rooms: {} }
     }
   },
   emits: ['change'],
   methods: {
     onChange(newInput) {
-      this.$emit( 'change', newInput );
+      this.userInputs.rooms = { ...this.userInputs.rooms, ...newInput };
+      this.$emit( 'change', this.userInputs );
     }
   }
 }

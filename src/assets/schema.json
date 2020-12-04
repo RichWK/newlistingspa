@@ -1,6 +1,6 @@
 [
   {
-    "label": "Date on Multiple Listing Contract",
+    "label": "Date on contract",
     "fields": [
       { "name": "contractDate", "fType": "date" }
     ]

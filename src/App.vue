@@ -77,7 +77,7 @@ export default {
   header img {
 
     background-color: #1fad58;
-    padding: 20px 50px;
+    padding: 25px 50px;
   }
 
   .title {

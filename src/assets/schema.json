@@ -1070,20 +1070,6 @@
     ]
   },
   {
-    "label": "View — displays on board reports",
-    "fields": [
-      {
-        "name": "viewForBoardReports",
-        "fType": "radio",
-        "options": [
-          { "name": "viewForBoardReportsYes", "label": "Yes" },
-          { "name": "viewForBoardReportsNo", "label": "No" }
-        ]
-      },
-      { "name": "viewForBoardReportsDetails", "fType": "text", "label": "If yes, please provide details" }
-    ]
-  },
-  {
     "label": "View — displays on realtor.ca",
     "fields": [
       {
@@ -1103,6 +1089,20 @@
           { "name": "viewForRealtorCaWater", "label": "Water" }
         ]
       }
+    ]
+  },
+  {
+    "label": "View — displays on board reports",
+    "fields": [
+      {
+        "name": "viewForBoardReports",
+        "fType": "radio",
+        "options": [
+          { "name": "viewForBoardReportsYes", "label": "Yes" },
+          { "name": "viewForBoardReportsNo", "label": "No" }
+        ]
+      },
+      { "name": "viewForBoardReportsDetails", "fType": "text", "label": "If yes, please provide details" }
     ]
   },
   {

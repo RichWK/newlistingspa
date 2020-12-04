@@ -15,7 +15,7 @@
     :showClearIcon="true"
     @change="onChange"
   />
-  <FormText
+  <FormInput
     :floatingLabel="false"
     name="dimensions"
     label="Dimensions"
@@ -29,14 +29,14 @@
 <script>
 
 import FormDropdown from './FormDropdown.vue'
-import FormText from './FormText.vue'
+import FormInput from './FormInput.vue'
 
 export default {
   
   name: 'FormRoom',
   components: {
     'FormDropdown': FormDropdown,
-    'FormText': FormText
+    'FormInput': FormInput
   },
   data () {
     return {

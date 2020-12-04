@@ -28,7 +28,7 @@ import InputText from 'primevue/inputtext';
 
 export default {
   
-  name: 'FormText',
+  name: 'FormInput',
   components: {
     'PrimeText': InputText
   },

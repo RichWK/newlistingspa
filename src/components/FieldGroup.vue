@@ -19,6 +19,11 @@
         v-bind="field"
         @change="onChange"
       />
+      <FormInput
+        v-if="this.inputFieldTypes.includes( field.fType )"
+        v-bind="field"
+        @change="onChange"
+      />
       <FormRepeatingField
         v-if="this.repeatingFieldTypes.includes( field.fType )"
         v-bind="field"
@@ -26,11 +31,6 @@
       />
       <FormSelection
         v-if="this.selectionFieldTypes.includes( field.fType )"
-        v-bind="field"
-        @change="onChange"
-      />
-      <FormText
-        v-if="this.textFieldTypes.includes( field.fType )"
         v-bind="field"
         @change="onChange"
       />
@@ -52,9 +52,9 @@
 
 import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
+import FormInput from './FormInput.vue'
 import FormRepeatingField from './FormRepeatingField.vue'
 import FormSelection from './FormSelection.vue'
-import FormText from './FormText.vue'
 import FormTextarea from './FormTextarea.vue'
 
 export default {
@@ -63,21 +63,19 @@ export default {
   components: {
     'FormDate': FormDate,
     'FormDropdown': FormDropdown,
+    'FormInput': FormInput,
     'FormRepeatingField': FormRepeatingField,
     'FormSelection': FormSelection,
-    'FormText': FormText,
     'FormTextarea': FormTextarea
   },
   data() {
     return {
-      textFieldTypes: [
+      inputFieldTypes: [
         'text',
+        'decimal',
+        'currency',
         'number',
         'phone',
-      ],
-      numberFieldTypes: [
-        'decimal',
-        'currency'
       ],
       repeatingFieldTypes: [
         'rooms',

@@ -17,22 +17,22 @@
       <FormSelection
         v-if="this.selectionFieldTypes.includes( field.fType )"
         v-bind="field"
-        @new-user-input="newUserInput"
+        @change="onChange"
       />
       <FormDate
         v-if="field.fType === 'date'"
         v-bind="field"
-        @new-user-input="newUserInput"
+        @change="onChange"
       />
       <FormDropdown
         v-if="field.fType === 'dropdown'"
         v-bind="field"
-        @new-user-input="newUserInput"
+        @change="onChange"
       />
       <FormTextarea
         v-if="field.fType === 'textarea'"
         v-bind="field"
-        @new-user-input="newUserInput"
+        @change="onChange"
       />
       <FormRepeatingField
         v-if="this.repeatingFieldTypes.includes( field.fType )"
@@ -89,14 +89,8 @@ export default {
       userInputs: {}
     }
   },
-  emits: ['change','new-user-input'],
+  emits: ['change'],
   methods: {
-    newUserInput(userInput) {
-
-      let { name, value } = userInput;
-      this.userInputs[name] = value;
-      this.$emit( 'new-user-input', this.userInputs );
-    },
     onChange(userInput) {
 
       this.userInputs = { ...this.userInputs, ...userInput };      

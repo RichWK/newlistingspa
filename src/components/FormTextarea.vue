@@ -21,20 +21,20 @@ export default {
   components: {
     'PrimeTextarea': Textarea
   },
+  computed: {
+    userInputAsObject() {
+      return { [this.name]: this.userInput }
+    }
+  },
   data () {
     return {
       userInput: null
     }
   },
-  emits: ['new-user-input'],
+  emits: ['change'],
   methods: {
     onChange() {
-      this.$emit( 'new-user-input',
-        {
-          name: this.name,
-          value: this.userInput
-        }
-      );
+      this.$emit( 'change', this.userInputAsObject );
     }
   },
   props: {

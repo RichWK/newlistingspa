@@ -539,7 +539,7 @@
           { "name": "titleToLandOther", "label": "Other" }
         ]
       },
-      { "name": "landLeaseExpiryYear", "fType": "number", "label": "Land lease expiry year" }
+      { "name": "landLeaseExpiryYear", "fType": "year", "label": "Land lease expiry year" }
     ]
   },
   {
@@ -595,8 +595,8 @@
   {
     "label": "Year details",
     "fields": [
-      { "name": "approximateYearBuilt", "fType": "number", "label": "Approximate year built" },
-      { "name": "approximateYearRenovated", "fType": "number", "label": "Approximate year renovated" }
+      { "name": "approximateYearBuilt", "fType": "year", "label": "Approximate year built" },
+      { "name": "approximateYearRenovated", "fType": "year", "label": "Approximate year renovated" }
     ]
   },
   {
@@ -801,7 +801,7 @@
     "label": "Taxes",
     "fields": [
       { "name": "grossTaxes", "fType": "currency", "label": "Gross taxes" },
-      { "name": "forTaxYear", "fType": "number", "label": "For tax year" },
+      { "name": "forTaxYear", "fType": "year", "label": "For tax year" },
       {
         "name": "taxIncludesUtilities",
         "fType": "radio",
@@ -1553,7 +1553,7 @@
     "label": "Maximum rentals allowed",
     "fields": [
       { "name": "rentalsAllowedNumber", "fType": "number", "label": "Number of units" },
-      { "name": "rentalsAllowedPercentage", "fType": "number", "label": "Percentage of units" }
+      { "name": "rentalsAllowedPercentage", "fType": "percentage", "label": "Percentage of units" }
     ]
   },
   {
@@ -1589,9 +1589,9 @@
     "label": "Multifamily income",
     "fields": [
       { "name": "multifamilyIncomePerAnnum", "fType": "currency", "label": "Yearly income" },
-      { "name": "multifamilyIncomeYear", "fType": "number", "label": "As of which year?" },
+      { "name": "multifamilyIncomeYear", "fType": "year", "label": "As of which year?" },
       { "name": "multifamilyIncomeLessOperatingExpenses", "fType": "currency", "label": "Operating expenses" },
-      { "name": "multifamilyIncomeNetAmount", "fType": "number", "label": "Net income" }
+      { "name": "multifamilyIncomeNetAmount", "fType": "currency", "label": "Net income" }
     ]
   },
   {

@@ -73,9 +73,11 @@ export default {
       textFieldTypes: [
         'text',
         'number',
-        'decimal',
-        'currency',
         'phone',
+      ],
+      numberFieldTypes: [
+        'decimal',
+        'currency'
       ],
       repeatingFieldTypes: [
         'rooms',

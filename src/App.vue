@@ -1,6 +1,18 @@
 <template>
 
-  <h1>Create a new listing</h1>
+  <header>
+
+    <img src="./assets/logo.png">
+
+  </header>
+
+  <div class="title">
+
+    <h1>Create a new listing</h1>
+
+    <p>Fill out this form and submit your new listing directly to our Paragon MLS system.</p>
+
+  </div>
 
   <form>
 
@@ -57,10 +69,32 @@ export default {
 
 <style scoped>
 
+  header {
+
+    margin-bottom: 35px;
+  }
+
+  header img {
+
+    background-color: #1fad58;
+    padding: 20px 50px;
+  }
+
+  .title {
+
+    margin-bottom: 35px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-left: 5px solid #f8e729;
+  }
+
   h1 {
 
-    margin-top: 10px;
-    margin-bottom: 40px;
+    font-family: "Merriweather", serif;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
 </style>

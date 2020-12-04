@@ -121,7 +121,8 @@ h2 {
   margin-top: 5px;
   margin-left: 3px;
   margin-bottom: 35px;
-  font-size: 14px;
+  font-size: 18px;
+  color: #1FAD58;
 }
 
 .group {
@@ -129,12 +130,11 @@ h2 {
   margin-bottom: 20px;
   padding: 20px 15px;
   padding-bottom: 15px;
-  border-radius: 5px;
 }
 
 .group:nth-child(odd) {
 
-  background: #d5d5d5;
+  background: #e7fff0;
 }
 
 .group:last-of-type {

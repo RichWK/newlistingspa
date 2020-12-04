@@ -99,10 +99,5 @@ input {
   border-radius: 4px;
 }
 
-label {
-
-  font-size: 14px;
-}
-
 </style>
 

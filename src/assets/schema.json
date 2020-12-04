@@ -6,12 +6,6 @@
     ]
   },
   {
-    "label": "Rooms",
-    "fields": [
-      { "name": "rooms", "fType": "rooms", "maximum": 30 }
-    ]
-  },
-  {
     "label": "Property address",
     "fields": [
       { "name": "addressUnitNumber", "fType": "text", "label": "Unit" },

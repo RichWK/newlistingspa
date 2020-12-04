@@ -73,7 +73,7 @@ export default {
       return this.fType === 'phone' ? 'tel' : 'text'
     },
     useGrouping() {
-      return this.fType === 'number' ? false : true
+      return this.fType === 'year' ? false : true
     },
     userInputAsObject() {
       return { [this.name]: this.userInput }
@@ -88,7 +88,8 @@ export default {
       'numberFieldTypes': [
         'number',
         'decimal',
-        'currency'
+        'currency',
+        'year'
       ],
       userInput: null
     }

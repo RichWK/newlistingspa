@@ -76,6 +76,7 @@ export default {
         'currency',
         'number',
         'phone',
+        'year'
       ],
       repeatingFieldTypes: [
         'rooms',

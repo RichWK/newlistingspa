@@ -22,6 +22,7 @@
       :id="name"
       :minFractionDigits="minFractionDigits"
       :mode="mode"
+      :suffix="suffix"
       :useGrouping="useGrouping"
       @change="onChange"
     />
@@ -68,6 +69,9 @@ export default {
     },
     placeholderText() {
       return this.floatingLabel === false ? this.label : ''
+    },
+    suffix() {
+      return this.fType === 'percentage' ? '%' : undefined
     },
     type() {
       return this.fType === 'phone' ? 'tel' : 'text'

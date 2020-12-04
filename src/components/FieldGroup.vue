@@ -9,16 +9,6 @@
       :key="field.name"
     >
 
-      <FormText
-        v-if="this.textFieldTypes.includes( field.fType )"
-        v-bind="field"
-        @change="onChange"
-      />
-      <FormSelection
-        v-if="this.selectionFieldTypes.includes( field.fType )"
-        v-bind="field"
-        @change="onChange"
-      />
       <FormDate
         v-if="field.fType === 'date'"
         v-bind="field"
@@ -29,13 +19,23 @@
         v-bind="field"
         @change="onChange"
       />
-      <FormTextarea
-        v-if="field.fType === 'textarea'"
+      <FormRepeatingField
+        v-if="this.repeatingFieldTypes.includes( field.fType )"
         v-bind="field"
         @change="onChange"
       />
-      <FormRepeatingField
-        v-if="this.repeatingFieldTypes.includes( field.fType )"
+      <FormSelection
+        v-if="this.selectionFieldTypes.includes( field.fType )"
+        v-bind="field"
+        @change="onChange"
+      />
+      <FormText
+        v-if="this.textFieldTypes.includes( field.fType )"
+        v-bind="field"
+        @change="onChange"
+      />
+      <FormTextarea
+        v-if="field.fType === 'textarea'"
         v-bind="field"
         @change="onChange"
       />
@@ -50,23 +50,23 @@
 
 <script>
 
-import FormText from './FormText.vue'
-import FormSelection from './FormSelection.vue'
 import FormDate from './FormDate.vue'
 import FormDropdown from './FormDropdown.vue'
-import FormTextarea from './FormTextarea.vue'
 import FormRepeatingField from './FormRepeatingField.vue'
+import FormSelection from './FormSelection.vue'
+import FormText from './FormText.vue'
+import FormTextarea from './FormTextarea.vue'
 
 export default {
   
   name: 'FieldGroup',
   components: {
-    'FormText': FormText,
-    'FormSelection': FormSelection,
     'FormDate': FormDate,
     'FormDropdown': FormDropdown,
-    'FormTextarea': FormTextarea,
-    'FormRepeatingField': FormRepeatingField
+    'FormRepeatingField': FormRepeatingField,
+    'FormSelection': FormSelection,
+    'FormText': FormText,
+    'FormTextarea': FormTextarea
   },
   data() {
     return {

@@ -1409,7 +1409,7 @@
   {
     "label": "Open houses and tours",
     "fields": [
-      
+      { "name": "openHouses", "fType": "openHouses", "maximum": 4 }
     ]
   },
   {

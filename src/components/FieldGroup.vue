@@ -71,17 +71,18 @@ export default {
   data() {
     return {
       inputFieldTypes: [
-        'text',
-        'decimal',
         'currency',
+        'decimal',
         'number',
+        'percentage',
         'phone',
+        'text',
         'year'
       ],
       repeatingFieldTypes: [
-        'rooms',
         'bathrooms',
-        'openHouses'
+        'openHouses',
+        'rooms'
       ],
       selectionFieldTypes: [
         'checkbox',

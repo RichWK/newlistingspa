@@ -86,9 +86,10 @@ export default {
         'phone'
       ],
       'numberFieldTypes': [
-        'number',
-        'decimal',
         'currency',
+        'decimal',
+        'number',
+        'percentage',
         'year'
       ],
       userInput: null

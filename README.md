@@ -21,7 +21,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
   * Hide fields according to the property type selected by the user. Simplifies things 🙂
 * Bugs
-  * Clearing fields within <FormRepeatingField> does not clear the data
+  * Clearing fields within `<FormRepeatingField>` does not clear the data
 
 ### Common commands
 

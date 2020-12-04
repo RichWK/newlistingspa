@@ -1,11 +1,17 @@
 <template>
 
-  <FormRoom
+  <div
     v-for="n in repetitions"
-    :index="n"
     :key="n"
-    @change="onChange"
-  />
+  >
+
+    <FormRoom
+      v-if="name == 'rooms'"
+      :index="n"
+      @change="onChange"
+    />
+
+  </div>
 
 </template>
 

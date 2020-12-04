@@ -18,7 +18,11 @@
     <PrimeNumber
       v-if="numberFieldTypes.includes( fType )"
       v-model="userInput"
+      :currency="currency"
       :id="name"
+      :minFractionDigits="minFractionDigits"
+      :mode="mode"
+      :useGrouping="useGrouping"
       @change="onChange"
     />
     <label v-if="floatingLabel" :for="name">{{ label }}</label>
@@ -42,8 +46,22 @@ export default {
     'PrimeText': InputText
   },
   computed: {
+    currency() {
+      return this.fType === 'currency' ? 'CAD' : undefined
+    },
     inputMode() {
       return this.fType === 'number' ? 'numeric' : undefined
+    },
+    minFractionDigits() {
+      return this.fType === 'decimal' ? 2 : undefined
+    },
+    mode() {
+      switch( this.fType ) {
+        case 'currency':
+          return 'currency'
+        default:
+          return 'decimal'
+      }
     },
     pattern() {
       return this.fType === 'number' ? '[0-9]*' : undefined
@@ -54,6 +72,9 @@ export default {
     type() {
       return this.fType === 'phone' ? 'tel' : 'text'
     },
+    useGrouping() {
+      return this.fType === 'number' ? false : true
+    },
     userInputAsObject() {
       return { [this.name]: this.userInput }
     }
@@ -62,10 +83,10 @@ export default {
     return {
       'textFieldTypes': [
         'text',
-        'number',
         'phone'
       ],
       'numberFieldTypes': [
+        'number',
         'decimal',
         'currency'
       ],

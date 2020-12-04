@@ -20,17 +20,17 @@
         @change="onChange"
       />
       <FormInput
-        v-if="this.inputFieldTypes.includes( field.fType )"
+        v-if="inputFieldTypes.includes( field.fType )"
         v-bind="field"
         @change="onChange"
       />
       <FormRepeatingField
-        v-if="this.repeatingFieldTypes.includes( field.fType )"
+        v-if="repeatingFieldTypes.includes( field.fType )"
         v-bind="field"
         @change="onChange"
       />
       <FormSelection
-        v-if="this.selectionFieldTypes.includes( field.fType )"
+        v-if="selectionFieldTypes.includes( field.fType )"
         v-bind="field"
         @change="onChange"
       />

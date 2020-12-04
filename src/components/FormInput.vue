@@ -6,12 +6,19 @@
   >
     
     <PrimeText
+      v-if="textFieldTypes.includes( fType )"
       v-model="userInput"
       :id="name"
       :type="type"
       :inputmode="inputMode"
       :pattern="pattern"
       :placeholder="placeholderText"
+      @change="onChange"
+    />
+    <PrimeNumber
+      v-if="numberFieldTypes.includes( fType )"
+      v-model="userInput"
+      :id="name"
       @change="onChange"
     />
     <label v-if="floatingLabel" :for="name">{{ label }}</label>
@@ -24,12 +31,14 @@
 
 <script>
 
+import InputNumber from 'primevue/inputnumber';
 import InputText from 'primevue/inputtext';
 
 export default {
   
   name: 'FormInput',
   components: {
+    'PrimeNumber': InputNumber,
     'PrimeText': InputText
   },
   computed: {
@@ -51,6 +60,15 @@ export default {
   },
   data () {
     return {
+      'textFieldTypes': [
+        'text',
+        'number',
+        'phone'
+      ],
+      'numberFieldTypes': [
+        'decimal',
+        'currency'
+      ],
       userInput: null
     }
   },
@@ -65,7 +83,10 @@ export default {
       type: Boolean,
       default: true
     },
-    'fType': String,
+    'fType': {
+      type: String,
+      default: 'text'
+    },
     'label': String,
     'name': String
   }
@@ -97,6 +118,11 @@ input {
 
   display: block;
   border-radius: 4px;
+}
+
+.p-inputtext, .p-inputnumber {
+
+  width: 250px;
 }
 
 </style>

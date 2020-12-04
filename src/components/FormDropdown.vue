@@ -62,7 +62,7 @@ export default {
 
 .p-dropdown {
 
-  min-width: 216px;
+  min-width: 250px;
   margin-right: 12px;
   margin-bottom: 20px;
 }

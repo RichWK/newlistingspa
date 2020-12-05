@@ -10,7 +10,7 @@
 
     <h1>Create a new listing</h1>
 
-    <p>Fill out this form and submit your new listing directly to our Paragon MLS system.</p>
+    <p>Fill out this form for submitting your new listing directly to our Paragon MLS system.</p>
 
   </div>
 

@@ -157,6 +157,7 @@ export default {
   color: #fff;
   border-radius: 10px;
   line-height: 1;
+  user-select: none;
 }
 
 .group {

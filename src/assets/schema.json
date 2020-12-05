@@ -1346,7 +1346,7 @@
   {
     "label": "Rooms",
     "fields": [
-      { "name": "rooms", "fType": "rooms" }
+      { "name": "rooms", "fType": "rooms", "maximum": 30 }
     ]
   },
   {

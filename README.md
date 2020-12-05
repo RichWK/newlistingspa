@@ -10,11 +10,11 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * A few fields need the ability to specify a "note". (e.g. 'Age Type', 'Units in Development'.) Maybe this could be an icon which reveals details when tapped / on mouseover.
   * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
+  * Have the 'max' UI only appear when maximum has been reached (use 200ms zoom-in animation when appearing)
   * Create `<FormBathroom>` and `<FormOpenHouse>`
   * `<FormRepeatingField>` needs some work. Perhaps it would be better to use PrimeVue's DataTable component?
   * New field types
     * PrimeVue toggle button for switching between feet and metres
-  * Limit checkbox selection based on 'maximum' attribute. Also indicate the limit with some kind of label
   * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
   * Hide fields according to the property type that's been selected. Simplifies things for the user 🙂
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly

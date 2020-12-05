@@ -11,6 +11,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
   * Have the 'max' UI only appear when maximum has been reached (use 200ms zoom-in animation when appearing)
+  * Fade out other radio button options once one has been selected, mimicking checkbox selection behaviour once the max has been reached. But — they should remain selectable
   * Create `<FormBathroom>` and `<FormOpenHouse>`
   * `<FormRepeatingField>` needs some work. Perhaps it would be better to use PrimeVue's DataTable component?
   * New field types

@@ -4,12 +4,18 @@
   
     <div class="container" v-for="option in options" :key="option.name">
     
-      <label :for="option.name">{{ option.label }}</label>
+      <label
+        :class="{ 'deactivated' : deactivated && !userInput.includes( option.label ) }"
+        :for="option.name"
+      >
+        {{ option.label }}
+      </label>
 
       <PrimeCheckbox
         v-if="fType === 'checkbox'"
         v-model="userInput"
         v-bind="$attrs"
+        :disabled="deactivated && !userInput.includes( option.label )"
         :id="option.name"
         :name="name"
         :value="option.label"
@@ -19,6 +25,7 @@
         v-if="fType === 'radio'"
         v-model="userInput"
         v-bind="$attrs"
+        :disabled="deactivated && !userInput.includes( option.label )"
         :id="option.name"
         :name="name"
         :value="option.label"
@@ -46,13 +53,16 @@ export default {
     'PrimeRadio': RadioButton
   },
   computed: {
+    deactivated() {
+      return this.userInput.length >= this.maximum ? true : false
+    },
     userInputAsObject() {
       return { [this.name]: this.userInput }
     }
   },
   data () {
     return {
-      'userInput': null
+      'userInput': []
     }
   },
   emits: ['change'],
@@ -62,10 +72,16 @@ export default {
     }
   },
   props: {
-    'label': String,
     'fType': String,
+    'label': String,
+    'maximum': {
+      type: Number
+    },
     'name': String,
-    'options': Array
+    'options': {
+      type: Array,
+      required: true
+    }
   }
 }
 
@@ -94,6 +110,13 @@ label {
   padding: 5px;
   padding-left: 10px;
   margin-right: 20px;
+}
+
+label.deactivated {
+
+  color: #cbcbcb;
+  user-select: none;
+  cursor: default;
 }
 
 </style>

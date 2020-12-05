@@ -2,7 +2,12 @@
   
   <div class="group">
 
-    <h2>{{ label }}</h2>
+    <div class="header-container">
+
+      <h2>{{ label }}</h2>
+      <span v-if="maximum">max {{ maximum }}</span>
+
+    </div>
 
     <template
       v-for="field in fields"
@@ -68,6 +73,18 @@ export default {
     'FormSelection': FormSelection,
     'FormTextarea': FormTextarea
   },
+  computed: {
+    maximum() {
+      let i, max = 0;
+      for ( i = 0; i < this.fields.length; i++ ) {
+        if ( this.fields[i]['maximum'] ) {
+          max = this.fields[i]['maximum'];
+          break;
+        }
+      }
+      return max;
+    }
+  },
   data() {
     return {
       inputFieldTypes: [
@@ -117,14 +134,29 @@ export default {
 
 <style scoped>
 
-h2 {
+.header-container h2 {
 
+  display: inline-block;
   margin: 0;
   margin-top: 5px;
   margin-left: 3px;
+  margin-right: 10px;
   margin-bottom: 35px;
   font-size: 18px;
-  color: #1FAD58;
+  color: #1fad58;
+}
+
+.header-container span {
+
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  padding: 4px 8px 5px;
+  font-size: 14px;
+  background: #1fad58;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 1;
 }
 
 .group {

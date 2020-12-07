@@ -1655,5 +1655,11 @@
       { "name": "manufacturedHomesElectricalNumber", "fType": "text", "label": "CSA / BC electrical number" },
       { "name": "manufacturedHomesPadRental", "fType": "currency", "label": "Pad rental" }
     ]
+  },
+  {
+    "label": "Photos",
+    "fields": [
+      
+    ]
   }
 ]

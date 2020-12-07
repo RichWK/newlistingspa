@@ -539,7 +539,7 @@
           { "name": "titleToLandOther", "label": "Other" }
         ]
       },
-      { "name": "landLeaseExpiryYear", "fType": "year", "label": "Land lease expiry year" }
+      { "name": "landLeaseExpiryYear", "fType": "year", "label": "Year land lease expires" }
     ]
   },
   {

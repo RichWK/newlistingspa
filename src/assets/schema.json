@@ -985,8 +985,7 @@
     ]
   },
   {
-    "label": "Parking places",
-    "note": "The number of spaces available for vehicles.",
+    "label": "How many spaces are available for vehicles?",
     "fields": [
       { "name": "parkingPlacesCovered", "fType": "number", "label": "Covered" },
       { "name": "parkingPlacesTotal", "fType": "number", "label": "Total" }

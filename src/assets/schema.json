@@ -594,6 +594,7 @@
   },
   {
     "label": "Year details",
+    "note": "If unknown, please specify '9999'.",
     "fields": [
       { "name": "approximateYearBuilt", "fType": "year", "label": "Approximate year built" },
       { "name": "approximateYearRenovated", "fType": "year", "label": "Approximate year renovated" }
@@ -920,6 +921,7 @@
   },
   {
     "label": "Rain screen",
+    "note": "Built-in drainage cavity located between the outer cladding and the building paper. Allows water to escape.",
     "fields": [
       {
         "name": "rainScreen",
@@ -984,6 +986,7 @@
   },
   {
     "label": "Parking places",
+    "note": "The number of spaces available for vehicles.",
     "fields": [
       { "name": "parkingPlacesCovered", "fType": "number", "label": "Covered" },
       { "name": "parkingPlacesTotal", "fType": "number", "label": "Total" }
@@ -1381,7 +1384,7 @@
     ]
   },
   {
-    "label": "Display address on internet?",
+    "label": "Display property address on internet?",
     "fields": [
       {
         "name": "displayAddressOnInternet",
@@ -1402,12 +1405,14 @@
   },
   {
     "label": "Open houses and tours",
+    "note": "Open houses are available to the public, whereas tours are specifically for agents.",
     "fields": [
       { "name": "openHouses", "fType": "openHouses", "maximum": 4 }
     ]
   },
   {
     "label": "Strata details",
+    "note": "The 'units in development' field is only applicable in cases where more than one strata plan exists.",
     "fields": [
       { "name": "strataMaintenanceFee", "fType": "currency", "label": "Monthly maintenance fee" },
       { "name": "strataUnitsInDevelopment", "fType": "number", "label": "Units in development" },

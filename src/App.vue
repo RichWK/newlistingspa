@@ -10,7 +10,7 @@
 
     <h1>Create a new listing</h1>
 
-    <p>Fill out this form to submit your new residential listing directly to our Paragon MLS system. It supports detached, attached, apartments, multifamily (up to 4 units) and leasehold. For all other types, please submit a commercial listing.</p>
+    <p>Fill out this form to submit your new residential listing directly to our Paragon MLS system. It supports detached, attached, apartments, multifamily (up to 4 units) and leasehold types. For all others, please submit a commercial listing.</p>
 
   </div>
 
@@ -20,6 +20,7 @@
       v-for="group in groups"
       :key="group.label"
       :label="group.label"
+      :note="group.note"
       :fields="group.fields"
       @change="storeUserInputs"
     />

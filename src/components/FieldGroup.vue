@@ -5,7 +5,20 @@
     <div class="header-container">
 
       <h2>{{ label }}</h2>
-      <span v-if="maximum">max {{ maximum }}</span>
+      <span
+        v-if="note"
+        class="note"
+        @click="toggleNote"
+      >?</span>
+      <span
+        v-if="maximum"
+        class="maximum"
+      >max {{ maximum }}</span>
+
+      <p
+        v-if="note"
+        :class="{ show: showNote }"
+      >{{ note }}</p>
 
     </div>
 
@@ -105,6 +118,7 @@ export default {
         'checkbox',
         'radio'
       ],
+      showNote: false,
       userInputs: {}
     }
   },
@@ -114,17 +128,21 @@ export default {
 
       this.userInputs = { ...this.userInputs, ...userInput };      
       this.$emit( 'change', this.userInputs );
+    },
+    toggleNote() {
+      this.showNote = !this.showNote;
     }
   },
   props: {
+    'fields': {
+      type: Array,
+      required: true
+    },
     'label': {
       type: String,
       required: true
     },
-    'fields': {
-      type: Array,
-      required: true
-    }
+    'note': String
   }
 }
 
@@ -152,12 +170,43 @@ export default {
   position: relative;
   top: -2px;
   padding: 4px 8px 5px;
-  font-size: 14px;
+  line-height: 1;
+}
+
+.header-container span.note {
+
+  color: #1fad58;
+  cursor: pointer;
+  border: 2px solid #1fad58;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.header-container span.maximum {
+
   background: #1fad58;
   color: #fff;
   border-radius: 10px;
-  line-height: 1;
+  font-size: 14px;
   user-select: none;
+}
+
+.header-container p {
+
+  margin: 0;
+  font-style: italic;
+  font-size: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.header-container p.show {
+
+  max-height: 200px;
+  margin-bottom: 35px;
 }
 
 .group {

@@ -180,7 +180,7 @@ export default {
   border: 2px solid #1fad58;
   font-weight: bold;
   border-radius: 25px;
-  padding: 5px 10px;
+  padding: 3px 8px;
   margin-right: 10px;
 }
 

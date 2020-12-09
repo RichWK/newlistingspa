@@ -3,8 +3,8 @@
   <PrimeCalendar
     v-model="userInput"
     dateFormat="MM d, yy"
-    showIcon
-    @date-select="onSelection"
+    :showIcon="showIcon"
+    @date-select="onChange"
   />
 
 </template>
@@ -33,12 +33,16 @@ export default {
   },
   emits: ['change'],
   methods: {
-    onSelection() {
+    onChange() {
       this.$emit( 'change', this.userInputAsObject );
     }
   },
   props: {
-    'name': String
+    'name': String,
+    'showIcon': {
+      type: Boolean,
+      default: true
+    }
   }
 }
 

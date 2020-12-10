@@ -10,8 +10,8 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
   * Fade out other radio button options once one has been selected, mimicking checkbox selection behaviour once the max has been reached. But — they should remain selectable
-  * `<FormRepeatingField>` needs some work.
-    * Create `<FormBathroom>` and `<FormOpenHouse>`
+  * `<FormRepeatingField>` and its child components need some work.
+    * Add a numeric identifier to the left of each repeating field
   * New field types
     * PrimeVue toggle button for switching between feet and metres
   * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
@@ -19,6 +19,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
 * Bugs
   * Clearing fields within `<FormRepeatingField>` does not clear the data
+  * Open house date field is undefined in data
 
 ### Common commands
 

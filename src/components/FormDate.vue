@@ -55,6 +55,7 @@ export default {
 .p-calendar {
 
   margin-bottom: 20px;
+  margin-right: 12px;
   width: 250px;
 }
 

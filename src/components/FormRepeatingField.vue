@@ -5,6 +5,11 @@
     :key="n"
   >
 
+    <FormBathroom
+      v-if="name == 'bathrooms'"
+      :index="n"
+      @change="onChange"
+    />
     <FormOpenHouse
       v-if="name == 'openHouses'"
       :index="n"
@@ -24,6 +29,7 @@
 
 <script>
 
+import FormBathroom from './FormBathroom.vue'
 import FormOpenHouse from './FormOpenHouse.vue'
 import FormRoom from './FormRoom.vue'
 
@@ -31,6 +37,7 @@ export default {
   
   name: 'FormRepeatingField',
   components: {
+    'FormBathroom': FormBathroom,
     'FormOpenHouse': FormOpenHouse,
     'FormRoom': FormRoom
   },

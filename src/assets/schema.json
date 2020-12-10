@@ -1404,7 +1404,7 @@
   },
   {
     "label": "Open houses and tours",
-    "note": "Open houses are available to the public, but tours are specifically for agents.",
+    "note": "Open houses are available to the public, but tours are specifically only for agents.",
     "fields": [
       { "name": "openHouses", "fType": "openHouses", "maximum": 4 }
     ]

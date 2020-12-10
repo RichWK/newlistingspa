@@ -5,6 +5,11 @@
     :key="n"
   >
 
+    <FormOpenHouse
+      v-if="name == 'openHouses'"
+      :index="n"
+      @change="onChange"
+    />
     <FormRoom
       v-if="name == 'rooms'"
       :index="n"
@@ -19,12 +24,14 @@
 
 <script>
 
+import FormOpenHouse from './FormOpenHouse.vue'
 import FormRoom from './FormRoom.vue'
 
 export default {
   
   name: 'FormRepeatingField',
   components: {
+    'FormOpenHouse': FormOpenHouse,
     'FormRoom': FormRoom
   },
   computed: {
@@ -35,18 +42,22 @@ export default {
   data () {
     return {
       'fieldsRequested': 3,
-      'userInputs': { rooms: {} }
+      'userInputs': { [this.name]: {} }
     }
   },
   emits: ['change'],
   methods: {
     onChange(newInput) {
-      this.userInputs.rooms = { ...this.userInputs.rooms, ...newInput };
+      let type = this.name;
+      this.userInputs[type] = { ...this.userInputs[type], ...newInput };
       this.$emit( 'change', this.userInputs );
     }
   },
   props: {
-    'name': String,
+    'name': {
+      type: String,
+      required: true
+    },
     'fType': {
       type: String,
       required: true

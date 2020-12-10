@@ -168,7 +168,6 @@ export default {
 
   display: inline-block;
   position: relative;
-  top: -2px;
   padding: 4px 8px 5px;
   line-height: 1;
 }
@@ -182,6 +181,7 @@ export default {
   border-radius: 25px;
   padding: 3px 8px;
   margin-right: 10px;
+  top: -1px;
 }
 
 .header-container span.maximum {
@@ -191,6 +191,7 @@ export default {
   border-radius: 10px;
   font-size: 14px;
   user-select: none;
+  top: -2px;
 }
 
 .header-container p {

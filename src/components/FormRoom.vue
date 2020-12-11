@@ -1,7 +1,7 @@
 <template>
 
   <FormDropdown
-    :placeholder="'Room ' + index"
+    placeholder="Room"
     optionLabel="room"
     :options="rooms"
     :showClearIcon="true"

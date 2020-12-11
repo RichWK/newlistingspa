@@ -11,7 +11,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
 * Refine the design
   * Fade out other radio button options once one has been selected, mimicking checkbox selection behaviour once the max has been reached. But — they should remain selectable
   * `<FormRepeatingField>` and its child components need some work.
-    * Add a numeric identifier to the left of each repeating field
   * New field types
     * PrimeVue toggle button for switching between feet and metres
   * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute

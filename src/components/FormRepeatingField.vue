@@ -5,6 +5,8 @@
     :key="n"
   >
 
+    <h3>{{ n }}.</h3>
+    
     <FormBathroom
       v-if="name == 'bathrooms'"
       :index="n"
@@ -79,7 +81,11 @@ export default {
 
 <style scoped>
 
+h3 {
 
+  display: inline-block;
+  margin-right: 12px;
+}
 
 </style>
 

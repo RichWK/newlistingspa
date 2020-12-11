@@ -85,6 +85,7 @@ h3 {
 
   display: inline-block;
   margin-right: 12px;
+  color: #1fad58;
 }
 
 </style>

@@ -12,7 +12,6 @@
     optionLabel="floor"
     :filter="false"
     :options="floors"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormDropdown
@@ -20,7 +19,6 @@
     optionLabel="ensuite"
     :filter="false"
     :options="ensuite"
-    :showClearIcon="true"
     @change="onChange"
   />
 

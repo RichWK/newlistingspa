@@ -5,7 +5,6 @@
     optionLabel="type"
     :options="types"
     placeholder="Open house or tour?"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormDate
@@ -18,7 +17,6 @@
     optionLabel="time"
     :options="times"
     placeholder="Starting at"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormDropdown
@@ -26,7 +24,6 @@
     optionLabel="time"
     :options="times"
     placeholder="Ending at"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormDropdown
@@ -34,7 +31,6 @@
     optionLabel="refreshment"
     :options="refreshments"
     placeholder="Refreshments?"
-    :showClearIcon="true"
     @change="onChange"
   />
 

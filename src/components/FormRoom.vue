@@ -4,7 +4,6 @@
     placeholder="Room"
     optionLabel="room"
     :options="rooms"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormDropdown
@@ -12,7 +11,6 @@
     optionLabel="floor"
     :filter="false"
     :options="floors"
-    :showClearIcon="true"
     @change="onChange"
   />
   <FormInput

@@ -49,7 +49,7 @@ export default {
     },
     'showClearIcon': {
       type: Boolean,
-      default: false
+      default: true
     }
   }
 }

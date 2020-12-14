@@ -13,7 +13,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * `<FormRepeatingField>` and its child components need some work.
   * New field types
     * PrimeVue toggle button for switching between feet and metres
-  * Show `<h2>` for any `<FormSelection>` whose data specifies a label attribute
   * Hide fields according to the property type that's been selected. Simplifies things for the user 🙂
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
 * Bugs

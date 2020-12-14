@@ -891,11 +891,15 @@
     "label": "Taxes",
     "fields": [
       { "name": "grossTaxes", "fType": "currency", "label": "Gross taxes" },
-      { "name": "forTaxYear", "fType": "year", "label": "For tax year" },
+      { "name": "forTaxYear", "fType": "year", "label": "For tax year" }
+    ]
+  },
+  {
+    "label": "Do taxes include utilities?",
+    "fields": [
       {
-        "name": "taxIncludesUtilities",
+        "name": "floodPlain",
         "fType": "radio",
-        "label": "Does tax include utilties?",
         "options": [
           { "name": "taxIncludesUtilitiesYes", "label": "Yes" },
           { "name": "taxIncludesUtilitiesNo", "label": "No" }

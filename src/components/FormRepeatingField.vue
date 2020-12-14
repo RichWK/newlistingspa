@@ -44,13 +44,15 @@ export default {
     'FormRoom': FormRoom
   },
   computed: {
+    fieldsRequested() {
+      return Object.keys(this.userInputs[this.name]).length + 1;
+    },
     repetitions () {
       return this.fieldsRequested > this.maximum ? this.maximum : this.fieldsRequested;
     }
   },
   data () {
     return {
-      'fieldsRequested': 3,
       'userInputs': { [this.name]: {} }
     }
   },

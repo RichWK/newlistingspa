@@ -155,7 +155,6 @@ export default {
 .header-container h2 {
 
   display: inline-block;
-  margin: 0;
   margin-top: 5px;
   margin-left: 3px;
   margin-right: 10px;

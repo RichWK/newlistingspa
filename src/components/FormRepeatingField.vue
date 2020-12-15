@@ -5,7 +5,7 @@
     :key="n"
   >
 
-    <h3>{{ n }}.</h3>
+    <h3>{{ n }}</h3>
     
     <FormBathroom
       v-if="name == 'bathrooms'"

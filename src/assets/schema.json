@@ -515,14 +515,15 @@
     ]
   },
   {
-    "label": "Appointment contact",
+    "label": "Contact for appointments",
     "fields": [
       { "name": "appointmentPhoneNumber", "fType": "phone", "label": "Phone number" },
-      { "name": "forAppointmentCall", "fType": "text", "label": "For appointment call" }
+      { "name": "forAppointmentCall", "fType": "text", "label": "Name" }
     ]
   },
   {
     "label": "Dwelling classification",
+    "note": "'Attached' includes apartments.",
     "fields": [
       { 
         "name": "dwellingClassification",
@@ -628,7 +629,7 @@
           { "name": "titleToLandOther", "label": "Other" }
         ]
       },
-      { "name": "landLeaseExpiryYear", "fType": "year", "label": "Year land lease expires" }
+      { "name": "landLeaseExpiryYear", "fType": "year", "label": "Year of land lease expiry" }
     ]
   },
   {
@@ -678,12 +679,12 @@
           { "name": "propertyDisclosureStatementNotCompleted", "label": "No" }
         ]
       },
-      { "name": "propertyDisclosureStatementNotCompletedExplanation", "fType": "text", "label": "If not, please explain" }
+      { "name": "propertyDisclosureStatementNotCompletedExplanation", "fType": "text", "label": "If no, please explain" }
     ]
   },
   {
     "label": "Year details",
-    "note": "If unknown, please specify '9999'.",
+    "note": "If the year is unknown, please specify '9999'.",
     "fields": [
       { "name": "approximateYearBuilt", "fType": "year", "label": "Approximate year built" },
       { "name": "approximateYearRenovated", "fType": "year", "label": "Approximate year renovated" }
@@ -1078,7 +1079,7 @@
     ]
   },
   {
-    "label": "How many spaces are available for vehicles?",
+    "label": "How many spaces available for vehicles?",
     "fields": [
       { "name": "parkingPlacesCovered", "fType": "number", "label": "Covered" },
       { "name": "parkingPlacesTotal", "fType": "number", "label": "Total" }
@@ -1101,7 +1102,7 @@
     ]
   },
   {
-    "label": "Garage",
+    "label": "Garage measurements",
     "fields": [
       { "name": "garageSize", "fType": "number", "label": "Dimensions" },
       { "name": "garageDoorHeight", "fType": "number", "label": "Door height" }
@@ -1497,14 +1498,14 @@
   },
   {
     "label": "Open houses and tours",
-    "note": "Open houses are available to the public, but tours are specifically only for agents.",
+    "note": "Open houses are available to the public, but tours are only attended by agents.",
     "fields": [
       { "name": "openHouses", "fType": "openHouses", "maximum": 4 }
     ]
   },
   {
     "label": "Strata details",
-    "note": "The 'units in development' field is only applicable in cases where more than one strata plan exists.",
+    "note": "'Units in development' only applies if more than one strata plan exists.",
     "fields": [
       { "name": "strataMaintenanceFee", "fType": "currency", "label": "Monthly maintenance fee" },
       { "name": "strataUnitsInDevelopment", "fType": "number", "label": "Units in development" },
@@ -1621,7 +1622,7 @@
     ]
   },
   {
-    "label": "Are cats allowed?",
+    "label": "Cats allowed?",
     "fields": [
       {
         "name": "petsCats",
@@ -1634,7 +1635,7 @@
     ]
   },
   {
-    "label": "Are dogs allowed?",
+    "label": "Dogs allowed?",
     "fields": [
       {
         "name": "petsDogs",
@@ -1747,7 +1748,7 @@
     ]
   },
   {
-    "label": "Other manufactured home details",
+    "label": "Other manufactured home info",
     "fields": [
       { "name": "manufacturedHomesElectricalNumber", "fType": "text", "label": "CSA / BC electrical number" },
       { "name": "manufacturedHomesPadRental", "fType": "currency", "label": "Pad rental" }

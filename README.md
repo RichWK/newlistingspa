@@ -9,7 +9,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Add a "pattern" attribute — for basic data validation, especially for number fields
   * Subarea dropdown should filter based on the area selected. (And be greyed out prior to an area being selected.)
 * Refine the design
-  * Fade out other radio button options once one has been selected, mimicking checkbox selection behaviour once the max has been reached. But — they should remain selectable
   * `<FormRepeatingField>` and its child components need some work.
   * New field types
     * PrimeVue toggle button for switching between feet and metres

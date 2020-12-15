@@ -5,7 +5,7 @@
     <div class="container" v-for="option in options" :key="option.name">
     
       <label
-        :class="{ 'deactivated' : deactivated && !userInput.includes( option.label ) }"
+        :class="[ fType, { 'deactivated' : deactivated && !userInput.includes( option.label ) }]"
         :for="option.name"
       >
         {{ option.label }}
@@ -25,7 +25,6 @@
         v-if="fType === 'radio'"
         v-model="userInput"
         v-bind="$attrs"
-        :disabled="deactivated && !userInput.includes( option.label )"
         :id="option.name"
         :name="name"
         :value="option.label"
@@ -54,7 +53,13 @@ export default {
   },
   computed: {
     deactivated() {
-      return this.userInput.length >= this.maximum ? true : false
+      let length = this.userInput.length;
+      switch( this.fType ) {
+        case 'checkbox':
+          return length >= this.maximum ? true : false
+        default:
+          return length > 0 ? true : false
+      }
     },
     userInputAsObject() {
       return { [this.name]: this.userInput }
@@ -115,6 +120,16 @@ label {
 label.deactivated {
 
   color: #cbcbcb;
+}
+
+label.deactivated.checkbox {
+
+  user-select: none;
+  cursor: default;
+}
+
+label.deactivated.checkbox + div.p-checkbox {
+
   user-select: none;
   cursor: default;
 }

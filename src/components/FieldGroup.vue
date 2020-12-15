@@ -11,9 +11,9 @@
         @click="toggleNote"
       >?</span>
       <span
-        v-if="maximum"
-        class="maximum"
-      >max {{ maximum }}</span>
+        v-if="max"
+        class="max"
+      >max {{ max }}</span>
 
       <p
         v-if="note"
@@ -87,11 +87,11 @@ export default {
     'FormTextarea': FormTextarea
   },
   computed: {
-    maximum() {
+    max() {
       let i, max = 0;
       for ( i = 0; i < this.fields.length; i++ ) {
-        if ( this.fields[i]['maximum'] ) {
-          max = this.fields[i]['maximum'];
+        if ( this.fields[i]['max'] ) {
+          max = this.fields[i]['max'];
           break;
         }
       }
@@ -183,7 +183,7 @@ export default {
   top: -1px;
 }
 
-.header-container span.maximum {
+.header-container span.max {
 
   background: #1fad58;
   color: #fff;

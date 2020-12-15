@@ -48,7 +48,7 @@ export default {
       return Object.keys(this.userInputs[this.name]).length + 1;
     },
     repetitions () {
-      return this.fieldsRequested > this.maximum ? this.maximum : this.fieldsRequested;
+      return this.fieldsRequested > this.max ? this.max : this.fieldsRequested;
     }
   },
   data () {
@@ -73,7 +73,7 @@ export default {
       type: String,
       required: true
     },
-    'maximum': Number
+    'max': Number
   }
 }
 

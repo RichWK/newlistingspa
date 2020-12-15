@@ -56,7 +56,7 @@ export default {
       let length = this.userInput.length;
       switch( this.fType ) {
         case 'checkbox':
-          return length >= this.maximum ? true : false
+          return length >= this.max ? true : false
         default:
           return length > 0 ? true : false
       }
@@ -79,7 +79,7 @@ export default {
   props: {
     'fType': String,
     'label': String,
-    'maximum': {
+    'max': {
       type: Number
     },
     'name': String,

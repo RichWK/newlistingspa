@@ -584,7 +584,7 @@
       { 
         "name": "styleOfHome",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "styleOfHomeBasementEntry", "label": "Basement entry" },
           { "name": "styleOfHomeSplitEntry", "label": "Split entry" },
@@ -651,7 +651,7 @@
       {
         "name": "sellersInterest",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "sellersInterestRegisteredOwner", "label": "Registered owner" },
           { "name": "sellersInterestPowerofAttorney", "label": "Power of attorney" },
@@ -671,7 +671,7 @@
       {
         "name": "occupancy",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "occupancyOwner", "label": "Owner" },
           { "name": "occupancyTenant", "label": "Tenant" },
@@ -737,7 +737,7 @@
       {
         "name": "renovations",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "renovationsAddition", "label": "Addition" },
           { "name": "renovationsCompletely", "label": "Completely" },
@@ -755,7 +755,7 @@
       {
         "name": "suites",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "suitesNone", "label": "None" },
           { "name": "suitesLegal", "label": "Legal suite(s)" },
@@ -772,7 +772,7 @@
       {
         "name": "basementArea",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "basementNone", "label": "None" },
           { "name": "basementCrawl", "label": "Crawl" },
@@ -819,7 +819,7 @@
       {
         "name": "servicesConnected",
         "fType": "checkbox",
-        "maximum": 6,
+        "max": 6,
         "options": [
           { "name": "servicesConnectedNone", "label": "None" },
           { "name": "servicesConnectedCommunity", "label": "Community" },
@@ -860,7 +860,7 @@
       {
         "name": "waterSupply",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "waterSupplyNone", "label": "None" },
           { "name": "waterSupplyCityOrMunicipal", "label": "City or municipal" },
@@ -968,7 +968,7 @@
       {
         "name": "construction",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "constructionBrick", "label": "Brick" },
           { "name": "constructionConcrete", "label": "Concrete" },
@@ -1007,7 +1007,7 @@
       {
         "name": "exteriorFinish",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "exteriorFinishAluminum", "label": "Aluminum" },
           { "name": "exteriorFinishBrick", "label": "Brick" },
@@ -1047,7 +1047,7 @@
       {
         "name": "roof",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "roofAsphalt", "label": "Asphalt" },
           { "name": "roofFibreglass", "label": "Fibreglass" },
@@ -1068,7 +1068,7 @@
       {
         "name": "parking",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "parkingNone", "label": "None" },
           { "name": "parkingAdditionalAvailable", "label": "Additional available" },
@@ -1104,7 +1104,7 @@
       {
         "name": "parkingAccess",
         "fType": "checkbox",
-        "maximum": 2,
+        "max": 2,
         "options": [
           { "name": "parkingAccessFront", "label": "Front" },
           { "name": "parkingAccessRear", "label": "Rear" },
@@ -1151,7 +1151,7 @@
       {
         "name": "siteInfluences",
         "fType": "checkbox",
-        "maximum": 6,
+        "max": 6,
         "options": [
           { "name": "siteInfluencesAdultOriented", "label": "Adult oriented" },
           { "name": "siteInfluencesCleared", "label": "Cleared" },
@@ -1184,7 +1184,7 @@
       {
         "name": "viewForRealtorCa",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "viewForRealtorCaCity", "label": "City" },
           { "name": "viewForRealtorCaLake", "label": "Lake" },
@@ -1220,7 +1220,7 @@
       {
         "name": "outdoorArea",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "outdoorAreaNone", "label": "None" },
           { "name": "outdoorAreaBalcony", "label": "Balcony" },
@@ -1240,7 +1240,7 @@
       {
         "name": "fuelHeating",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "fuelHeatingBaseboard", "label": "Baseboard" },
           { "name": "fuelHeatingElectric", "label": "Electric" },
@@ -1273,7 +1273,7 @@
       {
         "name": "fireplaceFuel",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "fireplaceFuelNone", "label": "None" },
           { "name": "fireplaceFuelGasNatural", "label": "Gas, natural" },
@@ -1305,7 +1305,7 @@
       {
         "name": "floorFinish",
         "fType": "checkbox",
-        "maximum": 3,
+        "max": 3,
         "options": [
           { "name": "floorFinishConcrete", "label": "Concrete" },
           { "name": "floorFinishHardwood", "label": "Hardwood" },
@@ -1326,7 +1326,7 @@
       {
         "name": "featuresIncluded",
         "fType": "checkbox",
-        "maximum": 10,
+        "max": 10,
         "options": [
           { "name": "featuresIncludedAirConditioning", "label": "Air conditioning" },
           { "name": "featuresIncludedClothesDryer", "label": "Clothes dryer" },
@@ -1416,7 +1416,7 @@
       {
         "name": "amenities",
         "fType": "checkbox",
-        "maximum": 6,
+        "max": 6,
         "options": [
           { "name": "amenitiesNone", "label": "None" },
           { "name": "amenitiesAirConditioningCentral", "label": "Air conditioning, central" },
@@ -1455,13 +1455,13 @@
   {
     "label": "Rooms",
     "fields": [
-      { "name": "rooms", "fType": "rooms", "maximum": 30 }
+      { "name": "rooms", "fType": "rooms", "max": 30 }
     ]
   },
   {
     "label": "Bathrooms",
     "fields": [
-      { "name": "bathrooms", "fType": "bathrooms", "maximum": 12 }
+      { "name": "bathrooms", "fType": "bathrooms", "max": 12 }
     ]
   },
   {
@@ -1513,7 +1513,7 @@
     "label": "Open houses and tours",
     "note": "Open houses are available to the public, but tours are only attended by agents.",
     "fields": [
-      { "name": "openHouses", "fType": "openHouses", "maximum": 4 }
+      { "name": "openHouses", "fType": "openHouses", "max": 4 }
     ]
   },
   {
@@ -1588,7 +1588,7 @@
       {
         "name": "bylawRestrictions",
         "fType": "checkbox",
-        "maximum": 4,
+        "max": 4,
         "options": [
           { "name": "bylawRestrictionsAgeRestrictions", "label": "Age restrictions" },
           { "name": "bylawRestrictionsPetsAllowed", "label": "Pets allowed" },

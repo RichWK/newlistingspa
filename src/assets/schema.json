@@ -101,7 +101,20 @@
           { "name": "Way" }
         ]
       },
-      { "name": "addressStreetDirection", "fType": "text", "label": "Street direction" },
+      { "name": "addressStreetDirection",
+        "fType": "dropdown",
+        "label": "Street direction",
+        "options": [
+          { "name": "N" },
+          { "name": "S" },
+          { "name": "E" },
+          { "name": "W" },
+          { "name": "NE" },
+          { "name": "NW" },
+          { "name": "SE" },
+          { "name": "SW" }
+        ]
+      },
       { "name": "addressCityOrTown", "fType": "text", "label": "City or town" }
     ]
   },

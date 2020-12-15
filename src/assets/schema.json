@@ -1511,7 +1511,7 @@
   },
   {
     "label": "Open houses and tours",
-    "note": "Open houses are available to the public, but tours are only attended by agents.",
+    "note": "Open houses are available to the public, but tours can only be attended by agents.",
     "fields": [
       { "name": "openHouses", "fType": "openHouses", "max": 4 }
     ]

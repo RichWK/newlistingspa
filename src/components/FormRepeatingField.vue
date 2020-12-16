@@ -2,26 +2,31 @@
 
   <div
     v-for="n in repetitions"
+    class="flex-container"
     :key="n"
   >
 
     <h3>{{ n }}</h3>
+
+    <div class="container">
     
-    <FormBathroom
-      v-if="name == 'bathrooms'"
-      :index="n"
-      @change="onChange"
-    />
-    <FormOpenHouse
-      v-if="name == 'openHouses'"
-      :index="n"
-      @change="onChange"
-    />
-    <FormRoom
-      v-if="name == 'rooms'"
-      :index="n"
-      @change="onChange"
-    />
+      <FormBathroom
+        v-if="name == 'bathrooms'"
+        :index="n"
+        @change="onChange"
+      />
+      <FormOpenHouse
+        v-if="name == 'openHouses'"
+        :index="n"
+        @change="onChange"
+      />
+      <FormRoom
+        v-if="name == 'rooms'"
+        :index="n"
+        @change="onChange"
+      />
+    
+    </div>
 
   </div>
 
@@ -83,9 +88,23 @@ export default {
 
 <style scoped>
 
+div.flex-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+div.flex-container:not(:last-of-type) {
+
+  margin-bottom: 10px;
+}
+
 h3 {
 
-  display: inline-block;
+  margin: 0;
+  margin-top: 7px;
   margin-right: 12px;
   color: #1fad58;
 }

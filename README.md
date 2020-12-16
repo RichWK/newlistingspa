@@ -11,7 +11,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Some fields should deactivate based on the answer of others (e.g. 'will fixtures be removed?')
   * Some fields should be deactivated from the start and only calculate input from other fields (e.g. floor area, multifamily income)
 * Refine the design
-  * `<FormRepeatingField>` and its child components need some work
   * Add a PrimeVue toggle button to switch between feet and metres
   * Hide fields according to the property type that's been selected. Simplifies things for the user 🙂
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly

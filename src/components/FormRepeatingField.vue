@@ -105,7 +105,7 @@ h3 {
 
   margin: 0;
   margin-top: 7px;
-  margin-right: 12px;
+  margin-right: 15px;
   color: #1fad58;
 }
 

@@ -1,13 +1,13 @@
 <template>
 
   <FormDropdown
-    placeholder="Room"
+    label="Room"
     optionLabel="room"
     :options="rooms"
     @change="onChange"
   />
   <FormDropdown
-    placeholder="Floor"
+    label="Floor"
     optionLabel="floor"
     :filter="false"
     :options="floors"

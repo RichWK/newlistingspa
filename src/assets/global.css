@@ -29,3 +29,25 @@ body {
     cursor: pointer;
 }
 
+div.p-float-label {
+
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+div.p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label, .p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label, .p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label {
+  
+    top: -.65rem;
+    font-size: 11px;
+    left: 0.2rem;
+}
+
+@media (max-width: 450px) { 
+
+    #app {
+
+        padding: 25px 10px;
+    }
+}
+

@@ -1,8 +1,7 @@
 <template>
 
   <div
-    class="container"
-    :class="{ 'p-float-label' : floatingLabel }"
+    class="container p-float-label"
   >
     
     <PrimeText
@@ -12,7 +11,6 @@
       :type="type"
       :inputmode="inputMode"
       :pattern="pattern"
-      :placeholder="placeholderText"
       @change="onChange"
     />
     <PrimeNumber
@@ -26,7 +24,7 @@
       :useGrouping="useGrouping"
       @change="onChange"
     />
-    <label v-if="floatingLabel" :for="name">{{ label }}</label>
+    <label :for="name">{{ label }}</label>
     
   </div>
 
@@ -67,9 +65,6 @@ export default {
     pattern() {
       return this.fType === 'number' ? '[0-9]*' : undefined
     },
-    placeholderText() {
-      return this.floatingLabel === false ? this.label : ''
-    },
     suffix() {
       return this.fType === 'percentage' ? '%' : undefined
     },
@@ -106,10 +101,6 @@ export default {
     }
   },
   props: {
-    'floatingLabel': {
-      type: Boolean,
-      default: true
-    },
     'fType': {
       type: String,
       default: 'text'
@@ -129,22 +120,7 @@ export default {
 
   display: inline-block;
   margin-right: 12px;
-  margin-bottom: 30px;
-}
-
-/* Adjusting PrimeVue floating label defaults. */
-
-.p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label, .p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label, .p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label {
-  
-    top: -.65rem;
-    font-size: 11px;
-    left: 0.2rem;
-}
-
-input {
-
-  display: block;
-  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .p-inputtext, .p-inputnumber {

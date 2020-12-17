@@ -4,7 +4,7 @@
     :filter="false"
     optionLabel="type"
     :options="types"
-    placeholder="Open house or tour?"
+    label="Open house or tour?"
     @change="onChange"
   />
   <FormDate
@@ -16,21 +16,21 @@
     :filter="false"
     optionLabel="time"
     :options="times"
-    placeholder="Starting at"
+    label="Starting at"
     @change="onChange"
   />
   <FormDropdown
     :filter="false"
     optionLabel="time"
     :options="times"
-    placeholder="Ending at"
+    label="Ending at"
     @change="onChange"
   />
   <FormDropdown
     :filter="false"
     optionLabel="refreshment"
     :options="refreshments"
-    placeholder="Refreshments?"
+    label="Refreshments?"
     @change="onChange"
   />
 

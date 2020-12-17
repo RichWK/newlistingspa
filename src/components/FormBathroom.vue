@@ -1,21 +1,20 @@
 <template>
 
   <FormInput
-    :floatingLabel="false"
     fType="number"
     label="Number of pieces"
     name="numberOfPieces"
     @change="onChange"
   />
   <FormDropdown
-    placeholder="Floor"
+    label="Floor"
     optionLabel="floor"
     :filter="false"
     :options="floors"
     @change="onChange"
   />
   <FormDropdown
-    placeholder="En-suite?"
+    label="En-suite?"
     optionLabel="ensuite"
     :filter="false"
     :options="ensuite"

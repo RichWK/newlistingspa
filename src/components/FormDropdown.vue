@@ -1,14 +1,21 @@
 <template>
+
+  <div
+    class="p-float-label"
+  >
   
-  <PrimeDropdown
-    v-model="userInputAsObject"
-    :filter="filter"
-    :options="options"
-    :optionLabel="optionLabel"
-    :placeholder="label"
-    :showClear="showClearIcon"
-    @change="onChange"
-  />
+    <PrimeDropdown
+      v-model="userInputAsObject"
+      :filter="filter"
+      :options="options"
+      :optionLabel="optionLabel"
+      :showClear="showClearIcon"
+      :inputId="name"
+      @change="onChange"
+    />
+    <label :for="name">{{ label }}</label>
+
+  </div>
 
 </template>
 
@@ -63,8 +70,6 @@ export default {
 .p-dropdown {
 
   min-width: 250px;
-  margin-right: 12px;
-  margin-bottom: 20px;
 }
 
 </style>

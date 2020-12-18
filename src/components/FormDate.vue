@@ -38,8 +38,7 @@ export default {
         let dateString =
           input.getFullYear()
           + '-'
-          + ( input.getMonth()
-          + 1 )
+          + ( input.getMonth() + 1 )
           + '-'
           + input.getDate();
         return { [this.name]: dateString }

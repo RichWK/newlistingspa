@@ -28,7 +28,7 @@
   />
   <FormDropdown
     :filter="false"
-    optionLabel="refreshment"
+    optionLabel="refreshments"
     :options="refreshments"
     label="Refreshments?"
     @change="onChange"
@@ -69,8 +69,8 @@ export default {
   data () {
     return {
       'refreshments': [
-         { "refreshment": 'Yes' },
-         { "refreshment": 'No' }
+         { "refreshments": 'Yes' },
+         { "refreshments": 'No' }
       ],
       'times': [
         '8:00 am',

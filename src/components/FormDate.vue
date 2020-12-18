@@ -38,7 +38,10 @@ export default {
     }
   },
   props: {
-    'name': String,
+    'name': {
+      type: String,
+      default: 'date'
+    },
     'showIcon': {
       type: Boolean,
       default: true

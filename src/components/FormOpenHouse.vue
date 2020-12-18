@@ -2,9 +2,10 @@
 
   <FormDropdown
     :filter="false"
+    label="Open house or tour?"
+    name="type"
     optionLabel="type"
     :options="types"
-    label="Open house or tour?"
     @change="onChange"
   />
   <FormDate
@@ -14,23 +15,26 @@
   />
   <FormDropdown
     :filter="false"
+    label="Starting at"
+    name="startTime"
     optionLabel="startTime"
     :options="startTimes"
-    label="Starting at"
     @change="onChange"
   />
   <FormDropdown
     :filter="false"
+    label="Ending at"
+    name="endTime"
     optionLabel="endTime"
     :options="endTimes"
-    label="Ending at"
     @change="onChange"
   />
   <FormDropdown
     :filter="false"
+    label="Refreshments?"
+    name="refreshments"
     optionLabel="refreshments"
     :options="refreshments"
-    label="Refreshments?"
     @change="onChange"
   />
 

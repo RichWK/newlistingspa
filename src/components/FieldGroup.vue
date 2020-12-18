@@ -126,7 +126,7 @@ export default {
   methods: {
     onChange(userInput) {
 
-      this.userInputs = { ...this.userInputs, ...userInput };      
+      this.userInputs = { ...this.userInputs, ...userInput };
       this.$emit( 'change', this.userInputs );
     },
     toggleNote() {

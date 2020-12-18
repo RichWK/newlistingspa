@@ -14,8 +14,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF) — built us
   * Add a PrimeVue toggle button to switch between feet and metres
   * Hide fields according to the property type that's been selected. Simplifies things for the user 🙂
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
-* Bugs
-  * Clearing date fields does not clear the data
 
 ### Common commands
 

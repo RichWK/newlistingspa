@@ -1,9 +1,19 @@
 <template>
+
+  <!--
+
+  <PrimeCalendar> requires two event listeners because:
+  
+    - @change only fires when the field is cleared or modified manually
+    - @date-select only fires when a date is selected from the calendar
+
+  -->
   
   <PrimeCalendar
     v-model="userInput"
     dateFormat="MM d, yy"
     :showIcon="showIcon"
+    @change="onChange"
     @date-select="onChange"
   />
 

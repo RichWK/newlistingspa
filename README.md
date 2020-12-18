@@ -1,6 +1,6 @@
 # newlistingspa
 
-An online alternative to REBGV's existing 'Data Input Form' (a PDF).
+An online alternative to REBGV's existing 'Data Input Form' (a PDF) — built using Vue.js 3.
 
 ### To-dos
 
@@ -16,7 +16,6 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF).
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
 * Bugs
   * Clearing fields within `<FormRepeatingField>` does not clear the data
-  * Open house date field is undefined in data
 
 ### Common commands
 

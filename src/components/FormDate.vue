@@ -33,7 +33,20 @@ export default {
   },
   computed: {
     userInputAsObject() {
-      return { [this.name]: this.userInput }
+      let input = this.userInput;
+      if ( input instanceof Date ) {
+        let dateString =
+          input.getFullYear()
+          + '-'
+          + ( input.getMonth()
+          + 1 )
+          + '-'
+          + input.getDate();
+        return { [this.name]: dateString }
+      }
+      else {
+        return { [this.name]: input }
+      }
     }
   },
   data () {

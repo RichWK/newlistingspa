@@ -8,6 +8,7 @@
   />
   <FormDropdown
     label="Floor"
+    name="floor"
     optionLabel="floor"
     :filter="false"
     :options="floors"
@@ -15,6 +16,7 @@
   />
   <FormDropdown
     label="En-suite?"
+    name="ensuite"
     optionLabel="ensuite"
     :filter="false"
     :options="ensuite"

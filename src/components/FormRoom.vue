@@ -2,12 +2,14 @@
 
   <FormDropdown
     label="Room"
+    name="room"
     optionLabel="room"
     :options="rooms"
     @change="onChange"
   />
   <FormDropdown
     label="Floor"
+    name="floor"
     optionLabel="floor"
     :filter="false"
     :options="floors"

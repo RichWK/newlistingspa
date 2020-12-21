@@ -16,7 +16,6 @@
     @change="onChange"
   />
   <FormInput
-    :floatingLabel="false"
     name="dimensions"
     label="Dimensions"
     @change="onChange"

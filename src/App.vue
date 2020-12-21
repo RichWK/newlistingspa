@@ -57,7 +57,7 @@ export default {
       // Remove any blank values.
       for (const [key, value] of Object.entries( this.userInputs ) ) {
 
-        if (value?.length <= 0 ) { delete this.userInputs[key] }
+        if ( !value || value?.length <= 0 ) { delete this.userInputs[key] }
       }
     }
   },

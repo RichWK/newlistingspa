@@ -1238,7 +1238,7 @@
     "label": "Fuel and heating",
     "fields": [
       {
-        "name": "fuelHeating",
+        "name": "fuelAndHeating",
         "fType": "checkbox",
         "max": 3,
         "options": [

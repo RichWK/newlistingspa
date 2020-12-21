@@ -912,7 +912,7 @@
     "label": "Do taxes include utilities?",
     "fields": [
       {
-        "name": "floodPlain",
+        "name": "taxIncludesUtilities",
         "fType": "radio",
         "options": [
           { "name": "taxIncludesUtilitiesYes", "label": "Yes" },

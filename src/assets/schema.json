@@ -1117,7 +1117,7 @@
   {
     "label": "Garage measurements",
     "fields": [
-      { "name": "garageSize", "fType": "number", "label": "Dimensions" },
+      { "name": "garageSize", "fType": "text", "label": "Dimensions" },
       { "name": "garageDoorHeight", "fType": "number", "label": "Door height" }
     ]
   },

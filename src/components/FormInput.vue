@@ -22,7 +22,7 @@
       :mode="mode"
       :suffix="suffix"
       :useGrouping="useGrouping"
-      @change="onChange"
+      @blur="onChange"
     />
     <label :for="name">{{ label }}</label>
     
@@ -97,7 +97,9 @@ export default {
   emits: ['change'],
   methods: {
     onChange() {
-      this.$emit( 'change', this.userInputAsObject);
+      // setTimeout( () => { console.log( this.userInput ) }, 2000 );
+
+      setTimeout( () => { this.$emit( 'change', this.userInputAsObject); }, 2000 );
     }
   },
   props: {

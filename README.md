@@ -15,7 +15,7 @@ An online alternative to REBGV's existing 'Data Input Form' (a PDF) — built us
   * Hide fields according to the property type that's been selected. Simplifies things for the user 🙂
   * Could look at SimpleTax for inspiration — they handle complex forms elegantly
 * Bugs
-  * Check propagation of data from `<FormRoom>` and `<FormBathroom>` to `<App>`
+  * PrimeVue's `<InputNumber>` seems to have a bug? Opened an issue on their repo
 
 ### Common commands
 

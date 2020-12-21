@@ -904,8 +904,8 @@
   {
     "label": "Taxes",
     "fields": [
-      { "name": "grossTaxes", "fType": "currency", "label": "Gross taxes" },
-      { "name": "forTaxYear", "fType": "year", "label": "For tax year" }
+      { "name": "taxGross", "fType": "currency", "label": "Gross taxes" },
+      { "name": "taxYear", "fType": "year", "label": "For tax year" }
     ]
   },
   {

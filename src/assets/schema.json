@@ -536,7 +536,6 @@
   },
   {
     "label": "Dwelling classification",
-    "note": "'Attached' includes apartments.",
     "fields": [
       { 
         "name": "dwellingClassification",
@@ -1607,7 +1606,7 @@
     "label": "Restricted age",
     "fields": [
       {
-        "name": "restrictedAge",
+        "name": "bylawRestrictedAge",
         "fType": "radio",
         "options": [
           { "name": "restrictedAge19Plus", "label": "19+" },
@@ -1624,12 +1623,12 @@
     "label": "Number of pets allowed",
     "fields": [
       {
-        "name": "petsNumberAllowed",
+        "name": "bylawPetsAllowed",
         "fType": "radio",
         "options": [
-          { "name": "petsNumberAllowed1", "label": "1" },
-          { "name": "petsNumberAllowed2", "label": "2" },
-          { "name": "petsNumberAllowedNoRestriction", "label": "No restriction" }
+          { "name": "bylawPetsAllowedOne", "label": "1" },
+          { "name": "bylawPetsAllowedTwo", "label": "2" },
+          { "name": "bylawPetsAllowedNoRestriction", "label": "No restriction" }
         ]
       }
     ]
@@ -1638,11 +1637,11 @@
     "label": "Cats allowed?",
     "fields": [
       {
-        "name": "petsCats",
+        "name": "bylawCatsAllowed",
         "fType": "radio",
         "options": [
-          { "name": "petsCatsYes", "label": "Yes" },
-          { "name": "petsCatsNo", "label": "No" }
+          { "name": "bylawCatsAllowedYes", "label": "Yes" },
+          { "name": "bylawCatsAllowedNo", "label": "No" }
         ]
       }
     ]
@@ -1651,11 +1650,11 @@
     "label": "Dogs allowed?",
     "fields": [
       {
-        "name": "petsDogs",
+        "name": "bylawDogsAllowed",
         "fType": "radio",
         "options": [
-          { "name": "petsDogsYes", "label": "Yes" },
-          { "name": "petsDogsNo", "label": "No" }
+          { "name": "bylawDogsAllowedYes", "label": "Yes" },
+          { "name": "bylawDogsAllowedNo", "label": "No" }
         ]
       }
     ]

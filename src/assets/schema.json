@@ -1467,13 +1467,13 @@
   {
     "label": "REALTOR® remarks",
     "fields": [
-      { "name": "realtorRemarks", "fType": "textarea" }
+      { "name": "remarksRealtor", "fType": "textarea" }
     ]
   },
   {
     "label": "Public remarks",
     "fields": [
-      { "name": "publicRemarks", "fType": "textarea" }
+      { "name": "remarksPublic", "fType": "textarea" }
     ]
   },
   {
@@ -1505,8 +1505,8 @@
   {
     "label": "Links",
     "fields": [
-      { "name": "virtualTourUrl", "fType": "text", "label": "Virtual tour" },
-      { "name": "propertyBrochureUrl", "fType": "text", "label": "Property brochure" }
+      { "name": "urlVirtualTour", "fType": "text", "label": "Virtual tour" },
+      { "name": "urlPropertyBrochure", "fType": "text", "label": "Property brochure" }
     ]
   },
   {

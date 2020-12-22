@@ -22,7 +22,7 @@
       :mode="mode"
       :suffix="suffix"
       :useGrouping="useGrouping"
-      @blur="onChange"
+      @blur="onBlur"
     />
     <label :for="name">{{ label }}</label>
     
@@ -96,10 +96,12 @@ export default {
   },
   emits: ['change'],
   methods: {
+    onBlur() {
+      // setTimeout( () => { console.log( this.userInput ) }, 1000 );
+      setTimeout( () => { this.$emit( 'change', this.userInputAsObject); }, 1000 );
+    },
     onChange() {
-      // setTimeout( () => { console.log( this.userInput ) }, 2000 );
-
-      setTimeout( () => { this.$emit( 'change', this.userInputAsObject); }, 2000 );
+      this.$emit( 'change', this.userInputAsObject);
     }
   },
   props: {

@@ -1558,26 +1558,26 @@
     "label": "What does the monthly maintenance fee include?",
     "fields": [
       {
-        "name": "strataMaintenanceFee",
+        "name": "strataMaintenanceFeeIncludes",
         "fType": "checkbox",
         "options": [
-          { "name": "strataMaintenanceFeeCableOrSatellite", "label": "Cable or satellite" },
-          { "name": "strataMaintenanceFeeCaretaker", "label": "Caretaker" },
-          { "name": "strataMaintenanceFeeElectricity", "label": "Electricity" },
-          { "name": "strataMaintenanceFeeGardening", "label": "Gardening" },
-          { "name": "strataMaintenanceFeeGarbagePickup", "label": "Garbage pickup" },
-          { "name": "strataMaintenanceFeeGas", "label": "Gas" },
-          { "name": "strataMaintenanceFeeGeothermal", "label": "Geothermal" },
-          { "name": "strataMaintenanceFeeHeat", "label": "Heat" },
-          { "name": "strataMaintenanceFeeHotWater", "label": "Hot water" },
-          { "name": "strataMaintenanceFeeManagement", "label": "Management" },
-          { "name": "strataMaintenanceFeeRecreationFacility", "label": "Recreation facility" },
-          { "name": "strataMaintenanceFeeRvParking", "label": "RV parking" },
-          { "name": "strataMaintenanceFeeSewer", "label": "Sewer" },
-          { "name": "strataMaintenanceFeeSnowRemoval", "label": "Snow removal" },
-          { "name": "strataMaintenanceFeeTaxes", "label": "Taxes" },
-          { "name": "strataMaintenanceFeeWater", "label": "Water" },
-          { "name": "strataMaintenanceFeeOther", "label": "Other" }
+          { "name": "strataMaintenanceFeeIncludesCableOrSatellite", "label": "Cable or satellite" },
+          { "name": "strataMaintenanceFeeIncludesCaretaker", "label": "Caretaker" },
+          { "name": "strataMaintenanceFeeIncludesElectricity", "label": "Electricity" },
+          { "name": "strataMaintenanceFeeIncludesGardening", "label": "Gardening" },
+          { "name": "strataMaintenanceFeeIncludesGarbagePickup", "label": "Garbage pickup" },
+          { "name": "strataMaintenanceFeeIncludesGas", "label": "Gas" },
+          { "name": "strataMaintenanceFeeIncludesGeothermal", "label": "Geothermal" },
+          { "name": "strataMaintenanceFeeIncludesHeat", "label": "Heat" },
+          { "name": "strataMaintenanceFeeIncludesHotWater", "label": "Hot water" },
+          { "name": "strataMaintenanceFeeIncludesManagement", "label": "Management" },
+          { "name": "strataMaintenanceFeeIncludesRecreationFacility", "label": "Recreation facility" },
+          { "name": "strataMaintenanceFeeIncludesRvParking", "label": "RV parking" },
+          { "name": "strataMaintenanceFeeIncludesSewer", "label": "Sewer" },
+          { "name": "strataMaintenanceFeeIncludesSnowRemoval", "label": "Snow removal" },
+          { "name": "strataMaintenanceFeeIncludesTaxes", "label": "Taxes" },
+          { "name": "strataMaintenanceFeeIncludesWater", "label": "Water" },
+          { "name": "strataMaintenanceFeeIncludesOther", "label": "Other" }
         ]
       }
     ]

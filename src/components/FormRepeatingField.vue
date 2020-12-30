@@ -96,6 +96,11 @@ div.flex-container {
   align-items: flex-start;
 }
 
+div.header-container + div.flex-container {
+
+  margin-top: 10px;
+}
+
 div.flex-container:not(:last-of-type) {
 
   margin-bottom: 10px;

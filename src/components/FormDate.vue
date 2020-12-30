@@ -79,7 +79,7 @@ export default {
 
 .p-calendar {
 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-right: 12px;
   width: 250px;
 }

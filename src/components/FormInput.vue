@@ -124,7 +124,7 @@ export default {
 
   display: inline-block;
   margin-right: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .p-inputtext, .p-inputnumber {

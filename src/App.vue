@@ -16,6 +16,14 @@
 
   <form>
 
+    <PrimeButton
+      class="log-button p-button-rounded"
+      label="Log to console"
+      icon="pi pi-save"
+      iconPos="right"
+      @click="logToConsole"
+    />
+
     <FieldGroup
       v-for="group in groups"
       :key="group.label"
@@ -33,13 +41,15 @@
 
 <script>
 
-import FieldGroup from './components/FieldGroup.vue'
 import Schema from "./assets/schema.json";
+import Button from 'primevue/button';
+import FieldGroup from './components/FieldGroup.vue'
 
 export default {
 
   name: 'App',
   components: {
+    'PrimeButton': Button,
     FieldGroup
   },
   data() {
@@ -49,6 +59,9 @@ export default {
     }
   },
   methods: {
+    logToConsole() {
+      console.log( JSON.stringify( this.userInputs, null, 2 ) );
+    },
     storeUserInputs( newInputs ) {
       
       // Add new input to any existing values.
@@ -101,6 +114,15 @@ export default {
   p {
 
     line-height: 1.5;
+  }
+
+  .p-button.log-button {
+
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    background: #1fad58;
+    border-color: #1fad58;
   }
 
 </style>
